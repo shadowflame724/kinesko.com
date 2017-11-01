@@ -22,12 +22,12 @@ class PostDimmer extends AbstractWidget
     public function run()
     {
         $count = Post::count();
-        $string = 'Статей';
+        $string = 'статей -';
 
         return view('voyager::dimmer', array_merge($this->config, [
             'icon'   => 'voyager-file-text',
-            'title'  => "{$count} {$string}",
-            'text'   => __('voyager.dimmer.page_text', ['count' => $count, 'string' => Str::lower($string)]),
+            'title'  => "{$string} {$count}",
+            'text'   => "В базе данных {$string} {$count}",
             'button' => [
                 'text' => 'Все статьи',
                 'link' => route('voyager.services.index'),
