@@ -1,0 +1,195 @@
+
+// start of icons classes
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.4s;
+}
+
+.icon-cont {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    .icon:first-child {
+        opacity: 1;
+    }
+    .icon-hover {
+        position: absolute;
+        top: 0;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        opacity: 0;
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        .icon {
+            opacity: 0;
+        }
+        .icon-hover {
+            opacity: 1;
+        }
+    }
+}
+
+.icon-up {
+    background-image: url("../images/general/up-icon.svg");
+    width: 40px;
+    height: 23px;
+}
+
+.icon-up-hover {
+    background-image: url("../images/general/up-icon-hover.svg");
+    width: 40px;
+    height: 23px;
+}
+
+// *********************************************************************
+// start of social icons
+.icon-google {
+    background-image: url("../images/general/google-icon.svg");
+    width: 20px;
+    height: 27px;
+}
+.icon-google-hover {
+    background-image: url("../images/general/google-icon-hover.svg");
+    width: 20px;
+    height: 27px;
+}
+.icon-twitter {
+    background-image: url("../images/general/twitter-icon.svg");
+    width: 34px;
+    height: 28px;
+}
+.icon-twitter-hover {
+    background-image: url("../images/general/twitter-icon-hover.svg");
+    width: 34px;
+    height: 28px;
+}
+.icon-vk {
+    background-image: url("../images/general/vk-icon.svg");
+    width: 22px;
+    height: 26px;
+}
+.icon-vk-hover {
+    background-image: url("../images/general/vk-icon-hover.svg");
+    width: 22px;
+    height: 26px;
+}
+.icon-rss {
+    background-image: url("../images/general/rss-icon.svg");
+    width: 27px;
+    height: 27px;
+}
+.icon-rss-hover {
+    background-image: url("../images/general/rss-icon-hover.svg");
+    width: 27px;
+    height: 27px;
+}
+// end of social icons
+// *********************************************************************
+
+.icon-search {
+    background-image: url("../images/general/search-icon.svg");
+    width: 35px;
+    height: 37px;
+}
+.icon-search-hover {
+    background-image: url("../images/general/search-icon-hover.svg");
+    width: 35px;
+    height: 37px;
+}
+
+.icon-check-mark {
+    background-image: url('../images/general/check-mark-yellow.svg');
+    width: 130px;
+    height: 100px;
+}
+
+.icon-cross-yellow {
+    background-image: url(../images/general/cross-yellow.svg);
+    width: 39px;
+    height: 39px;
+}
+
+//
+.icon-arrow-left {
+    background-image: url(../images/general/arrow-left.svg);
+    width: 40px;
+    height: 50px;
+}
+.icon-arrow-left-hover {
+    background-image: url(../images/general/arrow-left-hover.svg);
+    width: 40px;
+    height: 50px;
+}
+.icon-arrow-right {
+    background-image: url(../images/general/arrow-right.svg);
+    width: 40px;
+    height: 50px;
+}
+.icon-arrow-right-hover{
+    background-image: url(../images/general/arrow-right-hover.svg);
+    width: 40px;
+    height: 50px;
+}
+//
+
+.icon-arrow-down-yellow {
+    background-image: url(../images/general/arrow-down-yellow.svg);
+    width: 50px;
+    height: 50px;
+}
+
+.icon-service-1 {
+    background-image: url(../images/general/service-1-icon.svg);
+    width: 178px;
+    height: 168px;
+}
+
+.icon-service-1-hover {
+    background-image: url(../images/general/service-1-icon-hover.svg);
+    width: 178px;
+    height: 168px;
+}
+
+.icon-service-2 {
+    background-image: url(../images/general/service-2-icon.svg);
+    width: 194px;
+    height: 165px;
+}
+
+.icon-service-2-hover {
+    background-image: url(../images/general/service-2-icon-hover.svg);
+    width: 194px;
+    height: 165px;
+}
+
+.icon-service-3 {
+    background-image: url(../images/general/service-3-icon.svg);
+    width: 194px;
+    height: 165px;
+}
+
+.icon-service-3-hover {
+    background-image: url(../images/general/service-3-icon-hover.svg);
+    width: 194px;
+    height: 165px;
+}
+
+.icon-service-4 {
+    background-image: url(../images/general/service-4-icon.svg);
+    width: 178px;
+    height: 165px;
+}
+
+.icon-service-4-hover {
+    background-image: url(../images/general/service-4-icon-hover.svg);
+    width: 178px;
+    height: 165px;
+}
+// end of icons classes

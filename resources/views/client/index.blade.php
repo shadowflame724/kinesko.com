@@ -1,0 +1,227 @@
+@extends('client.template.layout')
+
+@section('page-title', $page->{'title' . $langSuf})
+
+@section('content')
+    <section id="index-page">
+        <div class="main-top-container bg-cont">
+            <div class="dark-mask"></div>
+
+            <div class="main-video-cont">
+                <video autoplay loop muted>
+                    <source src="/video/kinesko-main-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    Тег video не поддерживается вашим браузером.
+                </video>
+            </div>
+
+            <div class="container">
+                <h1 class="main-header animated fadeIn">
+                    Создание <br>
+                    графических роликов
+                </h1>
+                <div class="order-btns">
+                    <div class="view-example-btn">
+                        <a href="portfolio-material.html" class="skew-right gl-transparent-btn">
+                            <span class="skew-left">посмотреть пример</span>
+                        </a>
+                    </div>
+                    <div class="order-form-btn">
+                        <a href="/" class="skew-left gl-transparent-btn">
+                            <span class="skew-right">оформить заказ</span>
+                        </a>
+                    </div>
+                    <!--<a href="portfolio-material.html" class="skew-right gl-transparent-btn view-example-btn">-->
+                    <!--<span class="skew-left">посмотреть пример</span>-->
+                    <!--</a>-->
+                    <!--<a href="/" class="skew-left gl-transparent-btn order-form-btn">-->
+                    <!--<span class="skew-right">оформить заказ</span>-->
+                    <!--</a>-->
+                </div>
+            </div>
+        </div>
+
+        <!-- start of our-services -->
+        <div class="our-services triangle-left">
+            <div class="container">
+                <h3 class="section-header black-color">наши Услуги</h3>
+
+                <div class="our-services-wrapper">
+                    <div class="row">
+                        @foreach($serviceCategories as $serviceCategory)
+                        <div class="col-sm-6 col-lg-3 service-item">
+                            <a class="link-to-service" href="services.html#category-1">
+                            <span class="icon-cont">
+                                <i class="icon icon-service-1"></i>
+                                <i class="icon icon-hover icon-service-1-hover"></i>
+                            </span>
+                            </a>
+                            <h2 class="service-item-title">
+                                <a class="link-to-service" href="services.html#category-1">
+                                    {{ $serviceCategory->{'title' . $langSuf} }}
+                                </a>
+                            </h2>
+                            <hr class="inclined-line">
+                            <ul class="service-item-list">
+                                @foreach($serviceCategory->services as $service)
+                                <li>
+                                    <a href="{{ route('client.services.show', ['service' => $service->slug]) }}">{{ $service->{'title' . $langSuf} }}</a>
+                                </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of our-services -->
+
+        <!-- start of our-works -->
+        <div class="our-works triangle-right">
+            <div class="container">
+                <h3 class="section-header white-color">наши работы</h3>
+            </div>
+
+            {{--//= template/portfolio-block-big.html--}}
+            @include('client.template.portfolio-block-big')
+
+            <div class="achievments-cont">
+                <div class="achievment-item-cont">
+                    <div class="achievment-item">
+                        <div class="left-block">
+                            <!--<div class="img-cont">-->
+                            <!--<img src="/images/index/infographic-1.png" alt="infographic-photo">-->
+                            <!--</div>-->
+                            <div class="canvas-cont">
+                                <canvas class="circle-diagram" width="300" height="300" data-percents="73"></canvas>
+                            </div>
+                        </div>
+                        <div class="right-block">
+                            <p class="achievment-info">
+                                <span>73% всех наших клиентов мы никогда не видели лично,</span>
+                                а работали только по скайпу, почте и телефону
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="achievment-item-cont">
+                    <div class="achievment-item">
+                        <div class="left-block">
+                            <div class="canvas-cont">
+                                <canvas class="circle-diagram" width="300" height="300" data-percents="92"></canvas>
+                            </div>
+                        </div>
+                        <div class="right-block">
+                            <p class="achievment-info">
+                                <span>92% всех наших клиентов мы никогда не видели лично,</span>
+                                а работали только по скайпу, почте и телефону
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-cont">
+                <a href="/" class="skew-right gl-transparent-btn your-project-btn order-form-btn">
+                    <span class="skew-left">Расскажите нам о своем проекте</span>
+                </a>
+            </div>
+        </div>
+        <!-- end of our-works -->
+
+        <!-- start of photo-gallery-->
+        <div class="photo-gallery triangle-right">
+            <div class="container">
+                <h3 class="section-header black-color">Мы - KINESKO!</h3>
+            </div>
+
+            <div class="photo-gallery-cont clearfix">
+                <div class="photo-cont">
+                    <div class="img-cont">
+                        <img src="/images/index/photo-1.jpg" alt="kinesko-team-photo">
+                    </div>
+                    <div class="two-img-cont clearfix">
+                        <div class="img-cont">
+                            <img src="/images/index/photo-2.jpg" alt="kinesko-team-photo">
+                        </div>
+                        <div class="img-cont">
+                            <img src="/images/index/photo-3.jpg" alt="kinesko-team-photo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-cont clearfix">
+                    <div class="two-img-cont clearfix">
+                        <div class="img-cont">
+                            <img src="/images/index/photo-4.jpg" alt="kinesko-team-photo">
+                        </div>
+                        <div class="img-cont">
+                            <img src="/images/index/photo-5.jpg" alt="kinesko-team-photo">
+                        </div>
+                    </div>
+                    <div class="img-cont">
+                        <img src="/images/index/photo-6.jpg" alt="kinesko-team-photo">
+                    </div>
+                </div>
+
+                <div class="photo-cont clearfix">
+                    <div class="img-cont">
+                        <img src="/images/index/photo-7.jpg" alt="kinesko-team-photo">
+                    </div>
+                    <div class="two-img-cont clearfix">
+                        <div class="img-cont">
+                            <img src="/images/index/photo-8.jpg" alt="kinesko-team-photo">
+                        </div>
+                        <div class="img-cont">
+                            <img src="/images/index/photo-9.jpg" alt="kinesko-team-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end of photo-gallery -->
+
+        <!-- start of about-us -->
+        <div class="about-us">
+            <div class="container">
+                <h3 class="section-header yellow-color">О нас</h3>
+                <div class="row info-block-cont">
+                    <div class="col-md-6 title-cont">
+                        <h3 class="title">
+                            Качественный и продуманный
+                            дизайн —  одна из составляющих
+                            успеха
+                        </h3>
+                    </div>
+                    <div class="col-md-6 text-cont">
+                        <p>
+                        <span>
+                            Мы — креативная моушн студия KINESKO, родились 22 ноября 2009 года.
+                            Главные офисы — в Харькове, Киеве и Москве.
+                            Специализация — анимация, видео монтаж и разработка digital решений.
+                        </span>
+                        </p>
+                        <p class="for-read-more">
+                            Мы считаем, что штамповать одинаковые логотипы, фирменные стили, сайты, – это,
+                            простите, вульгарно. Мы создаем уникальные продукты, учитывая их цель и философию.
+                            Мы знаем, что отсутствие идеи никогда не удастся скрыть украшательством.
+                            Заказав любую услугу у нас, вы получите море внимания к своему проекту, потому что
+                            мы стремимся создавать не просто впечатляющие, а максимально полезные и работающие вещи.
+                        </p>
+                        <span class="read-more-btn">читать дальше...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of about-us -->
+    </section>
+    {{--//= template/our-materials.html--}}
+    @include('client.template.our-materials')
+@stop
+
+@section('page-scripts')
+<!-- scriots only this on page -->
+<script src="/js/index.js"></script>
+<!-- only this page -->
+@stop
