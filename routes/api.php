@@ -18,3 +18,5 @@ Route::post('/blocks-delete', 'BlockController@destroy')->name('blocks.destroy')
 
 Route::post('/callback-store', 'CallbackController@store')->name('callback.store');
 Route::post('/order-store', 'OrderController@store')->name('order.store');
+
+//Route::post('/order-store', 'OrderController@store')->name('order.store');
