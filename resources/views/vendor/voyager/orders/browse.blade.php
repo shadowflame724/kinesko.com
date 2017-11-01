@@ -1,0 +1,1 @@
+@include('vendor.voyager.template.browse_with-export')

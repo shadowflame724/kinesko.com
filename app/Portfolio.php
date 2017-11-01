@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Portfolio extends Model
+class Portfolio extends BaseModel
 {
     protected $table = 'portfolio';
 

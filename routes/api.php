@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,3 +18,4 @@ Route::post('/callback-store', 'CallbackController@store')->name('callback.store
 Route::post('/order-store', 'OrderController@store')->name('order.store');
 Route::post('/subscription-store', 'SubscriptionController@store')->name('order.store');
 
+Route::get('/export', 'ExportController@export')->name('export');
