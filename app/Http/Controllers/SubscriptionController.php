@@ -18,12 +18,12 @@ class SubscriptionController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:191',
-            'phone' => 'required|max:191|unique:subscriptions,email',
+            'email' => 'required|max:191|unique:subscriptions,email',
         ]);
 
         $callback = new Subscribe();
         $callback->name = $validatedData['name'];
-        $callback->phone = $validatedData['phone'];
+        $callback->email = $validatedData['email'];
         $callback->save();
 
         return response('success', 200);

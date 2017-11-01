@@ -356,7 +356,7 @@
 
                                         <div class="input-wrapper">
                                             <div class="input-cont skew-right">
-                                                <input type="text" name="user-name" required="required"
+                                                <input type="text" name="name" required="required"
                                                        class="user-name skew-left"
                                                        placeholder="Ваше имя" tabindex="1">
                                             </div>
@@ -364,7 +364,7 @@
 
                                         <div class="input-wrapper">
                                             <div class="input-cont skew-left">
-                                                <input type="email" name="user-email skew-left" required="required"
+                                                <input type="email" name="email" required="required"
                                                        class="user-email skew-right"
                                                        placeholder="Ваш email" tabindex="2">
                                             </div>
