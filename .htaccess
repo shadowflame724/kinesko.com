@@ -1,6 +1,5 @@
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-
+    RewriteEngine on
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
 
@@ -13,3 +12,4 @@ RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
 
 RewriteCond %{THE_REQUEST} //
 RewriteRule .* /$0 [R=301,L]
+

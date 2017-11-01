@@ -95,26 +95,21 @@ $(function () {
         kineskoFormHide(orderForm);
     });
 
-
-
-    $(orderForm).submit(function (event) { //устанавливаем событие отправки для формы
-        event.preventDefault();
-        $(this).ajaxSubmit({
-            target: orderForm,
-            url: "/api/order-store", //путь до php фаила отправителя,
-            type: "POST", //Метод отправки
-            success: function () {
-                //код в этом блоке выполняется при успешной отправке сообщения
-                // alert("Ваше сообщение отправлено!");
-                orderForm.reset();
-                successFormShow();
-                kineskoFormHide(orderForm);
-            },
-            error: function () {
-                alert("Произошла ошибка при отправке...( Попробуйте еще раз!");
-            }
-        });
+    $('.order-form').ajaxForm({
+        url: "/api/order-store", //путь до php фаила отправителя,
+        type: "POST", //Метод отправки
+        success: function () {
+            //код в этом блоке выполняется при успешной отправке сообщения
+            // alert("Ваше сообщение отправлено!");
+            orderForm.reset();
+            successFormShow();
+            kineskoFormHide(orderForm);
+        },
+        error: function () {
+            alert("Произошла ошибка при отправке...( Попробуйте еще раз!");
+        }
     });
+
 
     function modalClose(e) {
         if (e.keyCode === 27) {
@@ -191,7 +186,7 @@ $(function () {
         var form_data = $(this).serialize(); //собераем все данные из формы
         $.ajax({
             type: "POST", //Метод отправки
-            url: "/", //путь до php фаила отправителя
+            url: "/api/subscription-store", //путь до php фаила отправителя
             data: form_data,
             success: function () {
                 //код в этом блоке выполняется при успешной отправке сообщения
