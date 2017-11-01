@@ -2,11 +2,11 @@
 
 namespace App\Widgets;
 
-use App\Service;
+use App\Post;
 use Arrilot\Widgets\AbstractWidget;
 use Illuminate\Support\Str;
 
-class ServiceDimmer extends AbstractWidget
+class PostDimmer extends AbstractWidget
 {
     /**
      * The configuration array.
@@ -21,15 +21,15 @@ class ServiceDimmer extends AbstractWidget
      */
     public function run()
     {
-        $count = Service::count();
-        $string = 'услуг';
+        $count = Post::count();
+        $string = 'Статей';
 
         return view('voyager::dimmer', array_merge($this->config, [
             'icon'   => 'voyager-file-text',
             'title'  => "{$count} {$string}",
             'text'   => __('voyager.dimmer.page_text', ['count' => $count, 'string' => Str::lower($string)]),
             'button' => [
-                'text' => 'Все услуги',
+                'text' => 'Все статьи',
                 'link' => route('voyager.services.index'),
             ],
             'image' => voyager_asset('images/widget-backgrounds/03.jpg'),
