@@ -20,7 +20,7 @@ class BlogController extends Controller
     public function index($categorySlug = null)
     {
         $categories = PostCategory::all();
-        $page = Page::where('slug', 'uslugi')->first();
+        $page = Page::where('slug', 'blog')->first();
         $categoryId = null;
 
         if($categorySlug == null) {
@@ -58,12 +58,13 @@ class BlogController extends Controller
 
     }
 
-    public function author(User $user)
+    public function author($slug)
     {
+        $user = User::where('slug', $slug)->with('posts')->first();
 
         if ($user != null) {
             return view('client.blog.author', [
-                'post' => $user
+                'user' => $user
             ]);
         } else {
             return abort(404);

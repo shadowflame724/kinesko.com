@@ -1,32 +1,20 @@
 <!-- start of blog-sidebar -->
 <div class="blog-sidebar">
-    <p class="sidebar-header">Мы - KINESKO</p>
+    <p class="sidebar-header">@lang('client.blog-sidebar.header')</p>
 
     <div class="info-block-cont">
         <div class="text-cont">
-            <p>
-                Мы весьма радужно проводим наши корпоративы. Особенно, если это годовщина
-                существования нашей любимой студии! Мы весьма радужно проводим наши корпоративы.
-                Мы весьма радужно проводим наши корпоративы. Особенно, если это годовщина
-                существования нашей любимой студии! Мы весьма радужно проводим наши корпоративы.
-            </p>
-            <p class="for-read-more">
-                Мы весьма радужно проводим наши корпоративы. Особенно, если это годовщина
-                существования нашей любимой студии! Мы весьма радужно проводим наши корпоративы.
-                Мы весьма радужно проводим наши корпоративы. Особенно, если это годовщина
-                существования нашей любимой студии! Мы весьма радужно проводим наши корпоративы.
-            </p>
-            <span class="read-more-btn">читать дальше...</span>
+            @lang('client.blog-sidebar.text-content')
         </div>
     </div>
 
     <a href="/" class="skew-right gl-yellow-btn order-form-btn">
-        <span class="skew-left">цена вашего проекта</span>
+        <span class="skew-left">@lang('client.blog-sidebar.project_price')</span>
     </a>
 
     <hr class="inclined-line-1">
 
-    <p class="sidebar-header">Наши работы</p>
+    <p class="sidebar-header">@lang('client.blog-sidebar.our_work')</p>
 
     <div class="our-works-blog">
         <div class="portfolio-item">
@@ -43,13 +31,13 @@
         </div>
     </div>
 
-    <a href="portfolio.html" class="skew-right gl-yellow-btn">
-        <span class="skew-left">посмотреть все работы</span>
+    <a href="{{ route('client.portfolio.index') }}" class="skew-right gl-yellow-btn">
+        <span class="skew-left">@lang('client.portfolio-block-small.show_all')</span>
     </a>
 
     <hr class="inclined-line-2">
 
-    <p class="sidebar-header">Присоединяйтесь к нам</p>
+    <p class="sidebar-header">@lang('client.blog-sidebar.follow_us')</p>
 
     <div class="kinesko-widgets">
         <!-- youtube widget -->

@@ -45,14 +45,14 @@
                                         <img src="/storage/{{ $post->author->avatar }}" alt="author-img">
                                     </div>
                                     <div class="author-info">
-                                        <p class="name">Автор :
-                                            <a class="link-to-author" href="{{ route('client.blog.author', ['user' => $post->author->id ]) }}" title="страница автора">
-                                                {{ $post->author->name }}
+                                        <p class="name">@lang('client.blog.show_author') :
+                                            <a class="link-to-author" href="{{ route('client.blog.author', ['user' => $post->author->slug ]) }}" title="@lang('client.blog.author_page')">
+                                                {{ $post->author->{'name' . $langSuf} }}
                                             </a>
                                         </p>
-                                        <p class="specialty">Специальность :
+                                        <p class="specialty">@lang('client.blog.show_position) :
                                             <span>
-                                            Front-End Developer
+                                            {{ $post->author->{'position' . $langSuf} }}
                                         </span>
                                         </p>
                                     </div>

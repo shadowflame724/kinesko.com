@@ -3,9 +3,9 @@
     <div class="left-block bg-cont">
         <div class="gl-container">
             <h3 class="block-header">@lang('client.menu.portfolio')</h3>
-            <p class="block-title">которым гордимся</p>
+            <p class="block-title">@lang('client.portfolio-block-big.title')</p>
             <a href="{{ route('client.portfolio.index') }}" class="skew-right gl-transparent-btn white-border view-portfolio-btn">
-                <span class="skew-left">посмотреть все портфолио</span>
+                <span class="skew-left">@lang('client.portfolio-block-big.show_all')</span>
             </a>
         </div>
     </div>
@@ -15,7 +15,7 @@
                 <div class="portfolio-item-cont">
                     <div class="portfolio-item">
                         <div class="poster-img-cont">
-                            <img src="{{ url('storage/' . $value->image_thumb) }}" alt="{{ $value->image_thumb_alt }}">
+                            <img src="/storage/{{ $value->image_thumb }}" alt="{{ $value->image_thumb_alt }}">
                         </div>
                         <div class="hover-layer" style="color: #000;">
                             <h3 class="portfolio-name">
@@ -34,9 +34,9 @@
                 </div>
             @endforeach
             <div class="order-cont bg-cont">
-                <p class="slogan">Наши дизайны умеют восхищать и вдохновлять</p>
+                <p class="slogan">@lang('client.portfolio-block-big.wonderful_designers')</p>
                 <a href="/" class="skew-right gl-transparent-btn order-form-btn">
-                    <span class="skew-left">оформить заявку</span>
+                    <span class="skew-left">@lang('client.general.make_request')</span>
                 </a>
             </div>
         </div>

@@ -15,6 +15,6 @@ class ServiceCategory extends Model
 
     public function portfolio()
     {
-        return $this->hasMany(Portfolio::class);
+        return $this->hasMany(Portfolio::class, 'category_id', 'id');
     }
 }

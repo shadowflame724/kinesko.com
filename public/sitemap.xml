@@ -1,45 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 	<url>
-	<loc>http://test.kinesko.com.local</loc>
-		<priority>1.0</priority>
-		<lastmod>2017-11-01T00:00:00+03:00</lastmod>
+	<loc>http://test.kinesko.com.local/contacts</loc>
+		<priority>0.9</priority>
+		<lastmod>2017-10-23T15:22:04+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/contacts</loc>
+	<loc>http://test.kinesko.com.local/en/contacts</loc>
 		<priority>0.9</priority>
-		<lastmod>2017-11-01T00:00:00+03:00</lastmod>
+		<lastmod>2017-10-23T15:22:04+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://test.kinesko.com.local/company</loc>
 		<priority>0.9</priority>
-		<lastmod>2017-11-01T00:00:00+03:00</lastmod>
+		<lastmod>2017-10-23T15:21:25+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/company</loc>
+		<priority>0.9</priority>
+		<lastmod>2017-10-23T15:21:25+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://test.kinesko.com.local/blog</loc>
 		<priority>0.9</priority>
-		<lastmod>2017-11-01T00:00:00+03:00</lastmod>
+		<lastmod>2017-10-23T15:20:39+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog</loc>
+		<priority>0.9</priority>
+		<lastmod>2017-10-23T15:20:39+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://test.kinesko.com.local/portfolio</loc>
 		<priority>0.9</priority>
-		<lastmod>2017-11-01T00:00:00+03:00</lastmod>
+		<lastmod>2017-10-23T15:19:55+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/portfolio</loc>
+		<priority>0.9</priority>
+		<lastmod>2017-10-23T15:19:55+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
 	<loc>http://test.kinesko.com.local/uslugi</loc>
 		<priority>0.9</priority>
-		<lastmod>2017-11-01T00:00:00+03:00</lastmod>
+		<lastmod>2017-10-23T15:19:04+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/index</loc>
+	<loc>http://test.kinesko.com.local/en/uslugi</loc>
 		<priority>0.9</priority>
-		<lastmod>2017-11-01T00:00:00+03:00</lastmod>
+		<lastmod>2017-10-23T15:19:04+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local</loc>
+		<priority>1</priority>
+		<lastmod>2017-10-23T15:18:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en</loc>
+		<priority>1</priority>
+		<lastmod>2017-10-23T15:18:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local</loc>
+		<priority>0.9</priority>
+		<lastmod>2017-10-23T15:18:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en</loc>
+		<priority>0.9</priority>
+		<lastmod>2017-10-23T15:18:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T14:08:13+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T14:08:13+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/sadasdasd5</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T11:19:19+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyasadasdasd5</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T11:19:19+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/portfolio/sozdanie-igr</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T14:08:08+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/portfolio/sozdanie-igr</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T14:08:08+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/portfolio/animaciya-i-3d-mul-tiplikaciya</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T14:08:02+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/portfolio/animaciya-i-3d-mul-tiplikaciya</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T14:08:02+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/portfolio/s-emka-i-postobrabotka-videorolikov</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T14:07:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/portfolio/s-emka-i-postobrabotka-videorolikov</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T14:07:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T13:35:21+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T13:35:21+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/lorem-ipsum-post</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-10-26T17:58:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyalorem-ipsum-post</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-10-26T17:58:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T13:35:13+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T13:35:13+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/my-sample-post</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)my-sample-post</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T13:35:05+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T13:35:05+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/latest-post</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)latest-post</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/sozdanie-igr</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T13:34:54+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/sozdanie-igr</loc>
+		<priority>0.8</priority>
+		<lastmod>2017-10-24T13:34:54+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/sozdanie-igr/yarr-post</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/sozdanie-igryarr-post</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 </urlset>

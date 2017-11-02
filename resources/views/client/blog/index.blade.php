@@ -19,7 +19,7 @@
                     <ul>
                         <li @if($categoryId == null) class="active" @endif>
                             <a href="{{ route('client.blog.index') }}">
-                                <span>ВСЕ КАТЕГОРИИ</span>
+                                <span>@lang('client.general.all_categories')</span>
                             </a>
                         </li>
                         @foreach($categories as $postCategory)
@@ -55,9 +55,9 @@
                                                 <span class="material-date">{{ $post->created_at }}</span>
                                                 <span class="material-author">
                                         <a class="link-to-author"
-                                           href="{{ route('client.blog.author', ['user' => $post->author->id ]) }}"
+                                           href="{{ route('client.blog.author', ['user' => $post->author->slug ]) }}"
                                            title="страница автора">
-                                            {{ $post->author->name }}
+                                            {{ $post->author->{'name' . $langSuf} }}
                                         </a>
                                     </span>
                                             </div>

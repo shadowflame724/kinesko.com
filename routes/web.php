@@ -26,8 +26,8 @@ Route::group(
         Route::get('/services/{service}', 'ServiceController@show')->name('client.services.show');
 
         Route::get('/blog/{category?}', 'BlogController@index')->name('client.blog.index');
-        Route::get('/blog/{category}/{post}', 'BlogController@show')->name('client.blog.show');
         Route::get('/blog/author/{user}', 'BlogController@author')->name('client.blog.author');
+        Route::get('/blog/{category}/{post}', 'BlogController@show')->name('client.blog.show');
 
         Route::get('/contacts', 'ContactsController')->name('client.contacts');
         Route::get('/company', 'CompanyController')->name('client.company');

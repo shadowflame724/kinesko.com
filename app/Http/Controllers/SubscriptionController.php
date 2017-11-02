@@ -8,8 +8,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Callback;
-use App\Subscribe;
+use App\Subscription;
 use Illuminate\Http\Request;
 
 class SubscriptionController extends Controller
@@ -21,7 +20,7 @@ class SubscriptionController extends Controller
             'email' => 'required|max:191|unique:subscriptions,email',
         ]);
 
-        $callback = new Subscribe();
+        $callback = new Subscription();
         $callback->name = $validatedData['name'];
         $callback->email = $validatedData['email'];
         $callback->save();

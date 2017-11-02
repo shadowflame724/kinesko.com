@@ -17,7 +17,7 @@ class ServiceController extends Controller
 {
     public function index()
     {
-        $page = Page::where('slug', 'uslugi')->first();
+        $page = Page::where('slug', 'services')->first();
         $serviceCategories = ServiceCategory::with('services')->get();
 
         if ($page != null) {

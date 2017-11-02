@@ -8,7 +8,7 @@
 </head>
 <body>
 {{--//= template/header.html--}}
-@include('client.template.head')
+@include('client.template.header')
 
 <section id="page-404">
     <div class="main-top-container bg-cont">

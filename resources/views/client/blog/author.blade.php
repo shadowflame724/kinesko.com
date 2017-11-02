@@ -17,9 +17,9 @@
                 <div class="bread-crumbs">
                     <a href="{{ route('client.index') }}">@lang('client.menu.index')</a>
                     <a href="{{ route('client.blog.index') }}">@lang('client.menu.blog')</a>
-                    <span class="active">страница автора</span>
+                    <span class="active">@lang('client.blog.author_page')</span>
                 </div>
-                <h1 class="page-title">страница автора</h1>
+                <h1 class="page-title">@lang('client.blog.author_page')</h1>
             </div>
 
         </div>
@@ -32,10 +32,10 @@
                     <!-- start of author-block -->
                     <div class="author-block">
                         <div class="author-img">
-                            <img src="/images/blog-material/blog-author.jpg" alt="author-img">
+                            <img src="/storage/{{ $user->avatar }}" alt="author-img">
                         </div>
                         <div class="author-info">
-                            <p class="name">Алексей Глаголев</p>
+                            <p class="name">{{ $user->{'name' . $langSuf} }}</p>
                             <div class="rating-views-cont">
                                 <div class="star-rating-cont">
                                     <p class="cont-title">общий рейтинг</p>
@@ -67,8 +67,8 @@
                                     <div class="material-info">
                                         <span class="material-date">08:43, Июн 26, 2017</span>
                                         <span class="material-author">
-                                        <a class="link-to-author" href="blog-author.html" title="страница автора">
-                                            Алексей Мельниченко
+                                        <a class="link-to-author" href="{{ route('client.blog.author', ['user' => $user->slug]) }}" title="страница автора">
+                                            {{ $user->{'name' . $langSuf} }}
                                         </a>
                                     </span>
                                     </div>
@@ -246,7 +246,7 @@
 
     <ul class="blog-pagination">
         <li class="active">
-            <span>1</span>
+            <span>{{ setting('admin.loader') }}</span>
         </li>
         <li>
             <a href="#">2</a>

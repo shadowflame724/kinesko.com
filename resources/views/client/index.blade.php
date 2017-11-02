@@ -10,24 +10,23 @@
             <div class="main-video-cont">
                 <video autoplay loop muted>
                     <source src="/video/kinesko-main-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                    Тег video не поддерживается вашим браузером.
+                    @lang('client.index.video_error')
                 </video>
             </div>
 
             <div class="container">
                 <h1 class="main-header animated fadeIn">
-                    Создание <br>
-                    графических роликов
+                    @lang('client.index.header')
                 </h1>
                 <div class="order-btns">
                     <div class="view-example-btn">
                         <a href="portfolio-material.html" class="skew-right gl-transparent-btn">
-                            <span class="skew-left">посмотреть пример</span>
+                            <span class="skew-left">@lang('client.index.show_example')</span>
                         </a>
                     </div>
                     <div class="order-form-btn">
                         <a href="/" class="skew-left gl-transparent-btn">
-                            <span class="skew-right">оформить заказ</span>
+                            <span class="skew-right">@lang('client.general.make_request')</span>
                         </a>
                     </div>
                     <!--<a href="portfolio-material.html" class="skew-right gl-transparent-btn view-example-btn">-->
@@ -43,20 +42,21 @@
         <!-- start of our-services -->
         <div class="our-services triangle-left">
             <div class="container">
-                <h3 class="section-header black-color">наши Услуги</h3>
+                <h3 class="section-header black-color">@lang('client.index.our_services')</h3>
 
                 <div class="our-services-wrapper">
                     <div class="row">
-                        @foreach($serviceCategories as $serviceCategory)
+                        @foreach($serviceCategories as $key =>  $serviceCategory)
+                            @php($count = $key + 1)
                         <div class="col-sm-6 col-lg-3 service-item">
-                            <a class="link-to-service" href="services.html#category-1">
+                            <a class="link-to-service" href="/services#category-{{ $count }}">
                             <span class="icon-cont">
-                                <i class="icon icon-service-1"></i>
-                                <i class="icon icon-hover icon-service-1-hover"></i>
+                                <i class="icon icon-service-{{ $count }}"></i>
+                                <i class="icon icon-hover icon-service-{{ $count }}-hover"></i>
                             </span>
                             </a>
                             <h2 class="service-item-title">
-                                <a class="link-to-service" href="services.html#category-1">
+                                <a class="link-to-service" href="/services#category-{{ $count }}">
                                     {{ $serviceCategory->{'title' . $langSuf} }}
                                 </a>
                             </h2>
@@ -79,7 +79,7 @@
         <!-- start of our-works -->
         <div class="our-works triangle-right">
             <div class="container">
-                <h3 class="section-header white-color">наши работы</h3>
+                <h3 class="section-header white-color">@lang('client.blog-sidebar.our_work')</h3>
             </div>
 
             {{--//= template/portfolio-block-big.html--}}
@@ -98,8 +98,8 @@
                         </div>
                         <div class="right-block">
                             <p class="achievment-info">
-                                <span>73% всех наших клиентов мы никогда не видели лично,</span>
-                                а работали только по скайпу, почте и телефону
+                                @lang('client.index.fr_achiev_text')
+
                             </p>
                         </div>
                     </div>
@@ -113,8 +113,7 @@
                         </div>
                         <div class="right-block">
                             <p class="achievment-info">
-                                <span>92% всех наших клиентов мы никогда не видели лично,</span>
-                                а работали только по скайпу, почте и телефону
+                                @lang('client.index.sc_achiev_text')
                             </p>
                         </div>
                     </div>
@@ -123,7 +122,7 @@
 
             <div class="btn-cont">
                 <a href="/" class="skew-right gl-transparent-btn your-project-btn order-form-btn">
-                    <span class="skew-left">Расскажите нам о своем проекте</span>
+                    <span class="skew-left">@lang('client.forms.form_header')</span>
                 </a>
             </div>
         </div>
@@ -132,7 +131,7 @@
         <!-- start of photo-gallery-->
         <div class="photo-gallery triangle-right">
             <div class="container">
-                <h3 class="section-header black-color">Мы - KINESKO!</h3>
+                <h3 class="section-header black-color">@lang('client.blog-sidebar.header')</h3>
             </div>
 
             <div class="photo-gallery-cont clearfix">
@@ -185,31 +184,15 @@
         <!-- start of about-us -->
         <div class="about-us">
             <div class="container">
-                <h3 class="section-header yellow-color">О нас</h3>
+                <h3 class="section-header yellow-color">@lang('client.index.about_us')</h3>
                 <div class="row info-block-cont">
                     <div class="col-md-6 title-cont">
                         <h3 class="title">
-                            Качественный и продуманный
-                            дизайн —  одна из составляющих
-                            успеха
+                            @lang('client.index.about_us_title')
                         </h3>
                     </div>
                     <div class="col-md-6 text-cont">
-                        <p>
-                        <span>
-                            Мы — креативная моушн студия KINESKO, родились 22 ноября 2009 года.
-                            Главные офисы — в Харькове, Киеве и Москве.
-                            Специализация — анимация, видео монтаж и разработка digital решений.
-                        </span>
-                        </p>
-                        <p class="for-read-more">
-                            Мы считаем, что штамповать одинаковые логотипы, фирменные стили, сайты, – это,
-                            простите, вульгарно. Мы создаем уникальные продукты, учитывая их цель и философию.
-                            Мы знаем, что отсутствие идеи никогда не удастся скрыть украшательством.
-                            Заказав любую услугу у нас, вы получите море внимания к своему проекту, потому что
-                            мы стремимся создавать не просто впечатляющие, а максимально полезные и работающие вещи.
-                        </p>
-                        <span class="read-more-btn">читать дальше...</span>
+                        @lang('client.index.about_us_text')
                     </div>
                 </div>
             </div>

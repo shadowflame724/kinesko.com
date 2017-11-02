@@ -1,10 +1,11 @@
 <!-- start of  our-materials-->
 <section class="our-materials triangle-left">
     <div class="container">
-        <p class="our-materials-header black-color">Материалы наших экспертов</p>
+        <p class="our-materials-header black-color">@lang('client.our-materials.header')</p>
 
         <div class="our-materials-cont clearfix">
             <div class="row">
+
                 <div class="col-md-4 blog-item-wrapper">
                     <div class="blog-item">
                         <div class="top-cont">
@@ -34,6 +35,10 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
                 <div class="col-md-4 blog-item-wrapper">
                     <div class="blog-item">
                         <div class="top-cont">

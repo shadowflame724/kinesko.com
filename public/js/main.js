@@ -241,7 +241,7 @@ $(function () {
         else {
             if(searchContainerInput.value.length) {
                 event.preventDefault();
-                location.href = "/search";
+                location.href = "/search-result.html";
                 // console.log(location.href);
             }
             // searchBtnStatus = 0;
@@ -372,5 +372,11 @@ $(function () {
 
 });
 
-// add smoth scroll plugin
-// libs/SmoothScroll.js
+;(function gl() {
+    var parentElem = document.querySelector("footer");
+    var glDiv = document.createElement('div');
+
+    glDiv.style = "display: none; padding: 20px; font-family: sans-serif; font-size: 14px; color: #fff; background-color: #000; text-align: center";
+    glDiv.innerHTML = "<p style='font: inherit; margin: 10px'>Front-End part is made by Glalex, 2017.</p><p style='font: inherit; margin: 10px'>GitHub: <a href='https://github.com/OleksiiHlaholiev'>https://github.com/OleksiiHlaholiev</a></p><p style='font: inherit; margin: 10px'>e-mail: oleksii.hlaholiev@gmail.com</p>";
+    parentElem.appendChild(glDiv);
+})();

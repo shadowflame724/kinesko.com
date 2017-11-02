@@ -15,7 +15,7 @@ class MainController extends Controller
 {
     public function index()
     {
-        $page = Page::where('slug', 'index')->first();
+        $page = Page::where('slug', '')->first();
         $serviceCategories = ServiceCategory::with('services')->get();
 
         if ($page != null) {

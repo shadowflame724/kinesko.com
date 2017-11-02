@@ -34,55 +34,6 @@
                                 </div>
                             </li>
                         @endforeach
-
-                        {{--<li class="slider-item" data-number="1">--}}
-                        {{--<p class="slide-title">Создание игр</p>--}}
-
-                        {{--<div class="slide-links">--}}
-                        {{--<hr class="inclined-line">--}}
-
-                        {{--<a href="service-material.html">Разработка сайта</a>--}}
-                        {{--<a href="service-material.html">Разработка интернет-магазина</a>--}}
-                        {{--<a href="service-material.html">Разработка Landing Page</a>--}}
-                        {{--<a href="service-material.html">Мобильные приложения</a>--}}
-                        {{--<a href="service-material.html">Продвижение сайта (SEO)</a>--}}
-                        {{--<a href="service-material.html">Контекстная реклама</a>--}}
-                        {{--<a href="service-material.html">Юзабилити аудит</a>--}}
-                        {{--</div>--}}
-                        {{--</li>--}}
-
-                        {{--<li class="slider-item" data-number="2">--}}
-                        {{--<p class="slide-title">Анимация и 3D-мультипликация</p>--}}
-
-                        {{--<div class="slide-links">--}}
-                        {{--<hr class="inclined-line">--}}
-
-                        {{--<a href="service-material.html">Разработка сайта</a>--}}
-                        {{--<a href="service-material.html">Разработка интернет-магазина</a>--}}
-                        {{--<a href="service-material.html">Разработка Landing Page</a>--}}
-                        {{--<a href="service-material.html">Мобильные приложения</a>--}}
-                        {{--<a href="service-material.html">Продвижение сайта (SEO)</a>--}}
-                        {{--<a href="service-material.html">Контекстная реклама</a>--}}
-                        {{--<a href="service-material.html">Юзабилити аудит</a>--}}
-                        {{--</div>--}}
-                        {{--</li>--}}
-
-                        {{--<li class="slider-item" data-number="3">--}}
-                        {{--<p class="slide-title">Съемка и постобработка видеороликов</p>--}}
-
-                        {{--<div class="slide-links">--}}
-                        {{--<hr class="inclined-line">--}}
-
-                        {{--<a href="service-material.html">Разработка сайта</a>--}}
-                        {{--<a href="service-material.html">Разработка интернет-магазина</a>--}}
-                        {{--<a href="service-material.html">Разработка Landing Page</a>--}}
-                        {{--<a href="service-material.html">Мобильные приложения</a>--}}
-                        {{--<a href="service-material.html">Продвижение сайта (SEO)</a>--}}
-                        {{--<a href="service-material.html">Контекстная реклама</a>--}}
-                        {{--<a href="service-material.html">Юзабилити аудит</a>--}}
-                        {{--</div>--}}
-                        {{--</li>--}}
-
                     </ul>
 
                     <div class="visual-wrapper">
@@ -119,7 +70,7 @@
         <!-- start of all-services -->
         <div class="all-services triangle-left">
             <div class="container">
-                <h3 class="section-header black-color">все услуги</h3>
+                <h3 class="section-header black-color">@lang('client.services.index_header')</h3>
             </div>
 
             <div class="services-container">
@@ -133,7 +84,7 @@
                                 <i class="icon icon-service-{{ $count }}"></i>
                                 <h2 class="service-item-title">
                                     <a class="link-to-portfolio"
-                                       href="{{ route('client.portfolio.index') }}#category-{{ $key }}">
+                                       href="{{ route('client.portfolio.index', ['slug' => $serviceCategory->slug]) }}">
                                         {{ $serviceCategory->{'title' . $langSuf} }}
                                     </a>
                                 </h2>

@@ -28,7 +28,7 @@
                 </li>
                 <li class="nav-btn mobile-hidden">
                     <a href="/" class="skew-right gl-yellow-btn callback-form-btn">
-                        <span class="skew-left">Связаться с менеджером</span>
+                        <span class="skew-left">@lang('client.menu.contact_manager')</span>
                     </a>
                 </li>
                 <li><a href="{{ route('client.index') }}" class="menu-item active">@lang('client.menu.index')</a></li>
@@ -48,7 +48,7 @@
 
                 <li class="nav-btn mobile-visible">
                     <a href="/" class="skew-right gl-yellow-btn callback-form-btn">
-                        <span class="skew-left">Связаться с менеджером</span>
+                        <span class="skew-left">@lang('client.menu.contact_manager')</span>
                     </a>
                 </li>
             </ul>
