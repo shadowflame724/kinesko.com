@@ -15,7 +15,7 @@
                 <div class="portfolio-item-cont">
                     <div class="portfolio-item">
                         <div class="poster-img-cont">
-                            <img src="/storage/{{ $value->image_thumb }}" alt="{{ $value->image_thumb_alt }}">
+                            <img src="{{ url('storage/' . $value->image_thumb) }}" alt="{{ $value->image_thumb_alt }}">
                         </div>
                         <div class="hover-layer" style="color: #000;">
                             <h3 class="portfolio-name">
