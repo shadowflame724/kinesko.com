@@ -49,13 +49,13 @@
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/uslugi</loc>
+	<loc>http://test.kinesko.com.local/services</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:19:04+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/uslugi</loc>
+	<loc>http://test.kinesko.com.local/en/services</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:19:04+03:00</lastmod>
 		<changefreq>daily</changefreq>
@@ -106,6 +106,18 @@
 	<loc>http://test.kinesko.com.local/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyasadasdasd5</loc>
 		<priority>0.6</priority>
 		<lastmod>2017-11-02T11:19:19+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/test_slider</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T17:48:16+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyatest_slider</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T17:48:16+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
@@ -166,6 +178,18 @@
 	<loc>http://test.kinesko.com.local/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyalorem-ipsum-post</loc>
 		<priority>0.6</priority>
 		<lastmod>2017-10-26T17:58:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/stat-ya-o-sozdanii-igr</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T18:28:15+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyastat-ya-o-sozdanii-igr</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T18:28:15+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
@@ -238,6 +262,30 @@
 	<loc>http://test.kinesko.com.local/en/blog/sozdanie-igryarr-post</loc>
 		<priority>0.6</priority>
 		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/authoroleg</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T17:45:01+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/authoroleg</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T17:45:01+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/blog/authoraleksandr-kopytov</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T15:39:26+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://test.kinesko.com.local/en/blog/authoraleksandr-kopytov</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-02T15:39:26+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 </urlset>

@@ -34,6 +34,7 @@ return [
         'work_hours' => '9:00 - 18:00',
         'weekend_days' => 'Сб - Вс',
         'weekend' => 'выходной',
+        'contact_info' => 'Контактная информация',
 
     ],
     'forms' => [
@@ -48,6 +49,9 @@ return [
         'form_header_small' => 'Получите консультацию уже сейчас!',
         'callback_header' => 'Введите свои данные',
         'callback_header_small' => 'и наши менеджеры с вам свяжутся в течении 5 минут',
+        'subscribe_header' => 'Понравилась статья?',
+        'subscribe_header_small' => 'Подписывайтесь на наши обновления',
+        'subscribe_subscribe' => 'Подписаться',
         'form_success' => 'Спасибо за ваше сообщение!',
     ],
     'portfolio-block-big' => [

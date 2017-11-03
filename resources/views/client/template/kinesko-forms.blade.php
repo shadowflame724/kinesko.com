@@ -29,7 +29,7 @@
                    placeholder="@lang('client.forms.text')" tabindex="5">
 
             <div class="add-file-cont">
-                <input type="file" name="file" id="write-us-file" multiple data-multiple-caption="{count} files selected"
+                <input type="file" name="file[]" id="write-us-file" multiple data-multiple-caption="{count} files selected"
                        class="inputfile inputfile-2">
                 <label for="write-us-file"><span>+ @lang('client.forms.attach_file')</span></label>
             </div>

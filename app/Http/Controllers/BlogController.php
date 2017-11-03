@@ -8,6 +8,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Block;
 use App\Portfolio;
 use App\Post;
 use App\PostCategory;
@@ -23,9 +24,9 @@ class BlogController extends Controller
         $page = Page::where('slug', 'blog')->first();
         $categoryId = null;
 
-        if($categorySlug == null) {
+        if ($categorySlug == null) {
             $posts = Post::with('author')->with('category')->paginate(15);
-        }else{
+        } else {
             $category = PostCategory::where('slug', $categorySlug)->first();
             $categoryId = $category->id;
             $posts = Post::where('category_id', $categoryId)->with('author')->with('category')->paginate(15);
@@ -50,7 +51,7 @@ class BlogController extends Controller
 
         if ($post != null) {
             return view('client.blog.show', [
-                'post' => $post
+                'post' => $post,
             ]);
         } else {
             return abort(404);

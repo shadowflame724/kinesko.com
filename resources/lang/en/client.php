@@ -33,6 +33,7 @@ return [
         'work_hours' => '9:00 am - 06:00 pm',
         'weekend_days' => 'Sat. - Sun.',
         'weekend' => 'weekend',
+        'contact_info' => 'Contact info',
 
 
     ],
@@ -48,6 +49,9 @@ return [
         'form_header_small' => 'Get advice now!',
         'callback_header' => 'Enter your contacts',
         'callback_header_small' => 'and our managers will contact you within 5 minutes',
+        'subscribe_header' => 'Do you like the article?',
+        'subscribe_header_small' => 'Subscribe to our updates',
+        'subscribe_subscribe' => 'Subscribe',
         'form_success' => 'Thank you for your message!',
     ],
     'portfolio-block-big' => [

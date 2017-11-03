@@ -2,7 +2,6 @@
 
 namespace App;
 
-
 class Post extends BaseModel
 {
 
@@ -10,7 +9,7 @@ class Post extends BaseModel
 
     public function category()
     {
-        return $this->belongsTo(PostCategory::class);
+        return $this->belongsTo(PostCategory::class, 'category_id', 'id');
     }
 
     public function author()
