@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\URL;
 
 class BaseModel extends Model
 {
+
     public static function boot()
     {
         static::saved(function () {

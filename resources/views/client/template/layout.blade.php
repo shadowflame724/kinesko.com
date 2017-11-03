@@ -25,10 +25,6 @@
 
 @yield('page-scripts')
 
-<!-- scriots only this on page -->
-<script src="/js/index.js"></script>
-<!-- only this page -->
-
 <!-- start scripts from admin panel (Jivasite etc.) -->
 {{--{!! setting('site.scripts') !!}--}}
 <!-- end scripts from admin panel -->

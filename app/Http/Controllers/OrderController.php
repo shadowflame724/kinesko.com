@@ -29,7 +29,7 @@ class OrderController extends Controller
             'name' => 'required|max:191',
             'phone' => 'required',
             'email' => 'required',
-            'company' => 'required',
+            //'company' => 'required',
             'text' => 'required',
         ]);
         if ($request->hasFile('file')) {
@@ -55,7 +55,7 @@ class OrderController extends Controller
                 ];
             }
             $validatedData['file'] = json_encode($fileArr);
-            
+
         }
         Order::create($validatedData);
 

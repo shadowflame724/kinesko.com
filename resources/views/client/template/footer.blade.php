@@ -129,9 +129,9 @@
 </button>
 
 <div class="search-container">
-    <form class="search-form">
+    <form class="search-form" action="{{ route('client.search') }}">
         <div class="input-container skew-right">
-            <input class="skew-left" type="text" name="search-text" placeholder="@lang('client.general.search')" required autofocus>
+            <input class="skew-left" type="text" name="query" placeholder="@lang('client.general.search')" required autofocus>
         </div>
         <button type="submit" class="search-btn skew-right">
             <div class="search-icon skew-left">

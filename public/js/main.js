@@ -240,8 +240,8 @@ $(function () {
         }
         else {
             if(searchContainerInput.value.length) {
-                event.preventDefault();
-                location.href = "/search-result.html";
+                //event.preventDefault();
+                //location.href = "/search-result.html";
                 // console.log(location.href);
             }
             // searchBtnStatus = 0;
