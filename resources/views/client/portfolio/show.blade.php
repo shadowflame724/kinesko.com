@@ -10,7 +10,7 @@
 
 <!-- start of portfolio-material -->
 <section id="portfolio-material">
-    <div class="main-top-container bg-cont" style="background-image: {{ storage_path($portfolio->image) }};">
+    <div class="main-top-container bg-cont" style="background-image: url(/storage/{{ $portfolio->image }});">
         <div class="container">
             <div class="page-head">
                 <div class="bread-crumbs">
