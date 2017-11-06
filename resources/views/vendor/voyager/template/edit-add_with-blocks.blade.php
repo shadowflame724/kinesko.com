@@ -840,6 +840,42 @@
                 '</div>\n' +
                 '</div>';
 
+            var textFullScreenTemplate = '<div class="card list-group-item">\n' +
+                '    <div class="card-header" role="tab" id="heading' + count + '">\n' +
+                '      <h5 class="mb-0">\n' +
+                '        <a class="collapsed" data-toggle="collapse" data-parent="#' + color + 'accordion" href="#collapse' + count + '" aria-expanded="false" aria-controls="collapse' + count + '">\n' +
+                '<span class="glyphicon glyphicon-move" aria-hidden="true"></span>' +
+                '          ' + color + ' FullScreen TEXT Block \n' +
+                '        </a>\n' +
+                '      </h5>\n' +
+                '    </div>\n' +
+                '    <div id="collapse' + count + '" class="collapse" role="tabpanel" aria-labelledby="heading' + count + '">\n' +
+                '      <div class="card-block">\n' +
+                '<div class="form-group">\n' +
+                '<input type="hidden" name="blocks[' + count + '][id]" value="">\n' +
+                '<input type="hidden" name="blocks[' + count + '][type]" value="text">' +
+                '<input type="hidden" name="blocks[' + count + '][color]" value="' + color + '">' +
+                '<input type="hidden" name="blocks[' + count + '][order]"  value="' + count + '" class="order">' +
+                '<label for="name">Title RU</label>\n' +
+                '<input type="text" class="form-control" name="blocks[' + count + '][title_ru]" placeholder="Title RU">\n' +
+                '</div>' +
+                '<div class="form-group">\n' +
+                '<label for="name">Title EN</label>\n' +
+                '<input type="text" class="form-control" name="blocks[' + count + '][title_en]" placeholder="Title EN">\n' +
+                '</div>' +
+                '<div class="form-group">\n' +
+                '<label for="name">Body RU</label>\n' +
+                '<textarea class="form-control blockTextBox" name="blocks[' + count + '][body_ru]" placeholder="Body RU"></textarea>\n' +
+                '</div>' +
+                '<div class="form-group">\n' +
+                '<label for="name">Body EN</label>\n' +
+                '<textarea class="form-control blockTextBox" name="blocks[' + count + '][body_en]" placeholder="Body EN"></textarea>\n' +
+                '</div>' +
+                '</div>\n' +
+                '<i class="voyager-trash"></i>' +
+                '</div>\n' +
+                '</div>';
+
             var listTemplate = '<div class="card list-group-item">\n' +
                 '    <div class="card-header" role="tab" id="heading' + count + '">\n' +
                 '      <h5 class="mb-0">\n' +

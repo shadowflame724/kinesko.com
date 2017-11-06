@@ -26105,15 +26105,23 @@
             skin: "voyager",
             min_height: 600,
             resize: "vertical",
-            plugins: "link, image, code, youtube, giphy, table, textcolor",
+            plugins: "link, image, code, youtube, giphy, table, textcolor, anchor, paste",
             extended_valid_elements: "input[id|name|value|type|class|style|required|placeholder|autocomplete|onclick]",
             file_browser_callback: function (e, t, n, i) {
                 "image" == n && $("#upload_file").trigger("click")
             },
-            toolbar: "styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table youtube giphy | code",
+            toolbar: "styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table youtube giphy | code | anchor",
+            image_class_list: [
+                {title: 'None', value: ''},
+                {title: 'Blog Image', value: 'material-img'}
+            ],
             convert_urls: !1,
             image_caption: !0,
-            image_title: !0
+            image_title: !0,
+            paste_text_sticky: !0,
+            paste_text_sticky_default: !0,
+            forced_root_block: !1,
+            image_dimensions: !1
         })
     })
 }, function (e, t, n) {
