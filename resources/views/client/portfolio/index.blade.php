@@ -25,7 +25,7 @@
                     </li>
                     @foreach($categories as $category)
                         <li @if($categoryId != null AND $categoryId == $category->id) class="active" @endif>
-                            <a href="{{ route('client.portfolio.index', ['category' => $category->slug]) }}">
+                            <a href="{{ route('client.portfolio.category', ['category' => $category->slug]) }}">
                                 <span>{{ $category->{'title' . $langSuf} }}</span>
                             </a>
                         </li>

@@ -49,47 +49,47 @@ class BaseModel extends Model
 
         foreach ($pages as $value) {
             if ($value->slug == '') {
-                $sitemap->add(URL::to('/' . $value->slug), $value->updated_at, 1.0, 'daily');
-                $sitemap->add(URL::to('/en/' . $value->slug), $value->updated_at, 1.0, 'daily');
+                $sitemap->add(URL::to('/' . $value->slug . '.html'), $value->updated_at, 1.0, 'daily');
+                $sitemap->add(URL::to('/en/' . $value->slug . '.html'), $value->updated_at, 1.0, 'daily');
             }
 
-            $sitemap->add(URL::to('/' . $value->slug), $value->updated_at, 0.9, 'daily');
-            $sitemap->add(URL::to('/en/' . $value->slug), $value->updated_at, 0.9, 'daily');
+            $sitemap->add(URL::to('/' . $value->slug . '.html'), $value->updated_at, 0.9, 'daily');
+            $sitemap->add(URL::to('/en/' . $value->slug . '.html'), $value->updated_at, 0.9, 'daily');
         }
 
         foreach ($serviceCategories as $serviceCategory) {
-            $sitemap->add(URL::to('/portfolio/' . $serviceCategory->slug), $serviceCategory->updated_at, 0.8, 'daily');
-            $sitemap->add(URL::to('/en/portfolio/' . $serviceCategory->slug), $serviceCategory->updated_at, 0.8, 'daily');
+            $sitemap->add(URL::to('/portfolio/' . $serviceCategory->slug . '.html'), $serviceCategory->updated_at, 0.8, 'daily');
+            $sitemap->add(URL::to('/en/portfolio/' . $serviceCategory->slug . '.html'), $serviceCategory->updated_at, 0.8, 'daily');
 
             if ($serviceCategory->services->isNotEmpty()) {
                 foreach ($serviceCategory->services as $service) {
-                    $sitemap->add(URL::to('/services/' . $service->slug), $service->updated_at, 0.7, 'daily');
-                    $sitemap->add(URL::to('/en/services/' . $service->slug), $service->updated_at, 0.7, 'daily');
+                    $sitemap->add(URL::to('/services/' . $service->slug . '.html'), $service->updated_at, 0.7, 'daily');
+                    $sitemap->add(URL::to('/en/services/' . $service->slug . '.html'), $service->updated_at, 0.7, 'daily');
                 }
             }
             if ($serviceCategory->portfolio->isNotEmpty()) {
                 foreach ($serviceCategory->portfolio as $portfolio) {
-                    $sitemap->add(URL::to('/portfolio/' . $serviceCategory->slug . '/' . $portfolio->slug), $portfolio->updated_at, 0.6, 'daily');
-                    $sitemap->add(URL::to('/en/portfolio/' . $serviceCategory->slug . $portfolio->slug), $portfolio->updated_at, 0.6, 'daily');
+                    $sitemap->add(URL::to('/portfolio/' . $serviceCategory->slug . '/' . $portfolio->slug . '.html'), $portfolio->updated_at, 0.6, 'daily');
+                    $sitemap->add(URL::to('/en/portfolio/' . $serviceCategory->slug . $portfolio->slug . '.html'), $portfolio->updated_at, 0.6, 'daily');
                 }
             }
         }
 
         foreach ($postCategories as $postCategory) {
-            $sitemap->add(URL::to('/blog/' . $postCategory->slug), $postCategory->updated_at, 0.8, 'daily');
-            $sitemap->add(URL::to('/en/blog/' . $postCategory->slug), $postCategory->updated_at, 0.8, 'daily');
+            $sitemap->add(URL::to('/blog/' . $postCategory->slug . '.html'), $postCategory->updated_at, 0.8, 'daily');
+            $sitemap->add(URL::to('/en/blog/' . $postCategory->slug . '.html'), $postCategory->updated_at, 0.8, 'daily');
 
             if ($postCategory->posts->isNotEmpty()) {
                 foreach ($postCategory->posts as $post) {
-                    $sitemap->add(URL::to('/blog/' . $postCategory->slug . '/' . $post->slug), $post->updated_at, 0.6, 'daily');
-                    $sitemap->add(URL::to('/en/blog/' . $postCategory->slug . $post->slug), $post->updated_at, 0.6, 'daily');
+                    $sitemap->add(URL::to('/blog/' . $postCategory->slug . '/' . $post->slug . '.html'), $post->updated_at, 0.6, 'daily');
+                    $sitemap->add(URL::to('/en/blog/' . $postCategory->slug . $post->slug . '.html'), $post->updated_at, 0.6, 'daily');
                 }
             }
         }
 
         foreach ($users as $user) {
-            $sitemap->add(URL::to('/blog/author' . $user->slug), $user->updated_at, 0.6, 'daily');
-            $sitemap->add(URL::to('/en/blog/author' . $user->slug), $user->updated_at, 0.6, 'daily');
+            $sitemap->add(URL::to('/blog/author' . $user->slug . '.html'), $user->updated_at, 0.6, 'daily');
+            $sitemap->add(URL::to('/en/blog/author' . $user->slug . '.html'), $user->updated_at, 0.6, 'daily');
         }
 
         return $sitemap->store('xml', 'sitemap');
