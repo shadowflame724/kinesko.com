@@ -58,9 +58,9 @@
 
                             <!-- start of general block for all service-material pages -->
                             <div class="contact-info">
-                                <p class="contact-text"><span>Наши контакты:</span></p>
-                                <p class="contact-tel"><a href="tel:+380442235120">+ 38 044 223 51 20</a></p>
-                                <p class="contact-email"><a href="mailto:info@kinesko.com">info@kinesko.com</a></p>
+                                <p class="contact-text"><span>@lang('client.general.contact_info'):</span></p>
+                                <p class="contact-tel"><a href="tel:{{ setting('site.main_phone') }}">{{ setting('site.main_phone') }}</a></p>
+                                <p class="contact-email"><a href="mailto:{{ setting('site.main_email') }}">{{ setting('site.main_email') }}</a></p>
                             </div>
                             <!-- end of general block for all service-material pages -->
                         </div>

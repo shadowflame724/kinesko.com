@@ -24,7 +24,7 @@
                         </li>
                         @foreach($categories as $postCategory)
                             <li @if($categoryId != null AND $categoryId == $postCategory->id) class="active" @endif>
-                                <a href="{{ route('client.blog.index', ['category' => $postCategory->slug]) }}">
+                                <a href="{{ route('client.blog.category', ['category' => $postCategory->slug]) }}">
                                     <span>{{ $postCategory->{'title' . $langSuf} }}</span>
                                 </a>
                             </li>
@@ -47,7 +47,7 @@
                                             <a class="link-to-material"
                                                href="{{ route('client.blog.show', ['category' => $post->category->slug, 'post' => $post->slug]) }}">
                                                 <div class="bg-cont"
-                                                     style="background-image: url(/storage/{{ $post->image }});"></div>
+                                                     style="background-image: url('/storage/{{ $post->image_thumb }}');"></div>
                                             </a>
                                         </div>
                                         <div class="bottom-cont">
@@ -71,7 +71,7 @@
                                                 {{ $post->{'description' . $langSuf} }}
                                             </p>
                                             <a class="material-category-link"
-                                               href="{{ route('client.blog.index') }}">{{ $post->category->{'title' . $langSuf} }}</a>
+                                               href="{{ route('client.blog.category', ['category' => $post->category->slug]) }}">{{ $post->category->{'title' . $langSuf} }}</a>
                                         </div>
                                     </div>
                                 </div>

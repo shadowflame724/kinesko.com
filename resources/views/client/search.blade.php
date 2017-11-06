@@ -123,7 +123,7 @@
                                                     {{ $result->{'description' . $langSuf} }}
                                                 </p>
                                                 <a class="material-category-link"
-                                                   href="{{ route('client.blog.index', ['category' => $result->category->slug]) }}">{{ $result->category->{'title' . $langSuf} }}</a>
+                                                   href="{{ route('client.blog.category', ['category' => $result->category->slug]) }}">{{ $result->category->{'title' . $langSuf} }}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -186,7 +186,7 @@
                                                 <p class="material-text">
                                                     {{ $result->{'meta_description' . $langSuf} }}
                                                 </p>
-                                                <a class="material-category-link" href="{{ route('client.portfolio.index', ['category' => $result->category->slug]) }}">{{ $result->category->{'title' . $langSuf} }}</a>
+                                                <a class="material-category-link" href="{{ route('client.portfolio.category', ['category' => $result->category->slug]) }}">{{ $result->category->{'title' . $langSuf} }}</a>
                                             </div>
                                         </div>
                                     </div>

@@ -14,7 +14,7 @@
 
         <!-- start of blog-material -->
         <section class="blog-material">
-            <div class="main-top-container bg-cont" style="background-image: url('/storage/{{ $service->image }}');">
+            <div class="main-top-container bg-cont" style="background-image: url('/storage/{{ $post->image }}');">
                 <div class="dark-mask"></div>
                 <div class="container">
                     <div class="page-head">
@@ -397,6 +397,12 @@
         </section>
         <!-- end of blog-material -->
 
+        <!-- start of material-img-preview -->
+        <div id="material-img-preview">
+            <div class="dark-mask"></div>
+            <img class="full-img" src="" alt="full-img">
+        </div>
+        <!-- end of material-img-preview -->
 
         <!-- start of blog-material №2; TO DO: load blog-articles from data base in infinite cycle, in real-time-mode, via AJAX -->
         {{--<section class="blog-material">--}}
