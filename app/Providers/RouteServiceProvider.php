@@ -23,7 +23,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        parent::pattern('extension', '(?:.html)?');
 
         parent::boot();
     }

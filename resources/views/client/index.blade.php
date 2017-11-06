@@ -8,8 +8,9 @@
             <div class="dark-mask"></div>
 
             <div class="main-video-cont">
-                <video autoplay loop muted>
-                    <source src="/video/kinesko-main-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <video autoplay loop muted preload="auto">
+                    <!--<source src="video/kinesko-main-video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>-->
+                    <source src="/video/madonna.ogv">
                     @lang('client.index.video_error')
                 </video>
             </div>

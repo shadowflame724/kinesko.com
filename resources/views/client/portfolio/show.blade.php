@@ -10,7 +10,7 @@
 
 <!-- start of portfolio-material -->
 <section id="portfolio-material">
-    <div class="main-top-container bg-cont">
+    <div class="main-top-container bg-cont" style="background-image: {{ storage_path($portfolio->image) }};">
         <div class="container">
             <div class="page-head">
                 <div class="bread-crumbs">
@@ -30,7 +30,7 @@
                     @foreach(explode(',', $portfolio->tags) as $tag)
                     <li>
                         <!-- add link to search page with query = {tag} -->
-                        <a href="search-result.html">
+                        <a href="{{ route('client.search', ['query' => $tag]) }}">
                             <span>{{ $tag }}</span>
                         </a>
                     </li>
