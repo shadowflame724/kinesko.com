@@ -207,7 +207,7 @@
                 </div>
             </div>
         </div>
-        {{ $results->links('vendor.pagination.blog-pagination') }}
+        {{ $results->appends(\Illuminate\Support\Facades\Input::except('page'))->links('vendor.pagination.blog-pagination') }}
 
     </section>
     <!-- end of search-result -->
