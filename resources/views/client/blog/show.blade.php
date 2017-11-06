@@ -14,7 +14,7 @@
 
         <!-- start of blog-material -->
         <section class="blog-material">
-            <div class="main-top-container bg-cont" style="background-image: url(/storage/{{ $post->image }});">
+            <div class="main-top-container bg-cont" style="background-image: url('/storage/{{ $service->image }}');">
                 <div class="dark-mask"></div>
                 <div class="container">
                     <div class="page-head">

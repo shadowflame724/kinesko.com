@@ -103,15 +103,15 @@
                                         Type</strong></label>
                                 <select class="form-control" id="selectBlockType">
                                     <optgroup label="white wrapper">
-                                        <option value="textFullScreen">Text FullScreen Block</option>
+                                        <option value="w_textFullScreen">Text FullScreen Block</option>
                                         <option value="w_text">Text Block</option>
                                         <option value="w_image">Single Image Block</option>
                                         <option value="w_two_image">Two Images Block</option>
-                                        <option value="w_video">Video Block</option>
+                                        <option value="w_video">Video   Block</option>
                                     </optgroup>
                                     <optgroup label="black wrapper">
                                         <option value="b_list">List Block</option>
-                                        <option value="textFullScreen">Text FullScreen Block</option>
+                                        <option value="b_textFullScreen">Text FullScreen Block</option>
                                         <option value="b_text">Text Block</option>
                                         <option value="b_image">Single Image Block</option>
                                         <option value="b_two_image">Two Images Block</option>
@@ -1081,7 +1081,7 @@
                 '</div>\n' +
                 '</div>';
 
-            if (type.includes('text')) {
+            if (type.includes('textFullScreen')) {
                 template = textFullScreenTemplate;
             } else if (type.includes('two')) {
                 template = twoImageTemplate;

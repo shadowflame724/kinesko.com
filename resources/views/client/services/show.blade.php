@@ -6,7 +6,7 @@
 
     <!-- start of service-material -->
     <section id="service-material">
-        <div class="main-top-container bg-cont" style="background-image: url(/storage/{{ $service->image }});">
+        <div class="main-top-container bg-cont" style="background-image: url('/storage/{{ $service->image }}');">
             <div class="dark-mask"></div>
             <div class="container">
                 <div class="page-head">
