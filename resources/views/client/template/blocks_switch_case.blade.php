@@ -40,4 +40,16 @@
     </div>
     @break
 
+    @case('textFullScreen')
+
+    <div class="text-block-cont">
+        <div class="info-center">
+            <p>
+                {!! $block->{'body' . $langSuf} !!}
+            </p>
+
+        </div>
+    </div>
+    @break
+
 @endswitch

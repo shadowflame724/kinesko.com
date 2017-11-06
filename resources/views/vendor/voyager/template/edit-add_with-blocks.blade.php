@@ -103,6 +103,7 @@
                                         Type</strong></label>
                                 <select class="form-control" id="selectBlockType">
                                     <optgroup label="white wrapper">
+                                        <option value="textFullScreen">Text FullScreen Block</option>
                                         <option value="w_text">Text Block</option>
                                         <option value="w_image">Single Image Block</option>
                                         <option value="w_two_image">Two Images Block</option>
@@ -110,6 +111,7 @@
                                     </optgroup>
                                     <optgroup label="black wrapper">
                                         <option value="b_list">List Block</option>
+                                        <option value="textFullScreen">Text FullScreen Block</option>
                                         <option value="b_text">Text Block</option>
                                         <option value="b_image">Single Image Block</option>
                                         <option value="b_two_image">Two Images Block</option>
@@ -169,6 +171,55 @@
                                                                    value="{{ $block->title_en }}"
                                                                    placeholder="Title EN">
                                                         </div>
+                                                        <div class="form-group">
+                                                            <label for="name">Body RU</label>
+                                                            <textarea class="form-control blockTextBox"
+                                                                      name="blocks[{{ $globalCount }}][body_ru]"
+                                                                      placeholder="Body RU">{!! $block->body_ru !!}</textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="name">Body EN</label>
+                                                            <textarea class="form-control blockTextBox"
+                                                                      name="blocks[{{ $globalCount }}][body_en]"
+                                                                      placeholder="Body EN">{!! $block->body_en !!}</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <i class="voyager-trash"></i>
+                                                </div>
+                                            </div>
+
+                                            @break
+
+                                            @case('text')
+                                            <div class="card list-group-item">
+                                                <div class="card-header" role="tab" id="heading' + count + '">
+                                                    <h5 class="mb-0">
+                                                        <a class="collapsed" data-toggle="collapse"
+                                                           data-parent="#{{ $block->color }}accordion"
+                                                           href="#collapse{{ $globalCount }}" aria-expanded="false"
+                                                           aria-controls="collapse{{ $globalCount }}">
+                                                            <span class="glyphicon glyphicon-move"
+                                                                  aria-hidden="true"></span>
+                                                            {{ $block->color }} TEXT Block
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse{{ $globalCount }}" class="collapse" role="tabpanel"
+                                                     aria-labelledby="heading{{ $globalCount }}">
+                                                    <div class="card-block">
+
+                                                            <input type="hidden" name="blocks[{{ $globalCount }}][id]"
+                                                                   value="{{ $block->id }}">
+
+                                                            <input type="hidden" name="blocks[{{ $globalCount }}][type]"
+                                                                   value="text">
+                                                            <input type="hidden"
+                                                                   name="blocks[{{ $globalCount }}][color]"
+                                                                   value="{{ $block->color }}">
+                                                            <input type="hidden"
+                                                                   name="blocks[{{ $globalCount }}][order]"
+                                                                   value="{{ $block->order }}" class="order">
+
                                                         <div class="form-group">
                                                             <label for="name">Body RU</label>
                                                             <textarea class="form-control blockTextBox"
@@ -270,6 +321,7 @@
                                             </div>
 
                                             @break
+
                                         @endswitch
                                         @php($globalCount++)
 
@@ -851,18 +903,10 @@
                 '    </div>\n' +
                 '    <div id="collapse' + count + '" class="collapse" role="tabpanel" aria-labelledby="heading' + count + '">\n' +
                 '      <div class="card-block">\n' +
-                '<div class="form-group">\n' +
                 '<input type="hidden" name="blocks[' + count + '][id]" value="">\n' +
                 '<input type="hidden" name="blocks[' + count + '][type]" value="text">' +
                 '<input type="hidden" name="blocks[' + count + '][color]" value="' + color + '">' +
                 '<input type="hidden" name="blocks[' + count + '][order]"  value="' + count + '" class="order">' +
-                '<label for="name">Title RU</label>\n' +
-                '<input type="text" class="form-control" name="blocks[' + count + '][title_ru]" placeholder="Title RU">\n' +
-                '</div>' +
-                '<div class="form-group">\n' +
-                '<label for="name">Title EN</label>\n' +
-                '<input type="text" class="form-control" name="blocks[' + count + '][title_en]" placeholder="Title EN">\n' +
-                '</div>' +
                 '<div class="form-group">\n' +
                 '<label for="name">Body RU</label>\n' +
                 '<textarea class="form-control blockTextBox" name="blocks[' + count + '][body_ru]" placeholder="Body RU"></textarea>\n' +
@@ -991,7 +1035,7 @@
                 '</div>';
 
             if (type.includes('text')) {
-                template = textTemplate;
+                template = textFullScreenTemplate;
             } else if (type.includes('two')) {
                 template = twoImageTemplate;
             } else if (type.includes('video')) {
@@ -1000,6 +1044,8 @@
                 template = imageTemplate;
             } else if (type.includes('list')) {
                 template = listTemplate;
+            } else if (type.includes('text')) {
+                template = textTemplate;
             }
 
             $('#' + color + 'accordion').append(template);

@@ -2551,34 +2551,41 @@ footer {
       @media all and (max-width: 992px) {
         .material-wrapper .text-block-cont .info-left .block-title {
           text-align: center; } }
-    .material-wrapper .text-block-cont .info-right {
+    .material-wrapper .text-block-cont .info-right, .material-wrapper .text-block-cont .info-center {
       font-size: 18px;
       font-family: "MuseoSansCyrl300", sans-serif;
       line-height: 1.333;
       text-align: left; }
       @media all and (max-width: 992px) {
-        .material-wrapper .text-block-cont .info-right {
+        .material-wrapper .text-block-cont .info-right, .material-wrapper .text-block-cont .info-center {
           text-align: center; } }
-      .material-wrapper .text-block-cont .info-right ol, .material-wrapper .text-block-cont .info-right ul {
+      .material-wrapper .text-block-cont .info-right span, .material-wrapper .text-block-cont .info-right strong, .material-wrapper .text-block-cont .info-center span, .material-wrapper .text-block-cont .info-center strong {
+        font: inherit;
+        font-family: "MuseoSansCyrl900", sans-serif; }
+      .material-wrapper .text-block-cont .info-right ol, .material-wrapper .text-block-cont .info-right ul, .material-wrapper .text-block-cont .info-center ol, .material-wrapper .text-block-cont .info-center ul {
         padding-left: 0; }
-        .material-wrapper .text-block-cont .info-right ol li, .material-wrapper .text-block-cont .info-right ul li {
+        .material-wrapper .text-block-cont .info-right ol li, .material-wrapper .text-block-cont .info-right ul li, .material-wrapper .text-block-cont .info-center ol li, .material-wrapper .text-block-cont .info-center ul li {
           margin-bottom: 20px; }
-      .material-wrapper .text-block-cont .info-right ol {
+      .material-wrapper .text-block-cont .info-right ol, .material-wrapper .text-block-cont .info-center ol {
         position: relative;
         counter-reset: listCnt 0; }
-        .material-wrapper .text-block-cont .info-right ol li {
+        .material-wrapper .text-block-cont .info-right ol li, .material-wrapper .text-block-cont .info-center ol li {
           list-style-type: none; }
-          .material-wrapper .text-block-cont .info-right ol li:before {
+          .material-wrapper .text-block-cont .info-right ol li:before, .material-wrapper .text-block-cont .info-center ol li:before {
             counter-increment: listCnt;
             content: counter(listCnt) ". ";
             color: #f4bd00;
             font-family: "MuseoSansCyrl900", sans-serif; }
-      .material-wrapper .text-block-cont .info-right p, .material-wrapper .text-block-cont .info-right .for-read-more, .material-wrapper .text-block-cont .info-right ol, .material-wrapper .text-block-cont .info-right ul {
+      .material-wrapper .text-block-cont .info-right p, .material-wrapper .text-block-cont .info-right .for-read-more, .material-wrapper .text-block-cont .info-right ol, .material-wrapper .text-block-cont .info-right ul, .material-wrapper .text-block-cont .info-center p, .material-wrapper .text-block-cont .info-center .for-read-more, .material-wrapper .text-block-cont .info-center ol, .material-wrapper .text-block-cont .info-center ul {
         margin: 0 0 20px 0; }
-      .material-wrapper .text-block-cont .info-right .for-read-more {
+      .material-wrapper .text-block-cont .info-right .for-read-more, .material-wrapper .text-block-cont .info-center .for-read-more {
         display: none; }
-      .material-wrapper .text-block-cont .info-right .read-more-btn {
+      .material-wrapper .text-block-cont .info-right .read-more-btn, .material-wrapper .text-block-cont .info-center .read-more-btn {
         margin-top: 5px; }
+    .material-wrapper .text-block-cont .contact-info {
+      text-align: center; }
+      .material-wrapper .text-block-cont .contact-info .contact-text {
+        color: #f4bd00; }
   .material-wrapper .video-cont {
     height: 0;
     position: relative; }

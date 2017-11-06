@@ -53,6 +53,18 @@
                         @include('client.template.blocks_switch_case')
                     @endforeach
 
+                    <div class="text-block-cont">
+                        <div class="info-center">
+
+                            <!-- start of general block for all service-material pages -->
+                            <div class="contact-info">
+                                <p class="contact-text"><span>Наши контакты:</span></p>
+                                <p class="contact-tel"><a href="tel:+380442235120">+ 38 044 223 51 20</a></p>
+                                <p class="contact-email"><a href="mailto:info@kinesko.com">info@kinesko.com</a></p>
+                            </div>
+                            <!-- end of general block for all service-material pages -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
