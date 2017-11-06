@@ -119,7 +119,7 @@ return [
         'index_header' => 'все услуги',
         'show_order_service' => 'заказать услугу',
         'show_price' => 'стоимость от',
-        'show_currency' => 'грн',
+        'currency' => 'грн',
     ],
     'blog' => [
         'show_author' => 'Автор',

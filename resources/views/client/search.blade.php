@@ -34,7 +34,8 @@
                                 <div class="input-box-wrapper text-box-wrapper">
                                     <div class="input-box">
                                         <input type="text" name="query" required="required" class="search-text"
-                                               @if(isset($query)) value="{{$query}}" @else placeholder="Поиск" @endif tabindex="1">
+                                               @if(isset($query)) value="{{$query}}" @else placeholder="Поиск"
+                                               @endif tabindex="1">
                                     </div>
                                 </div>
 
@@ -82,182 +83,117 @@
                                 container (that is used on blog pages). You should only to determine (when get search
                                 result from data base) - which information for block is necessary or unnecessary !!!)
                              -->
+
                             @foreach($results as $result)
-                                <div class="blog-item-wrapper">
-                                    <div class="blog-item">
-                                        <div class="top-cont">
-                                            <a class="link-to-material" href="{{ route('client.blog.show', ['category' => $result->category->slug, 'post' => $result->slug]) }}">
-                                                <div class="bg-cont"></div>
-                                            </a>
-                                        </div>
-                                        <div class="bottom-cont">
-                                            <div class="material-info">
-                                                <span class="material-date">{{ $result->created_at->format('d-F-Y') }}</span>
-                                                <span class="material-author">
-                                        <a class="link-to-author" href="{{ route('client.blog.author', ['user' => $result->author->slug]) }}" title="страница автора">
+                                @php
+                                    $type = strtolower(str_replace('App\\', '', get_class($result)));
+                                @endphp
+
+                            @switch($type)
+
+                                    @case ('post')
+                                    <div class="blog-item-wrapper">
+                                        <div class="blog-item">
+                                            <div class="top-cont">
+
+                                                <a class="link-to-material"
+                                                   href="{{ route('client.blog.show', ['category' => $result->category->slug, 'post' => $result->slug]) }}">
+                                                    <div class="bg-cont" style="background-image: {{ storage_path($result->image) }}"></div>
+                                                </a>
+
+                                            </div>
+                                            <div class="bottom-cont">
+                                                <div class="material-info">
+                                                    <span class="material-date">{{ $result->created_at->format('d-F-Y') }}</span>
+                                                    <span class="material-author">
+                                        <a class="link-to-author"
+                                           href="{{ route('client.blog.author', ['user' => $result->author->slug]) }}"
+                                           title="@lang('client.blog.author_page')">
                                             {{ $result->author->{'name' . $langSuf} }}
                                         </a>
                                     </span>
+                                                </div>
+                                                <h3 class="material-title">
+                                                    <a class="link-to-material"
+                                                       href="{{ route('client.blog.show', ['category' => $result->category->slug, 'post' => $result->slug]) }}">
+                                                        {{ $result->{'title' . $langSuf} }}
+                                                    </a>
+                                                </h3>
+                                                <p class="material-text">
+                                                    {{ $result->{'description' . $langSuf} }}
+                                                </p>
+                                                <a class="material-category-link"
+                                                   href="{{ route('client.blog.index', ['category' => $result->category->slug]) }}">{{ $result->category->{'title' . $langSuf} }}</a>
                                             </div>
-                                            <h3 class="material-title">
-                                                <a class="link-to-material" href="{{ route('client.blog.show', ['category' => $result->category->slug, 'post' => $result->slug]) }}">
-                                                    {{ $result->{'title' . $langSuf} }}
-                                                </a>
-                                            </h3>
-                                            <p class="material-text">
-                                                {{ $result->{'description' . $langSuf} }}
-                                            </p>
-                                            <a class="material-category-link"
-                                               href="{{ route('client.blog.index', ['category' => $result->category->slug]) }}">{{ $result->category->{'title' . $langSuf} }}</a>
                                         </div>
                                     </div>
-                                </div>
+                                    @break
+
+                                    @case ('service')
+                                    <div class="blog-item-wrapper">
+                                        <div class="blog-item">
+                                            <div class="top-cont">
+                                                <a class="link-to-material" href="{{ route('client.services.show', ['service' => $result->slug]) }}">
+                                                    <div class="bg-cont"
+                                                         style="background-image: {{ storage_path($result->image) }}"></div>
+                                                </a>
+                                            </div>
+                                            <div class="bottom-cont">
+                                                <div class="material-info">
+                            <span class="material-author">
+                            <a class="link-to-author" href="{{ route('client.services.index') }}" title="страница услуг">
+                            @lang('client.menu.services')
+                            </a>
+                            </span>
+                                                </div>
+                                                <h3 class="material-title">
+                                                    <a class="link-to-material" href="{{ route('client.services.show', ['service' => $result->slug]) }}">
+                                                        {{ $result->{'title' . $langSuf} }}
+                                                    </a>
+                                                </h3>
+                                                <p class="material-text">
+                                                    {{ $result->{'meta_description' . $langSuf} }}
+                                                </p>
+                                                <a class="material-category-link" href="{{ route('client.services.index') }}">{{ $result->category->{'title' . $langSuf} }}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @break
+
+                                    @case ('portfolio')
+                                    <div class="blog-item-wrapper">
+                                        <div class="blog-item">
+                                            <div class="top-cont">
+                                                <a class="link-to-material" href="{{ route('client.portfolio.show', ['category' => $result->category->slug, 'post' => $result->slug]) }}">
+                                                    <div class="bg-cont" style="background-image: {{ storage_path($result->image) }}"></div>
+                                                </a>
+                                            </div>
+                                            <div class="bottom-cont">
+                                                <div class="material-info">
+                                                    <span class="material-date">{{ $result->created_at }}</span>
+                                                    <span class="material-author">
+                            <a class="link-to-author" href="{{ route('client.portfolio.index') }}" title="страница портфолио">
+                            @lang('client.menu.portfolio')
+                            </a>
+                            </span>
+                                                </div>
+                                                <h3 class="material-title">
+                                                    <a class="link-to-material" href="{{ route('client.portfolio.show', ['category' => $result->category->slug, 'post' => $result->slug]) }}">
+                                                        {{ $result->{'title' . $langSuf} }}
+                                                    </a>
+                                                </h3>
+                                                <p class="material-text">
+                                                    {{ $result->{'meta_description' . $langSuf} }}
+                                                </p>
+                                                <a class="material-category-link" href="{{ route('client.portfolio.index', ['category' => $result->category->slug]) }}">{{ $result->category->{'title' . $langSuf} }}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @break
+                                @endswitch
                             @endforeach
-                            {{--<div class="blog-item-wrapper">--}}
-                            {{--<div class="blog-item">--}}
-                            {{--<div class="top-cont">--}}
-                            {{--<a class="link-to-material" href="portfolio-material.html">--}}
-                            {{--<div class="bg-cont" style="background-image: url('images/general/portfolio-2.jpg')"></div>--}}
-                            {{--</a>--}}
-                            {{--</div>--}}
-                            {{--<div class="bottom-cont">--}}
-                            {{--<div class="material-info">--}}
-                            {{--<span class="material-date">08:43, Июн 26, 2017</span>--}}
-                            {{--<span class="material-author">--}}
-                            {{--<a class="link-to-author" href="portfolio.html" title="страница портфолио">--}}
-                            {{--портфолио--}}
-                            {{--</a>--}}
-                            {{--</span>--}}
-                            {{--</div>--}}
-                            {{--<h3 class="material-title">--}}
-                            {{--<a class="link-to-material" href="portfolio-material.html">--}}
-                            {{--Видео для М1--}}
-                            {{--</a>--}}
-                            {{--</h3>--}}
-                            {{--<p class="material-text">--}}
-                            {{--Мы весьма радужно проводим наши корпоративы. Особенно,--}}
-                            {{--<span>анимационные ролики</span>! Особенно, если это годовщина существования--}}
-                            {{--нашей любимой студии!--}}
-                            {{--</p>--}}
-                            {{--<a class="material-category-link" href="portfolio.html">2D АНИМАЦИИ</a>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--<div class="blog-item-wrapper">--}}
-                            {{--<div class="blog-item">--}}
-                            {{--<div class="top-cont">--}}
-                            {{--<a class="link-to-material" href="service-material.html">--}}
-                            {{--<div class="bg-cont" style="background-image: url('images/general/kinesko-main-bg.jpg')"></div>--}}
-                            {{--</a>--}}
-                            {{--</div>--}}
-                            {{--<div class="bottom-cont">--}}
-                            {{--<div class="material-info">--}}
-                            {{--<span class="material-author">--}}
-                            {{--<a class="link-to-author" href="services.html" title="страница услуг">--}}
-                            {{--услуги--}}
-                            {{--</a>--}}
-                            {{--</span>--}}
-                            {{--</div>--}}
-                            {{--<h3 class="material-title">--}}
-                            {{--<a class="link-to-material" href="service-material.html">--}}
-                            {{--Создание анимационных роликов--}}
-                            {{--</a>--}}
-                            {{--</h3>--}}
-                            {{--<p class="material-text">--}}
-                            {{--Мы весьма радужно проводим наши корпоративы. Особенно, если это годовщина--}}
-                            {{--существования нашей любимой студии!--}}
-                            {{--</p>--}}
-                            {{--<a class="material-category-link" href="services.html">РАЗРАБОТКА РЕКЛАМНОЙ СТРАТЕГИИ ПРОДВИЖЕНИЯ</a>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--<div class="blog-item-wrapper">--}}
-                            {{--<div class="blog-item">--}}
-                            {{--<div class="top-cont">--}}
-                            {{--<a class="link-to-material" href="portfolio-material.html">--}}
-                            {{--<div class="bg-cont" style="background-image: url('images/general/portfolio-4.jpg')"></div>--}}
-                            {{--</a>--}}
-                            {{--</div>--}}
-                            {{--<div class="bottom-cont">--}}
-                            {{--<div class="material-info">--}}
-                            {{--<span class="material-date">08:43, Июн 26, 2017</span>--}}
-                            {{--<span class="material-author">--}}
-                            {{--<a class="link-to-author" href="portfolio.html" title="страница портфолио">--}}
-                            {{--портфолио--}}
-                            {{--</a>--}}
-                            {{--</span>--}}
-                            {{--</div>--}}
-                            {{--<h3 class="material-title">--}}
-                            {{--<a class="link-to-material" href="portfolio-material.html">--}}
-                            {{--STEAMPUNK АНИМАЦИЯ--}}
-                            {{--</a>--}}
-                            {{--</h3>--}}
-                            {{--<p class="material-text">--}}
-                            {{--Мы весьма радужно проводим наши корпоративы. Особенно, если это годовщина--}}
-                            {{--существования нашей любимой студии!--}}
-                            {{--</p>--}}
-                            {{--<a class="material-category-link" href="portfolio.html">ВИДЕО И МОУШН ДИЗАЙН</a>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--<div class="blog-item-wrapper">--}}
-                            {{--<div class="blog-item">--}}
-                            {{--<div class="top-cont">--}}
-                            {{--<a class="link-to-material" href="blog-material.html">--}}
-                            {{--<div class="bg-cont" style="background-image: url('images/services/service-image-1.jpg')"></div>--}}
-                            {{--</a>--}}
-                            {{--</div>--}}
-                            {{--<div class="bottom-cont">--}}
-                            {{--<div class="material-info">--}}
-                            {{--<span class="material-date">08:43, Июн 26, 2017</span>--}}
-                            {{--<span class="material-author">--}}
-                            {{--<a class="link-to-author" href="blog-author.html" title="страница автора">--}}
-                            {{--Алексей Мельниченко--}}
-                            {{--</a>--}}
-                            {{--</span>--}}
-                            {{--</div>--}}
-                            {{--<h3 class="material-title">--}}
-                            {{--<a class="link-to-material" href="blog-material.html">--}}
-                            {{--Пятилетие в стиле 90х:  в стиле 90х Пятилетие--}}
-                            {{--</a>--}}
-                            {{--</h3>--}}
-                            {{--<p class="material-text">--}}
-                            {{--Мы весьма радужно проводим наши корпоративы. Особенно, если это годовщина--}}
-                            {{--существования нашей любимой студии!--}}
-                            {{--</p>--}}
-                            {{--<a class="material-category-link" href="blog.html">РАЗРАБОТКА РЕКЛАМНОЙ СТРАТЕГИИ ПРОДВИЖЕНИЯ</a>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--<div class="blog-item-wrapper">--}}
-                            {{--<div class="blog-item">--}}
-                            {{--<div class="top-cont">--}}
-                            {{--<a class="link-to-material" href="blog-material.html">--}}
-                            {{--<div class="bg-cont"></div>--}}
-                            {{--</a>--}}
-                            {{--</div>--}}
-                            {{--<div class="bottom-cont">--}}
-                            {{--<div class="material-info">--}}
-                            {{--<span class="material-date">08:43, Июн 26, 2017</span>--}}
-                            {{--<span class="material-author">--}}
-                            {{--<a class="link-to-author" href="blog-author.html" title="страница автора">--}}
-                            {{--Алексей Мельниченко--}}
-                            {{--</a>--}}
-                            {{--</span>--}}
-                            {{--</div>--}}
-                            {{--<h3 class="material-title">--}}
-                            {{--<a class="link-to-material" href="blog-material.html">--}}
-                            {{--Пятилетие в стиле 90х:  в стиле 90х Пятилетие--}}
-                            {{--</a>--}}
-                            {{--</h3>--}}
-                            {{--<p class="material-text">--}}
-                            {{--Мы весьма радужно проводим наши корпоративы. Особенно, если это годовщина--}}
-                            {{--существования нашей любимой студии!--}}
-                            {{--</p>--}}
-                            {{--<a class="material-category-link" href="blog.html">РАЗРАБОТКА РЕКЛАМНОЙ СТРАТЕГИИ ПРОДВИЖЕНИЯ</a>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
-                            {{--</div>--}}
                         </div>
                     </div>
 

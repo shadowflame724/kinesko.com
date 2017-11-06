@@ -119,7 +119,7 @@ We believe that stamping the same logos, corporate styles, websites - this,
         'index_header' => 'all services',
         'show_order_service' => 'order service',
         'show_price' => 'cost from',
-        'show_currency' => 'usd'
+        'currency' => 'usd'
     ],
     'blog' => [
         'show_author' => 'Author',

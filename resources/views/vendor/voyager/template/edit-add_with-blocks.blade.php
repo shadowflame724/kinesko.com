@@ -647,7 +647,7 @@
                 skin: 'voyager',
                 min_height: 200,
                 resize: 'vertical',
-                plugins: 'link image code youtube giphy table textcolor lists',
+                plugins: 'link image code youtube giphy table textcolor lists paste',
                 extended_valid_elements: 'input[id|name|value|type|class|style|required|placeholder|autocomplete|onclick]',
                 file_browser_callback: function (field_name, url, type, win) {
                     if (type == 'image') {
@@ -709,8 +709,9 @@
                 toolbar: 'styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table youtube giphy | code | readMoreButton',
                 image_caption: true,
                 image_title: true,
-                forced_root_block: false
-
+                forced_root_block: false,
+                paste_text_sticky: true,
+                paste_text_sticky_default: true
             });
             tinymce.init({
                 menubar: false,
@@ -718,7 +719,7 @@
                 skin: 'voyager',
                 min_height: 200,
                 resize: 'vertical',
-                plugins: 'code lists',
+                plugins: 'code lists paste',
                 extended_valid_elements: 'input[id|name|value|type|class|style|required|placeholder|autocomplete|onclick]',
                 setup:
                     function (editor) {
@@ -734,10 +735,12 @@
                             }
                         });
                     },
-                toolbar: ' bullist  | class2list | code',
+                toolbar: 'bullist  | class2list | code',
                 convert_urls: false,
                 image_caption: true,
-                image_title: true
+                image_title: true,
+                paste_text_sticky: true,
+                paste_text_sticky_default: true
             });
             tinymce.init({
                 menubar: false,

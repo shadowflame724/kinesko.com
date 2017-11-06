@@ -30,7 +30,7 @@ class PostDimmer extends AbstractWidget
             'text'   => "В базе данных {$string} {$count}",
             'button' => [
                 'text' => 'Все статьи',
-                'link' => route('voyager.services.index'),
+                'link' => route('voyager.posts.index'),
             ],
             'image' => voyager_asset('images/widget-backgrounds/03.jpg'),
         ]));

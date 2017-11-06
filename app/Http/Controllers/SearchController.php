@@ -8,9 +8,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Block;
 use App\Post;
 use App\Portfolio;
 use App\Service;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -45,12 +47,30 @@ class SearchController extends Controller
                                 ->get();
 
                             break;
-                        // Search by blocks
-//                        case 'in-text':
-//                            $sql['portfolio'] = Portfolio::where('text_ru', 'LIKE', '%' . $query . '%')
-//                                ->orWhere('text_ua', 'LIKE', '%' . $query . '%')
-//                                ->get();
-//                            break;
+                        case 'in-text':
+                            $idsArr = [];
+
+                            $blocks = Block::where('title_ru', 'LIKE', '%' . $query . '%')
+                                ->orWhere('title_en', 'LIKE', '%' . $query . '%')
+                                ->orWhere('body_ru', 'LIKE', '%' . $query . '%')
+                                ->orWhere('body_en', 'LIKE', '%' . $query . '%')
+                                ->get(['id'])->toArray();
+
+                            foreach ($blocks as $block){
+                                $idsArr[] = $block['id'];
+                            }
+
+                            foreach ($idsArr as $id){
+                                $items[] = Portfolio::where('block_ids', 'LIKE', '%' . $id . '%')->get();
+                            }
+
+                            foreach (array_unique($items) as $value){
+                                if($value->isNotEmpty()){
+                                    array_push($sql['portfolio'], $value);
+                                }
+                            }
+
+                            break;
                         default:
                             $sql['portfolio'] = Portfolio::where('title_ru', 'LIKE', '%' . $query . '%')
                                 ->orWhere('title_en', 'LIKE', '%' . $query . '%')
@@ -99,11 +119,31 @@ class SearchController extends Controller
                                 ->with('category')
                                 ->get();
                             break;
-//                        case 'in-text':
-//                            $sql['services'] = Service::where('description_ru', 'LIKE', '%' . $query . '%')
-//                                ->orWhere('description_ua', 'LIKE', '%' . $query . '%')
-//                                ->get();
-//                            break;
+                        case 'in-text':
+                            $idsArr = [];
+                            $sql['services'] = new Collection();
+
+                            $blocks = Block::where('title_ru', 'LIKE', '%' . $query . '%')
+                            ->orWhere('title_en', 'LIKE', '%' . $query . '%')
+                            ->orWhere('body_ru', 'LIKE', '%' . $query . '%')
+                            ->orWhere('body_en', 'LIKE', '%' . $query . '%')
+                            ->get(['id'])->toArray();
+
+                            foreach ($blocks as $block){
+                                $idsArr[] = $block['id'];
+                            }
+
+                            foreach ($idsArr as $id){
+                                $items[$id] = Service::where('block_ids', 'LIKE', '%' . $id . '%')->get();
+                            }
+
+                            foreach (array_unique($items) as $value){
+                                if($value->isNotEmpty()){
+                                    array_push($sql['services'], $value);
+                                }
+                            }
+
+                            break;
                         default:
                             $sql['services'] = Service::where('title_ru', 'LIKE', '%' . $query . '%')
                                 ->orWhere('title_en', 'LIKE', '%' . $query . '%')
