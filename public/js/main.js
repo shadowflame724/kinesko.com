@@ -92,7 +92,7 @@ $(function () {
 
 
     // **************************       FUNCTIONS       ***************************************************
-    
+
     function determineActivePage() {
         var currentLocation = window.location.href,
             status = false;
@@ -113,9 +113,9 @@ $(function () {
 
     }
 
-    function hideMenu (){
-        if (distanceTop > referTopPoint){
-            if ($(header).hasClass("header-hidden")){
+    function hideMenu() {
+        if (distanceTop > referTopPoint) {
+            if ($(header).hasClass("header-hidden")) {
                 $(header).removeClass("header-visible");
             }
             else {
@@ -124,9 +124,9 @@ $(function () {
         }
     }
 
-    function showMenu(){
-        if (distanceTop > referTopPoint){
-            if( !($(header).hasClass("header-visible")) ){
+    function showMenu() {
+        if (distanceTop > referTopPoint) {
+            if (!($(header).hasClass("header-visible"))) {
                 $(header).removeClass("header-hidden");
                 $(header).addClass("header-visible");
                 $(header).addClass("header-darkness");
@@ -134,7 +134,7 @@ $(function () {
         }
         else {
             $(header).removeClass("header-darkness");
-            setTimeout(function(){
+            setTimeout(function () {
                 $(header).removeClass("header-hidden header-visible");
             }, 100);
         }
@@ -167,7 +167,7 @@ $(function () {
 
         if (!firstPageLoadFlag) {
             // check if mobile header is not active (not opened list)
-            if( !$(header).hasClass("active")) {
+            if (!$(header).hasClass("active")) {
                 if (currentScrollTop > tempScrollTop) {//scroll down
                     hideMenu();
                 }
@@ -239,9 +239,9 @@ $(function () {
             searchBtnStatus = 1;
         }
         else {
-            if(searchContainerInput.value.length) {
+            if (searchContainerInput.value.length) {
                 event.preventDefault();
-                location.href = "/search-result.html";
+                location.href = "/search?query=" + searchContainerInput.value;
                 // console.log(location.href);
             }
             // searchBtnStatus = 0;
@@ -265,10 +265,10 @@ $(function () {
     // });
     // end of checkboxes tests
 
-    function searchFormClose (e) {
-        if ( e.keyCode === 27 ) {
+    function searchFormClose(e) {
+        if (e.keyCode === 27) {
             // close search-field on ESC
-            if($(searchContainerInput).hasClass("active")) {
+            if ($(searchContainerInput).hasClass("active")) {
                 $(searchContainerInput).removeClass("active").fadeOut(400);
                 searchBtnStatus = 0;
             }
@@ -277,8 +277,8 @@ $(function () {
 
     document.addEventListener('keydown', searchFormClose);
 
-    $("body").click(function(event) {
-        if(!$(event.target).closest(searchContainerInput).length &&
+    $("body").click(function (event) {
+        if (!$(event.target).closest(searchContainerInput).length &&
             $(searchContainerInput).hasClass("active")) {
             if (searchBtnStatus) {
                 event.preventDefault();
@@ -298,7 +298,7 @@ $(function () {
     // *************************************************************
 
     // start of material-img-preview logic
-    
+
     var materialImgPreview = $("#material-img-preview"),
         materialImgs = $(".material-img"),
         fullImg = $("#material-img-preview .full-img"),
@@ -320,10 +320,10 @@ $(function () {
 
     $(document).on('keydown', imgPreviewClose);
 
-    function imgPreviewClose (e) {
-        if ( e.keyCode === 27 ) {
+    function imgPreviewClose(e) {
+        if (e.keyCode === 27) {
             // close search-field on ESC
-            if($(materialImgPreview).hasClass("active")) {
+            if ($(materialImgPreview).hasClass("active")) {
                 $(materialImgPreview).removeClass("active").fadeOut(400);
                 $("html, body").removeClass("scroll-lock");
             }

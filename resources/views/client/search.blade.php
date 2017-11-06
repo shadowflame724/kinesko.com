@@ -98,7 +98,7 @@
 
                                                 <a class="link-to-material"
                                                    href="{{ route('client.blog.show', ['category' => $result->category->slug, 'post' => $result->slug]) }}">
-                                                    <div class="bg-cont" style="background-image: {{ storage_path($result->image) }}"></div>
+                                                    <div class="bg-cont" style="background-image: url('/storage/{{ $result->image }}');"></div>
                                                 </a>
 
                                             </div>
@@ -135,7 +135,7 @@
                                             <div class="top-cont">
                                                 <a class="link-to-material" href="{{ route('client.services.show', ['service' => $result->slug]) }}">
                                                     <div class="bg-cont"
-                                                         style="background-image: {{ storage_path($result->image) }}"></div>
+                                                         style="background-image: url('/storage/{{ $result->image }}');"></div>
                                                 </a>
                                             </div>
                                             <div class="bottom-cont">
@@ -166,7 +166,7 @@
                                         <div class="blog-item">
                                             <div class="top-cont">
                                                 <a class="link-to-material" href="{{ route('client.portfolio.show', ['category' => $result->category->slug, 'post' => $result->slug]) }}">
-                                                    <div class="bg-cont" style="background-image: {{ storage_path($result->image) }}"></div>
+                                                    <div class="bg-cont" style="background-image: url('/storage/{{ $result->image }}');"></div>
                                                 </a>
                                             </div>
                                             <div class="bottom-cont">

@@ -57,17 +57,20 @@ class SearchController extends Controller
                                 ->orWhere('body_en', 'LIKE', '%' . $query . '%')
                                 ->get(['id'])->toArray();
 
-                            foreach ($blocks as $block){
+                            foreach ($blocks as $block) {
                                 $idsArr[] = $block['id'];
                             }
 
-                            foreach ($idsArr as $id){
+                            foreach ($idsArr as $id) {
                                 $items[$id] = Portfolio::where('block_ids', 'LIKE', '%' . $id . '%')->get();
                             }
 
-                            foreach (array_unique($items) as $value){
-                                if($value->isNotEmpty()){
-                                    $sql['portfolio']->push($value->first());
+                            if (isset($items)) {
+
+                                foreach (array_unique($items) as $value) {
+                                    if ($value->isNotEmpty()) {
+                                        $sql['portfolio']->push($value->first());
+                                    }
                                 }
                             }
 
@@ -125,22 +128,25 @@ class SearchController extends Controller
                             $sql['services'] = new Collection();
 
                             $blocks = Block::where('title_ru', 'LIKE', '%' . $query . '%')
-                            ->orWhere('title_en', 'LIKE', '%' . $query . '%')
-                            ->orWhere('body_ru', 'LIKE', '%' . $query . '%')
-                            ->orWhere('body_en', 'LIKE', '%' . $query . '%')
-                            ->get(['id'])->toArray();
+                                ->orWhere('title_en', 'LIKE', '%' . $query . '%')
+                                ->orWhere('body_ru', 'LIKE', '%' . $query . '%')
+                                ->orWhere('body_en', 'LIKE', '%' . $query . '%')
+                                ->get(['id'])->toArray();
 
-                            foreach ($blocks as $block){
+                            foreach ($blocks as $block) {
                                 $idsArr[] = $block['id'];
                             }
 
-                            foreach ($idsArr as $id){
+                            foreach ($idsArr as $id) {
                                 $items[$id] = Service::where('block_ids', 'LIKE', '%' . $id . '%')->get();
                             }
 
-                            foreach (array_unique($items) as $value){
-                                if($value->isNotEmpty()){
-                                    $sql['services']->push($value->first());
+                            if (isset($items)) {
+
+                                foreach (array_unique($items) as $value) {
+                                    if ($value->isNotEmpty()) {
+                                        $sql['services']->push($value->first());
+                                    }
                                 }
                             }
 
@@ -167,20 +173,22 @@ class SearchController extends Controller
                         ->orWhere('body_en', 'LIKE', '%' . $query . '%')
                         ->get(['id'])->toArray();
 
-                    foreach ($blocks as $block){
+                    foreach ($blocks as $block) {
                         $idsArr[] = $block['id'];
                     }
 
-                    foreach ($idsArr as $id){
+                    foreach ($idsArr as $id) {
                         $items[$id] = Portfolio::where('block_ids', 'LIKE', '%' . $id . '%')->get();
                     }
+                    if (isset($items)) {
 
-                    foreach (array_unique($items) as $value){
-                        if($value->isNotEmpty()){
-                            $sql['portfolio']->push($value->first());
+                        foreach (array_unique($items) as $value) {
+                            if ($value->isNotEmpty()) {
+                                $sql['portfolio']->push($value->first());
+                            }
                         }
+                        $sql['portfolio'] = $sql['portfolio']->unique();
                     }
-                    $sql['portfolio'] = $sql['portfolio']->unique();
 
 
                     $sql['posts'] = Post::where('title_ru', 'LIKE', '%' . $query . '%')
@@ -206,20 +214,22 @@ class SearchController extends Controller
                         ->orWhere('body_en', 'LIKE', '%' . $query . '%')
                         ->get(['id'])->toArray();
 
-                    foreach ($blocks as $block){
+                    foreach ($blocks as $block) {
                         $idsArr[] = $block['id'];
                     }
 
-                    foreach ($idsArr as $id){
+                    foreach ($idsArr as $id) {
                         $items[$id] = Service::where('block_ids', 'LIKE', '%' . $id . '%')->get();
                     }
+                    if (isset($items)) {
 
-                    foreach (array_unique($items) as $value){
-                        if($value->isNotEmpty()){
-                            $sql['services']->push($value->first());
+                        foreach (array_unique($items) as $value) {
+                            if ($value->isNotEmpty()) {
+                                $sql['services']->push($value->first());
+                            }
                         }
+                        $sql['services'] = $sql['services']->unique();
                     }
-                    $sql['services'] = $sql['services']->unique();
 
                     break;
             }
