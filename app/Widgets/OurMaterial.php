@@ -20,7 +20,7 @@ class OurMaterial extends AbstractWidget
      */
     public function run()
     {
-        $posts = Post::with('author')->with('category')->get()->sortBy('created_at')->take(3);
+        $posts = Post::with('author')->with('category')->orderBy('created_at', 'desc')->limit(3)->get();
 
         return view('widgets.our-materials', [
             'posts' => $posts,

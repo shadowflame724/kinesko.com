@@ -3,9 +3,9 @@
 namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
-use  App\Portfolio;
+use App\Portfolio;
 
-class PortfolioSmall extends AbstractWidget
+class BlogSideBar extends AbstractWidget
 {
     /**
      * The configuration array.
@@ -20,10 +20,10 @@ class PortfolioSmall extends AbstractWidget
      */
     public function run()
     {
-        $portfolio = Portfolio::with('category')->orderBy('created_at', 'desc')->limit(3)->get();
+        $portfolio = Portfolio::with('category')->orderBy('created_at', 'desc')->limit(4)->get();
 
-        return view('widgets.portfolio-block-big', [
-            'portfolioWidget' => $portfolio,
+        return view('widgets.blog-sidebar', [
+            'portfolio' => $portfolio,
         ]);
     }
 }

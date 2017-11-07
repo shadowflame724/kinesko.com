@@ -11,7 +11,7 @@
     </div>
     <div class="right-block">
         <div class="portfolio-items-cont">
-            @foreach($portfolioFooter->slice(0,3) as $value)
+            @foreach($portfolioWidget as $value)
                 <div class="portfolio-item-cont">
                     <div class="portfolio-item">
                         <div class="poster-img-cont">

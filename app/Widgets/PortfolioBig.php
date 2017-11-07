@@ -3,6 +3,7 @@
 namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
+use  App\Portfolio;
 
 class PortfolioBig extends AbstractWidget
 {
@@ -19,10 +20,10 @@ class PortfolioBig extends AbstractWidget
      */
     public function run()
     {
-        //
+        $portfolio = Portfolio::with('category')->orderBy('created_at', 'desc')->limit(4)->get();
 
-        return view('widgets.portfolio_big', [
-            'config' => $this->config,
+        return view('widgets.portfolio-block-big', [
+            'portfolioWidget' => $portfolio,
         ]);
     }
 }

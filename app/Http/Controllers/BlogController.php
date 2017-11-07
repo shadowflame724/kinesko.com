@@ -8,12 +8,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Block;
-use App\Portfolio;
+use App\Events\PostShown;
 use App\Post;
 use App\PostCategory;
 use App\User;
-use Illuminate\Support\Facades\DB;
 use TCG\Voyager\Models\Page;
 
 class BlogController extends Controller
@@ -48,10 +46,18 @@ class BlogController extends Controller
     public function show($categorySlug, $postSlug)
     {
         $post = Post::where('slug', $postSlug)->with('author')->with('category')->first();
+        $similarPosts = Post::where('category_id', $post->category_id)
+            ->where('author_id', $post->author_id)
+            ->where('id', '!=', $post->id)
+            ->with('author')->with('category')
+            ->orderBy('created_at', 'DESC')
+            ->limit(2)->get();
 
         if ($post != null) {
+            event(new PostShown($post));
             return view('client.blog.show', [
                 'post' => $post,
+                'similarPosts' => $similarPosts
             ]);
         } else {
             return abort(404);

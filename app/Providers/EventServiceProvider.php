@@ -15,6 +15,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\PortfolioShown' => [
             'App\Listeners\PortfolioEventListener',
         ],
+        'App\Events\PostShown' => [
+            'App\Listeners\PostEventListener',
+        ],
     ];
 
     /**

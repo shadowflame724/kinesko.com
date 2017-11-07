@@ -26105,15 +26105,62 @@
             skin: "voyager",
             min_height: 600,
             resize: "vertical",
-            plugins: "link, image, code, youtube, giphy, table, textcolor, anchor, paste",
+            plugins: "link, image, code, youtube, giphy, table, textcolor, anchor, paste, template, importcss",
             extended_valid_elements: "input[id|name|value|type|class|style|required|placeholder|autocomplete|onclick]",
             file_browser_callback: function (e, t, n, i) {
                 "image" == n && $("#upload_file").trigger("click")
             },
-            toolbar: "styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table youtube giphy | code | anchor",
+            toolbar: "styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table youtube giphy | code | anchor | template",
             image_class_list: [
                 {title: 'None', value: ''},
                 {title: 'Blog Image', value: 'material-img'}
+            ],
+            templates: [
+                {title: 'Blog slider', description: 'Blog slider', content: '<!-- start of blog-slider -->\n' +
+                '                            <div class="flexslider">\n' +
+                '                                <div class="share-btn">\n' +
+                '                                    <a href="#" class="gl-yellow-btn skew-right">\n' +
+                '                                        <span class="skew-left">+ поделиться</span>\n' +
+                '                                    </a>\n' +
+                '                                </div>\n' +
+                '                                <ul class="slides">\n' +
+                '                                    <li>\n' +
+                '                                        <img src="/images/blog-material/blog-image-slide-1.jpg" alt="blog-slider-img">\n' +
+                '                                    </li>\n' +
+                '                                    <li>\n' +
+                '                                        <img src="/images/blog-material/blog-image-slide-2.jpg" alt="blog-slider-img">\n' +
+                '                                    </li>\n' +
+                '                                    <li>\n' +
+                '                                        <img src="/images/blog-material/blog-image-slide-3.jpg" alt="blog-slider-img">\n' +
+                '                                    </li>\n' +
+                '                                    <li>\n' +
+                '                                        <img src="/images/blog-material/blog-image-slide-4.jpg" alt="blog-slider-img">\n' +
+                '                                    </li>\n' +
+                '                                </ul>\n' +
+                '                            </div>\n' +
+                '                            <!-- end of blog-slider -->'},
+                {title: 'Blog attention-text', description: 'Blog attention-text', content: '<div class="special-text attention-text">\n' +
+                '                                    <div class="special-text-inner">\n' +
+                '                                        <p>\n' +
+                '                                            Для того чтобы заказать анализ потребителей продуктов питания\n' +
+                '                                            Украины обратитесь в компанию KOLORO. Наш менеджер проведет\n' +
+                '                                            бесплатную консультацию. Контактная информация: +38 044 223 51 20.\n' +
+                '                                            Для того чтобы заказать анализ потребителей продуктов питания\n' +
+                '                                            Украины обратитесь в компанию KOLORO. Наш менеджер проведет\n' +
+                '                                        </p>\n' +
+                '                                    </div>\n' +
+                '                                </div>\n'},
+                {title: 'Blog question-text', description: 'Blog question-text', content: '<div class="special-text question-text">\n' +
+                '                                    <div class="special-text-inner">\n' +
+                '                                        <p>\n' +
+                '                                            Для того чтобы заказать анализ потребителей продуктов питания\n' +
+                '                                            Украины обратитесь в компанию KOLORO. Наш менеджер проведет\n' +
+                '                                            бесплатную консультацию. Контактная информация: +38 044 223 51 20.\n' +
+                '                                            Для того чтобы заказать анализ потребителей продуктов питания\n' +
+                '                                            Украины обратитесь в компанию KOLORO. Наш менеджер проведет\n' +
+                '                                        </p>\n' +
+                '                                    </div>\n' +
+                '                                </div>\n'},
             ],
             convert_urls: !1,
             image_caption: !0,
@@ -26121,7 +26168,9 @@
             paste_text_sticky: !0,
             paste_text_sticky_default: !0,
             forced_root_block: !1,
-            image_dimensions: !1
+            image_dimensions: !1,
+            content_css : "/css/main.css"
+
         })
     })
 }, function (e, t, n) {
