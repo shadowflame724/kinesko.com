@@ -29,6 +29,7 @@ return [
         'more_jobs' => 'more jobs',
         'search' => 'Search',
         'address' => 'Trehsvyatitelskaya str. 5/1-A, <br> office 1, 2nd floor',
+        'address_ru' => 'Novy Arbat str. 5/1-A, office 1, 2nd floor',
         'work_days' => 'Mon. - 	Fri.',
         'work_hours' => '9:00 am - 06:00 pm',
         'weekend_days' => 'Sat. - Sun.',
@@ -131,5 +132,11 @@ We believe that stamping the same logos, corporate styles, websites - this,
         'author_common_votes' => 'common votes',
 
         'all_articles' => 'all author\'s articles',
+    ],
+    'contacts' => [
+        'kiev' => 'Kiev',
+        'moscow' => 'Moscow',
+        'get_directions' => 'get directions',
+        'write_letter' => 'write us a letter'
     ]
 ];

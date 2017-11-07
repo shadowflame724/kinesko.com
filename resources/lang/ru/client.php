@@ -30,6 +30,7 @@ return [
         'more_jobs' => 'больше работ',
         'search' => 'Поиск',
         'address' => 'ул. Трехсвятительская 5/1-А, <br> офис 1, 2-й этаж',
+        'address_ru' => 'ул. Новый Арбат 5/1-А, офис 1, 2-й этаж',
         'work_days' => 'Пн - Пт',
         'work_hours' => '9:00 - 18:00',
         'weekend_days' => 'Сб - Вс',
@@ -128,8 +129,12 @@ return [
         'show_position' => 'Специальность',
         'author_common_rating' => 'общий рейтинг',
         'author_common_views' => 'общих просмотров',
-
         'all_articles' => 'все статьи автора',
-
+    ],
+    'contacts' => [
+        'kiev' => 'Киев',
+        'moscow' => 'Москва',
+        'get_directions' => 'проложить маршрут',
+        'write_letter' => 'напишите нам письмо'
     ]
 ];

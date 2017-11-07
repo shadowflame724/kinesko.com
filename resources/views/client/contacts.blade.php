@@ -16,8 +16,8 @@
     <!-- start of fly-block -->
     <div class="fly-block">
         <ul class="contacts-menu">
-            <li class="kiev active">Киев</li>
-            <li class="moscow">Москва</li>
+            <li class="kiev active">@lang('client.contacts.kiev')</li>
+            <li class="moscow">@lang('client.contacts.moscow')</li>
         </ul>
 
         <span class="close-contacts-btn">
@@ -29,7 +29,7 @@
             <div class="tab-pane animated kiev active clearfix">
                 <div class="city-cont">
                     <i class="icon kiev-icon"></i>
-                    <p class="city-name">Киев</p>
+                    <p class="city-name">@lang('client.contacts.kiev')</p>
                 </div>
                 <div class="contacts-info">
                     <p class="tel">
@@ -43,10 +43,10 @@
                             info@kinesko.ua
                         </a>
                     </p>
-                    <p class="address">ул. Трехсвятительская 5/1-А, офис 1, 2-й этаж</p>
+                    <p class="address">@lang('client.general.address')</p>
 
                     <a href="/" class="skew-right gl-transparent-btn route-btn">
-                        <span class="skew-left">проложить маршрут</span>
+                        <span class="skew-left">@lang('client.contacts.get_directions')</span>
                     </a>
                 </div>
             </div>
@@ -56,7 +56,7 @@
             <div class="tab-pane animated moscow clearfix">
                 <div class="city-cont">
                     <i class="icon kiev-icon"></i>
-                    <p class="city-name">Москва</p>
+                    <p class="city-name">@lang('')</p>
                 </div>
                 <div class="contacts-info">
                     <p class="tel">
@@ -70,10 +70,10 @@
                             info@kinesko.ru
                         </a>
                     </p>
-                    <p class="address">ул. Новый Арбат 5/1-А, офис 1, 2-й этаж</p>
+                    <p class="address">@lang('client.general.address_ru')</p>
 
                     <a href="/" class="skew-right gl-transparent-btn route-btn">
-                        <span class="skew-left">проложить маршрут</span>
+                        <span class="skew-left">@lang('client.contacts.get_directions')</span>
                     </a>
                 </div>
             </div>
@@ -91,14 +91,14 @@
         <div class="main-top-container">
             <div class="page-head">
                 <div class="bread-crumbs">
-                    <a href="{{ route('client.index') }}">главная</a>
-                    <span class="active">контакты</span>
+                    <a href="{{ route('client.index') }}">@lang('client.menu.index')</a>
+                    <span class="active">@lang('client.menu.contacts')</span>
                 </div>
-                <h1 class="page-title">контакты</h1>
+                <h1 class="page-title">@lang('client.menu.contacts')</h1>
             </div>
             <div class="city-name">
-                <p class="active">Киев</p>
-                <p>Москва</p>
+                <p class="active">@lang('client.contacts.kiev')</p>
+                <p>@lang('client.contacts.moscow')</p>
             </div>
         </div>
 
@@ -152,7 +152,7 @@
             <div class="write-btn-cont">
                 <div class="write-btn-inner animated">
                     <a href="/" class="skew-right gl-transparent-btn write-btn">
-                        <span class="skew-left">написать нам письмо</span>
+                        <span class="skew-left">@lang('client.contacts.write_letter')</span>
                     </a>
                 </div>
             </div>
@@ -165,16 +165,16 @@
                         <i class="icon icon-cross-yellow"></i>
                     </div>
 
-                    <p class="form-header">Расскажите нам о своем проекте</p>
-                    <p class="form-header-small">Получите консультацию уже сейчас!</p>
+                    <p class="form-header">@lang('client.forms.form_header')</p>
+                    <p class="form-header-small">@lang('client.forms.form_header_small')</p>
 
                     <input type="text" name="user-name" required="required" class="user-name"
-                           placeholder="Имя *" tabindex="1">
+                           placeholder="@lang('client.forms.name')" tabindex="1">
 
                     <div class="full-container clearfix">
                         <div class="left-cont">
                             <input type="tel" name="user-tel" required="required" class="user-tel"
-                                   placeholder="Телефон *" tabindex="3">
+                                   placeholder="@lang('client.forms.phone')" tabindex="3">
                         </div>
                         <div class="right-cont">
                             <input type="email" name="user-email" required="required" class="user-email"
@@ -183,16 +183,16 @@
                     </div>
 
                     <input type="text" name="user-text" required="required" class="user-text"
-                           placeholder="Сопроводительный текст *" tabindex="3">
+                           placeholder="@lang('client.forms.text')" tabindex="3">
 
                     <div class="add-file-cont">
                         <input type="file" name="user-file" id="write-us-file-2" multiple data-multiple-caption="{count} files selected"
                                class="inputfile inputfile-2">
-                        <label for="write-us-file-2"><span>+ Добавить файл</span></label>
+                        <label for="write-us-file-2"><span>+ @lang('client.forms.attach_file')</span></label>
                     </div>
 
                     <button type="submit" class="skew-right gl-transparent-btn submit-btn">
-                        <span class="skew-left">Отправить</span>
+                        <span class="skew-left">@lang('client.forms.send')</span>
                     </button>
 
                 </div>
