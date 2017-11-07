@@ -11,7 +11,7 @@
 |
 */
 
-Route::post('/vote/{type}/{id}', 'VoteController@vote');
+Route::post('/vote/{type}/{id}', 'VoteController');
 
 
 Route::group(

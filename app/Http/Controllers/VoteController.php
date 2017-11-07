@@ -8,9 +8,8 @@ use Illuminate\Http\Request;
 
 class VoteController extends Controller
 {
-    public function vote(Request $request, $type = null, $id)
+    public function __invoke(Request $request, $type = null, $id)
     {
-        dd($request);
         if (\Session::has($request->path()))
             return 0;
         if ($request->ajax()) {
