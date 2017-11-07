@@ -34,7 +34,7 @@ class SearchController extends Controller
         $category = Input::get('category');
         $searchCondition = Input::get('search-condition');
         $page = Input::get('page', 1);
-        $perPage = 1;
+        $perPage = setting('site.pagination_length');
 
         if (strlen($query) > 1) {
             switch ($category) {

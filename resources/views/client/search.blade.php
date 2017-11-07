@@ -204,7 +204,8 @@
                     <div class="col-lg-4">
                         <div class="blog-sidebar-wrapper">
                             {{--//= template/blog-sidebar.html--}}
-                            @include('client.template.blog-sidebar')
+                            {{--@include('client.template.blog-sidebar')--}}
+                            @widget('BlogSideBar')
                         </div>
                     </div>
 

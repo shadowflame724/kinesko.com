@@ -67,11 +67,20 @@ class BlogController extends Controller
 
     public function author($slug)
     {
-        $user = User::where('slug', $slug)->with('posts')->first();
+        $user = User::where('slug', $slug)->first();
+        $posts = Post::where('author_id', $user->id)->with('category')->paginate(setting('site.pagination_length'));
+
+        $commonViews = $user->posts->sum('views');
+        $commonRating = $user->posts->sum('rating');
+        $commonVotes = $user->posts->sum('votes');
 
         if ($user != null) {
             return view('client.blog.author', [
-                'user' => $user
+                'user' => $user,
+                'posts' => $posts,
+                'commonViews' => $commonViews,
+                'commonRating' => $commonRating,
+                'commonVotes' => $commonVotes,
             ]);
         } else {
             return abort(404);

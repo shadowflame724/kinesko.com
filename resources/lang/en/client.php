@@ -34,6 +34,7 @@ return [
         'weekend_days' => 'Sat. - Sun.',
         'weekend' => 'weekend',
         'contact_info' => 'Contact info',
+        'votes' => 'votes'
 
 
     ],
@@ -91,9 +92,9 @@ return [
         'video_error' => 'The video tag is not supported by your browser.',
         'show_example' => 'see an example',
         'our_services' => 'Our services',
-        'fr_achiev_text' => '<span> 73% of all our customers we have never seen in person, </span>
+        'fr_achiev_text' => '<span> :COUNT% of all our customers we have never seen in person, </span>
                                 but worked only on Skype, mail and phone',
-        'sc_achiev_text' => '<span> 92% of all our customers we have never seen in person, </span>
+        'sc_achiev_text' => '<span> :COUNT% of all our customers we have never seen in person, </span>
                                 but worked only on Skype, mail and phone',
         'about_us' => 'About us',
         'about_us_title' => 'Quality and thoughtful
@@ -125,5 +126,10 @@ We believe that stamping the same logos, corporate styles, websites - this,
         'show_author' => 'Author',
         'author_page' => 'author page',
         'show_position' => 'Position',
+        'author_common_rating' => 'common rating',
+        'author_common_views' => 'common views',
+        'author_common_votes' => 'common votes',
+
+        'all_articles' => 'all author\'s articles',
     ]
 ];

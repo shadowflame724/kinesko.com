@@ -35,6 +35,7 @@ return [
         'weekend_days' => 'Сб - Вс',
         'weekend' => 'выходной',
         'contact_info' => 'Контактная информация',
+        'votes' => 'голосов'
 
     ],
     'forms' => [
@@ -125,5 +126,10 @@ return [
         'show_author' => 'Автор',
         'author_page' => 'страница автора',
         'show_position' => 'Специальность',
+        'author_common_rating' => 'общий рейтинг',
+        'author_common_views' => 'общих просмотров',
+
+        'all_articles' => 'все статьи автора',
+
     ]
 ];
