@@ -17,9 +17,9 @@
     <p class="sidebar-header">@lang('client.blog-sidebar.our_work')</p>
 
     <div class="our-works-blog">
-        @foreach($portfolio as $portfolio)
+        @foreach($portfolio as $value)
         <div class="portfolio-item">
-            <a href="{{ route('client.portfolio.show', ['category' => $portfolio->category->slug, 'portfolio' => $portfolio->slug]) }}portfolio-material.html" class="link-to-portfolio"></a>
+            <a href="{{ route('client.portfolio.show', ['category' => $value->category->slug, 'portfolio' => $value->slug]) }}" class="link-to-portfolio"></a>
         </div>
         @endforeach
     </div>

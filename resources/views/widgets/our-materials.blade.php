@@ -11,7 +11,7 @@
                         <div class="blog-item">
                             <div class="top-cont">
                                 <a class="link-to-material" href="{{ route('client.blog.show', ['category' => $post->category->slug, 'post' => $post->slug]) }}">
-                                    <div class="bg-cont" style="background-image: url('/storage/'{{ $post->image_thumb }})"></div>
+                                    <div class="bg-cont" style="background-image: url('/storage/{{ $post->image_thumb }}')"></div>
                                 </a>
                             </div>
                             <div class="bottom-cont">

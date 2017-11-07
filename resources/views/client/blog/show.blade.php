@@ -70,7 +70,7 @@
                                             <div class="blog-item">
                                                 <div class="top-cont">
                                                     <a class="link-to-material" href="{{ route('client.blog.show', ['category' => $similarPost->category->slug, 'post' => $similarPost->slug]) }}">
-                                                        <div class="bg-cont" style="background-image: url('/storage/'{{ $similarPost->image_thumb }})"></div>
+                                                        <div class="bg-cont" style="background-image: url('/storage/{{ $similarPost->image_thumb }}')"></div>
                                                     </a>
                                                 </div>
                                                 <div class="bottom-cont">
@@ -95,7 +95,7 @@
                                             </div>
                                         </div>
                                     @endforeach
-                                    
+
                                 </div>
                             {!! $post->{'body_2' . $langSuf} !!}
 
