@@ -119,7 +119,7 @@
 <!-- end of portfolio-material -->
 
 {{--//= template/portfolio-block-small.html--}}
-@widget(PortfolioSmall)
+@widget('PortfolioSmall')
 @stop
 
 <!-- scripts only for portfolio-material pages -->

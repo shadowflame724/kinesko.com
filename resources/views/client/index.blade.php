@@ -85,7 +85,7 @@
 
             {{--//= template/portfolio-block-big.html--}}
             {{--@include('client.template.portfolio-block-big')--}}
-            @widget(PortfolioBig)
+            @widget('PortfolioBig')
 
             <div class="achievments-cont">
                 <div class="achievment-item-cont">

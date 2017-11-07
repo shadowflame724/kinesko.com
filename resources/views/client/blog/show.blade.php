@@ -258,11 +258,12 @@
                 easing: "swing"
             });
         });
-
+        @php($data = [
+         'type' => 'post',
+         'id' => $post->id
+         ])
         // start of star-rating initialization
-        $(".rating").rating({min: 1, max: 5, step: 0.5, size: 'sm'});
-        $('.clear-rating').hide();
-        $('.caption').hide();
+        @include('client.template._js_star-rating')
         // end of of star-rating initialization
 
     </script>

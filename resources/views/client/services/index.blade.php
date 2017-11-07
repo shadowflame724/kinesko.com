@@ -106,7 +106,7 @@
         <!-- end of all-services -->
 
         {{--//= template/portfolio-block-small.html--}}
-        @widget(PortfolioSmall)
+        @widget('PortfolioSmall')
 
     </section>
     <!-- end of company-page -->

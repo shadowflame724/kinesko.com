@@ -73,5 +73,5 @@
     </section>
     <!-- end of service-material -->
     {{--//= template/portfolio-block-small.html--}}
-    @widget(PortfolioSmall)
+    @widget('PortfolioSmall')
 @stop
