@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::post('/vote/{type}/{id}', 'VoteController@vote');
+
+
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -41,9 +45,9 @@ Route::group(
     });
 
 
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-
 
 

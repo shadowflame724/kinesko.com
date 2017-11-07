@@ -70,7 +70,7 @@
                                             <div class="blog-item">
                                                 <div class="top-cont">
                                                     <a class="link-to-material" href="{{ route('client.blog.show', ['category' => $similarPost->category->slug, 'post' => $similarPost->slug]) }}">
-                                                        <div class="bg-cont" style="background-image: url('/storage/{{ $similarPost->image_thumb }}')"></div>
+                                                        <div class="bg-cont" style="background-image: url('/storage/'{{ $similarPost->image_thumb }})"></div>
                                                     </a>
                                                 </div>
                                                 <div class="bottom-cont">
@@ -258,13 +258,12 @@
                 easing: "swing"
             });
         });
-        @php($data = [
+    </script>
+    @php($data = [
          'type' => 'post',
          'id' => $post->id
          ])
-        // start of star-rating initialization
-        @include('client.template._js_star-rating')
-        // end of of star-rating initialization
-
-    </script>
+    {{--// start of star-rating initialization--}}
+    @include('client.template._js_star-rating')
+    {{--// end of of star-rating initialization--}}
 @stop

@@ -10,6 +10,7 @@ class VoteController extends Controller
 {
     public function vote(Request $request, $type = null, $id)
     {
+        dd($request);
         if (\Session::has($request->path()))
             return 0;
         if ($request->ajax()) {
@@ -21,6 +22,8 @@ class VoteController extends Controller
             $res->rating += $request->rating;
             $res->votes = $res->votes + 1;
             $res->save();
+            $request->session()->put($request->path(), 'true');
+
             session([$request->path() => 'true']);
             return 1;
         }
