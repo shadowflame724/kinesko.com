@@ -107,7 +107,7 @@
                                             </div>
                                             <div class="bottom-cont">
                                                 <div class="material-info">
-                                                    <span class="material-date">{{ $result->created_at->format('d-F-Y') }}</span>
+                                                    <span class="material-date">{{ $result->created_at->formatLocalized('%d %B %Y') }}</span>
                                                     <span class="material-author">
                                         <a class="link-to-author"
                                            href="{{ route('client.blog.author', ['user' => $result->author->slug]) }}"
@@ -174,7 +174,7 @@
                                             </div>
                                             <div class="bottom-cont">
                                                 <div class="material-info">
-                                                    <span class="material-date">{{ $result->created_at }}</span>
+                                                    <span class="material-date">{{ $result->created_at->formatLocalized('%d %B %Y') }}</span>
                                                     <span class="material-author">
                             <a class="link-to-author" href="{{ route('client.portfolio.index') }}" title="страница портфолио">
                             @lang('client.menu.portfolio')

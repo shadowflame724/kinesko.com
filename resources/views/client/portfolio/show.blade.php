@@ -10,7 +10,7 @@
 
 <!-- start of portfolio-material -->
 <section id="portfolio-material">
-    <div class="main-top-container bg-cont" style="background-image: url('/storage/{{ $service->image }}');">
+    <div class="main-top-container bg-cont" style="background-image: url('/storage/{{ $portfolio->image }}');">
         <div class="container">
             <div class="page-head">
                 <div class="bread-crumbs">
@@ -132,14 +132,13 @@
     var voicesCount = document.querySelector(".voices-count span");
     voicesCount.innerText = (+voicesCount.innerText).toLocaleString();
 
-    @php($data = [
-         'type' => 'portfolio',
-         'id' => $portfolio->id
-         ])
-    {{--// start of star-rating initialization--}}
-    @include('client.template._js_star-rating')
-    {{--// end of of star-rating initialization--}}
-
 </script>
 
+@php($data = [
+     'type' => 'portfolio',
+     'id' => $portfolio->id
+     ])
+{{--// start of star-rating initialization--}}
+@include('client.template._js_star-rating')
+{{--// end of of star-rating initialization--}}
 @stop

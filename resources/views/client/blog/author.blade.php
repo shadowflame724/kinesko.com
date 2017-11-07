@@ -68,7 +68,7 @@
                                         </div>
                                         <div class="bottom-cont">
                                             <div class="material-info">
-                                                <span class="material-date">{{ $post->created_at }}</span>
+                                                <span class="material-date">{{ $post->created_at->formatLocalized('%d %B %Y') }}</span>
                                                 <span class="material-author">
                                         <a class="link-to-author"
                                            href="{{ route('client.blog.author', ['user' => $user->slug]) }}"

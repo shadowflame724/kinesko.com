@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="material-general-info">
-                        <p class="material-date">{{ $post->created_at }}</p>
+                        <p class="material-date">{{ $post->created_at->formatLocalized('%d %B %Y') }}</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                                                 </div>
                                                 <div class="bottom-cont">
                                                     <div class="material-info">
-                                                        <span class="material-date">{{ $similarPost->created_at }}</span>
+                                                        <span class="material-date">{{ $similarPost->created_at->formatLocalized('%d %B %Y') }}</span>
                                                         <span class="material-author">
                                         <a class="link-to-author" href="{{ route('client.blog.author', ['author' => $similarPost->author->slug]) }}" title="@lang('client.blog.author_page')">
                                             {{ $similarPost->author->{'name' . $langSuf} }}

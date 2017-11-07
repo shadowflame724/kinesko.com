@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
     $(".rating").rating({min: 1, max: 5, step: 0.5, size: 'sm'}).on("rating.change", function (event, value) {
         var voted = false;
         var type = '{{ $data['type'] }}';
