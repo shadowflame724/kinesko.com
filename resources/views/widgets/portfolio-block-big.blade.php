@@ -27,7 +27,7 @@
                                 </a>
                             </p>
                             <a href="{{ route('client.portfolio.index', ['portfolio' => $value->categorySlug]) }}" class="skew-right gl-transparent-btn white-border go-portfolio-btn">
-                                <span class="skew-left">перейти</span>
+                                <span class="skew-left">@lang('client.general.go_to')</span>
                             </a>
                         </div>
                     </div>
