@@ -43,7 +43,7 @@
                                             <input class="rating" value="{{ $commonRating / $commonVotes }}"
                                                    type="number">
                                         </div>
-                                        <p class="voices-count">@lang('client.general.votes) <span>{{ $commonVotes }}</span></p>
+                                        <p class="voices-count">@lang('client.general.votes') <span>{{ $commonVotes }}</span></p>
                                     </div>
 
                                     <div class="views-cont">
