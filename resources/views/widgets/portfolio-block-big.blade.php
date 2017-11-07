@@ -22,11 +22,11 @@
                                 {{ $value->{'title' . $langSuf} }}
                             </h3>
                             <p class="portfolio-category">
-                                <a class="link-to-category" href="{{ route('client.portfolio.index', ['portfolio' => $value->categorySlug]) }}">
+                                <a class="link-to-category" href="{{ route('client.portfolio.category', ['portfolio' => $value->category->slug]) }}">
                                     {{ $value->{'categoryName' . $langSuf} }}
                                 </a>
                             </p>
-                            <a href="{{ route('client.portfolio.index', ['portfolio' => $value->categorySlug]) }}" class="skew-right gl-transparent-btn white-border go-portfolio-btn">
+                            <a href="{{ route('client.portfolio.show', ['category' => $value->category->slug, 'portfolio' => $value->category->slug]) }}" class="skew-right gl-transparent-btn white-border go-portfolio-btn">
                                 <span class="skew-left">@lang('client.general.go_to')</span>
                             </a>
                         </div>

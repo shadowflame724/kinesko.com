@@ -45,19 +45,13 @@ class ComposerServiceProvider extends ServiceProvider
         // ******
 
         $managers = Manager::all();
-        $portfolio = DB::table('portfolio')
-            ->join('service_categories', 'portfolio.category_id', '=', 'service_categories.id')
-            ->inRandomOrder(4)
-            ->select('portfolio.*', 'service_categories.title_ru as categoryName_ru', 'service_categories.title_en as categoryName_en', 'service_categories.slug as categorySlug')
-            ->get();
 
-        View::composer(['*'], function ($view) use ($request, $appLangs, $managers, $portfolio) {
+        View::composer(['*'], function ($view) use ($request, $appLangs, $managers) {
 
             $view
                 ->with([
                     'langSuf' => $appLangs['suf'],
-                    'managers' => $managers,
-                    'portfolioFooter' => $portfolio
+                    'managers' => $managers
                 ]);
         });
         /*

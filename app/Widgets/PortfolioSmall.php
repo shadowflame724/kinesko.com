@@ -22,7 +22,7 @@ class PortfolioSmall extends AbstractWidget
     {
         $portfolio = Portfolio::with('category')->orderBy('created_at', 'desc')->limit(3)->get();
 
-        return view('widgets.portfolio-block-big', [
+        return view('widgets.portfolio-block-small', [
             'portfolioWidget' => $portfolio,
         ]);
     }
