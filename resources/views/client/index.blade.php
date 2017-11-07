@@ -17,12 +17,14 @@
 
             <div class="container">
                 <h1 class="main-header animated fadeIn">
-                    @lang('client.index.header')
+                    {{--@lang('client.index.header')--}}
+                    {{ $mainWork->{'title' . $langSuf} }}
                 </h1>
                 <div class="order-btns">
                     <div class="view-example-btn">
-                        <a href="portfolio-material.html" class="skew-right gl-transparent-btn">
+                        <a href="{{ route('client.portfolio.show', ['category' => $mainWork->category->slug, 'portfolio' => $mainWork->slug]) }}" class="skew-right gl-transparent-btn">
                             <span class="skew-left">@lang('client.index.show_example')</span>
+
                         </a>
                     </div>
                     <div class="order-form-btn">
