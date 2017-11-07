@@ -132,11 +132,13 @@
     var voicesCount = document.querySelector(".voices-count span");
     voicesCount.innerText = (+voicesCount.innerText).toLocaleString();
 
-    // start of star-rating initialization
-    $(".rating").rating({min: 1, max: 5, step: 0.5, size: 'sm'});
-    $('.clear-rating').hide();
-    $('.caption').hide();
-    // end of of star-rating initialization
+    @php($data = [
+         'type' => 'portfolio',
+         'id' => $portfolio->id
+         ])
+    {{--// start of star-rating initialization--}}
+    @include('client.template._js_star-rating')
+    {{--// end of of star-rating initialization--}}
 
 </script>
 
