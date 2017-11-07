@@ -138,5 +138,32 @@ We believe that stamping the same logos, corporate styles, websites - this,
         'moscow' => 'Moscow',
         'get_directions' => 'get directions',
         'write_letter' => 'write us a letter'
+    ],
+    'about' => [
+        'our_team' => 'OUR TEAM',
+        'our_team_text' => '<p>
+                            <span>
+Our designs are able to admire, inspire, sell and make a profit.
+                                We create designs that people want to use.
+                            </span>
+                            </p>
+                            <p>
+To design was effective from the point of view of business, it must evoke emotions.
+                                We are very good at this. See for yourself.
+                            </p>',
+        'send_cv' => 'send CV',
+        'we_fat' => 'We are more than a studio',
+        'we_fat_text' => '<p>
+                            <span>
+Our designs are able to admire, inspire, sell and make a profit.
+                                We create designs that people want to use.
+                            </span>
+                            </p>
+                            <p>
+To design was effective from the point of view of business, it must evoke emotions.
+                                We are very good at this. See for yourself.
+                            </p>',
+        'read_more' => 'read more',
+        'our_hobby' => 'our hobby'
     ]
 ];

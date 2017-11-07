@@ -11,10 +11,10 @@
         <div class="container">
             <div class="page-head">
                 <div class="bread-crumbs">
-                    <a href="{{ route('client.index') }}">главная</a>
-                    <span class="active">компания</span>
+                    <a href="{{ route('client.index') }}">@lang('client.menu.index')</a>
+                    <span class="active">@lang('client.menu.company')</span>
                 </div>
-                <h1 class="page-title">компания</h1>
+                <h1 class="page-title">@lang('client.menu.company')</h1>
             </div>
         </div>
     </div>
@@ -85,20 +85,11 @@
                 </div>
 
                 <div class="team-text align-bottom">
-                    <h2 class="section-header yellow-color">наша команда</h2>
+                    <h2 class="section-header yellow-color">@lang('client.about.our_team')</h2>
 
                     <div class="info-block-cont">
                         <div class="text-cont black-color">
-                            <p>
-                            <span>
-                                Наши дизайны умеют восхищать, вдохновлять, продавать и приносить прибыль.
-                                Мы создаем дизайны, которыми люди хотят пользоваться.
-                            </span>
-                            </p>
-                            <p>
-                                Чтобы дизайн был эффективным с точки зрения бизнеса, он должен вызывать эмоции.
-                                Мы очень хорошо в этом разбираемся. Убедитесь сами.
-                            </p>
+                            @lang('client.about.our_team_text')
                         </div>
                     </div>
 
@@ -324,7 +315,7 @@
 
                 <div class="send-sv-cont">
                     <a href="/" class="skew-right gl-transparent-btn send-sv-btn order-form-btn">
-                        <span class="skew-left">отправить резюме</span>
+                        <span class="skew-left">@lang('client.about.send_cv')</span>
                     </a>
                 </div>
             </div>
@@ -338,25 +329,16 @@
             <div class="row info-block-cont">
                 <div class="col-md-6 title-cont">
                     <h3 class="title">
-                        Мы больше чем студия
+                        @lang('client.about.we_fat')
                     </h3>
                 </div>
                 <div class="col-md-6 text-cont">
-                    <p>
-                        <span>
-                            Наши дизайны умеют восхищать, вдохновлять, продавать и приносить прибыль.
-                            Мы создаем дизайны, которыми люди хотят пользоваться.
-                        </span>
-                    </p>
-                    <p class="for-read-more">
-                        Чтобы дизайн был эффективным с точки зрения бизнеса, он должен вызывать эмоции.
-                        Мы очень хорошо в этом разбираемся. Убедитесь сами.
-                    </p>
-                    <span class="read-more-btn">читать дальше...</span>
+                    @lang('client.about.we_fat_text')
+                    <span class="read-more-btn">@lang('client.about.read_more')...</span>
                 </div>
             </div>
 
-            <h3 class="section-header white-color">наши хобби</h3>
+            <h3 class="section-header white-color">@lang('client.about.our_hobby')</h3>
 
             <div class="hobby-icons-cont">
                 <div class="hobby-item-cont">
