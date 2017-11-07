@@ -49,27 +49,27 @@
                     <div class="row">
                         @foreach($serviceCategories as $key =>  $serviceCategory)
                             @php($count = $key + 1)
-                        <div class="col-sm-6 col-lg-3 service-item">
-                            <a class="link-to-service" href="/services#category-{{ $count }}">
+                            <div class="col-sm-6 col-lg-3 service-item">
+                                <a class="link-to-service" href="/services#category-{{ $count }}">
                             <span class="icon-cont">
                                 <i class="icon icon-service-{{ $count }}"></i>
                                 <i class="icon icon-hover icon-service-{{ $count }}-hover"></i>
                             </span>
-                            </a>
-                            <h2 class="service-item-title">
-                                <a class="link-to-service" href="/services#category-{{ $count }}">
-                                    {{ $serviceCategory->{'title' . $langSuf} }}
                                 </a>
-                            </h2>
-                            <hr class="inclined-line">
-                            <ul class="service-item-list">
-                                @foreach($serviceCategory->services as $service)
-                                <li>
-                                    <a href="{{ route('client.services.show', ['service' => $service->slug]) }}">{{ $service->{'title' . $langSuf} }}</a>
-                                </li>
-                                @endforeach
-                            </ul>
-                        </div>
+                                <h2 class="service-item-title">
+                                    <a class="link-to-service" href="/services#category-{{ $count }}">
+                                        {{ $serviceCategory->{'title' . $langSuf} }}
+                                    </a>
+                                </h2>
+                                <hr class="inclined-line">
+                                <ul class="service-item-list">
+                                    @foreach($serviceCategory->services as $service)
+                                        <li>
+                                            <a href="{{ route('client.services.show', ['service' => $service->slug]) }}">{{ $service->{'title' . $langSuf} }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
                         @endforeach
                     </div>
                 </div>
@@ -94,12 +94,12 @@
                             <!--<img src="/images/index/infographic-1.png" alt="infographic-photo">-->
                             <!--</div>-->
                             <div class="canvas-cont">
-                                <canvas class="circle-diagram" width="300" height="300" data-percents="73"></canvas>
+                                <canvas class="circle-diagram" width="300" height="300" data-percents="{{ setting('site.main_percent_left') }}"></canvas>
                             </div>
                         </div>
                         <div class="right-block">
                             <p class="achievment-info">
-                                @lang('client.index.fr_achiev_text')
+                                @lang('client.index.fr_achiev_text', ['count' => setting('site.main_percent_left')])
 
                             </p>
                         </div>
@@ -109,12 +109,12 @@
                     <div class="achievment-item">
                         <div class="left-block">
                             <div class="canvas-cont">
-                                <canvas class="circle-diagram" width="300" height="300" data-percents="92"></canvas>
+                                <canvas class="circle-diagram" width="300" height="300" data-percents="{{ setting('site.main_percent_right') }}"></canvas>
                             </div>
                         </div>
                         <div class="right-block">
                             <p class="achievment-info">
-                                @lang('client.index.sc_achiev_text')
+                                @lang('client.index.sc_achiev_text', ['count' => setting('site.main_percent_left')])
                             </p>
                         </div>
                     </div>
@@ -201,11 +201,12 @@
         <!-- end of about-us -->
     </section>
     {{--//= template/our-materials.html--}}
-    @include('client.template.our-materials')
+    {{--@include('client.template.our-materials')--}}
+    @widget('OurMaterial')
 @stop
 
 @section('page-scripts')
-<!-- scriots only this on page -->
-<script src="/js/index.js"></script>
-<!-- only this page -->
+    <!-- scriots only this on page -->
+    <script src="/js/index.js"></script>
+    <!-- only this page -->
 @stop

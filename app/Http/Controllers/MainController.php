@@ -8,6 +8,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
 use App\ServiceCategory;
 use TCG\Voyager\Models\Page;
 
@@ -17,12 +18,13 @@ class MainController extends Controller
     {
         $page = Page::where('slug', '')->first();
         $serviceCategories = ServiceCategory::with('services')->get();
+        $posts = Post::with('author')->with('category')->get()->sortBy('created_at')->take(3);
 
         if ($page != null) {
-
             return view('client.index', [
                 'page' => $page,
-                'serviceCategories' => $serviceCategories
+                'serviceCategories' => $serviceCategories,
+                'posts' => $posts
             ]);
         } else {
             return abort(404);

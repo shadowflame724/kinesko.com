@@ -3378,6 +3378,8 @@ footer {
       color: #000;
       font-family: "MuseoSansCyrl900", sans-serif; }
   #blog-materials .blog-material .blog-container .blog-material-cont .flexslider {
+    position: relative;
+    overflow: hidden;
     margin: 35px 0;
     border: none; }
     @media all and (max-width: 768px) {
@@ -3389,23 +3391,23 @@ footer {
       margin: 0; }
       #blog-materials .blog-material .blog-container .blog-material-cont .flexslider ul li:before, #blog-materials .blog-material .blog-container .blog-material-cont .flexslider ol li:before {
         all: unset; }
+    #blog-materials .blog-material .blog-container .blog-material-cont .flexslider .share-btn {
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      left: -15px; }
+      #blog-materials .blog-material .blog-container .blog-material-cont .flexslider .share-btn .gl-yellow-btn {
+        margin: 0;
+        width: 200px;
+        max-width: 100%;
+        border-right: 5px solid #fff;
+        border-bottom: 5px solid #fff;
+        font-size: 16px;
+        font-family: "MuseoSansCyrl900", sans-serif; }
     #blog-materials .blog-material .blog-container .blog-material-cont .flexslider .slides {
       margin: 0;
       position: relative;
       overflow-x: hidden; }
-      #blog-materials .blog-material .blog-container .blog-material-cont .flexslider .slides .share-btn {
-        position: absolute;
-        z-index: 5;
-        top: 0;
-        left: -15px; }
-        #blog-materials .blog-material .blog-container .blog-material-cont .flexslider .slides .share-btn .gl-yellow-btn {
-          margin: 0;
-          width: 200px;
-          max-width: 100%;
-          border-right: 5px solid #fff;
-          border-bottom: 5px solid #fff;
-          font-size: 16px;
-          font-family: "MuseoSansCyrl900", sans-serif; }
     #blog-materials .blog-material .blog-container .blog-material-cont .flexslider .flex-control-nav {
       bottom: 0; }
     #blog-materials .blog-material .blog-container .blog-material-cont .flexslider .flex-control-thumbs li {
@@ -4276,6 +4278,13 @@ footer {
   @media all and (max-width: 768px) {
     #search-result .search-title {
       font-size: 24px; } }
+
+#search-result .result-text {
+  margin: 15px 0;
+  font-size: 22px;
+  font-family: "MuseoSansCyrl900", sans-serif;
+  text-transform: uppercase;
+  color: #000; }
 
 #search-result .search-result-form {
   margin: 30px; }

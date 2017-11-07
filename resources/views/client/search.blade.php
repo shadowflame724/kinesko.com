@@ -83,6 +83,9 @@
                                 container (that is used on blog pages). You should only to determine (when get search
                                 result from data base) - which information for block is necessary or unnecessary !!!)
                              -->
+                            @if($results->isEmpty())
+                            <p class="result-text">По вашему запросу ничего не найдено</p>
+                            @else
 
                             @foreach($results as $result)
                                 @php
@@ -194,6 +197,7 @@
                                     @break
                                 @endswitch
                             @endforeach
+                                @endif
                         </div>
                     </div>
 
