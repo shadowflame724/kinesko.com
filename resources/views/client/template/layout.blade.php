@@ -26,7 +26,7 @@
 @yield('page-scripts')
 
 <!-- start scripts from admin panel (Jivasite etc.) -->
-{{--{!! setting('site.scripts') !!}--}}
+{!! setting('site.scripts') !!}
 <!-- end scripts from admin panel -->
 
 </body>

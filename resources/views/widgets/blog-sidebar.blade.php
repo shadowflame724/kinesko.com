@@ -18,9 +18,10 @@
 
     <div class="our-works-blog">
         @foreach($portfolio as $value)
-        <div class="portfolio-item">
-            <a href="{{ route('client.portfolio.show', ['category' => $value->category->slug, 'portfolio' => $value->slug]) }}" class="link-to-portfolio"></a>
-        </div>
+            <div class="portfolio-item">
+                <a href="{{ route('client.portfolio.show', ['category' => $value->category->slug, 'portfolio' => $value->slug]) }}"
+                   class="link-to-portfolio" style="background-image: url('/storage/{{ $value->image_thumb }}')"></a>
+            </div>
         @endforeach
     </div>
 

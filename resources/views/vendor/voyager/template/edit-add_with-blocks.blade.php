@@ -746,7 +746,7 @@
                 skin: 'voyager',
                 min_height: 200,
                 resize: 'vertical',
-                plugins: 'link image code youtube giphy table textcolor lists paste',
+                plugins: 'link image code youtube giphy table textcolor lists paste template',
                 extended_valid_elements: 'input[id|name|value|type|class|style|required|placeholder|autocomplete|onclick]',
                 file_browser_callback: function (field_name, url, type, win) {
                     if (type == 'image') {
@@ -805,12 +805,46 @@
                         }
                     });
                 },
-                toolbar: 'styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table youtube giphy | code | readMoreButton',
+                toolbar: 'styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table youtube giphy | code | readMoreButton | template',
                 image_caption: true,
                 image_title: true,
                 forced_root_block: false,
                 paste_text_sticky: true,
-                paste_text_sticky_default: true
+                paste_text_sticky_default: true,
+                templates: [
+                    {title: 'Миниатюки', description: 'Miniatures', content: '<div class="service-pictures-cont">\n' +
+                    '                            <div class="service-picture-cont">\n' +
+                    '                                <div class="picture">\n' +
+                    '                                    <img src="/images/service-material/service-pict-1.png" alt="service-picture">\n' +
+                    '                                </div>\n' +
+                    '                                <p class="text">Команда талантливых специалистов</p>\n' +
+                    '                            </div>\n' +
+                    '                            <div class="service-picture-cont">\n' +
+                    '                                <div class="picture">\n' +
+                    '                                    <img src="/images/service-material/service-pict-2.png" alt="service-picture">\n' +
+                    '                                </div>\n' +
+                    '                                <p class="text">Качественная графика</p>\n' +
+                    '                            </div>\n' +
+                    '                            <div class="service-picture-cont">\n' +
+                    '                                <div class="picture">\n' +
+                    '                                    <img src="/images/service-material/service-pict-3.png" alt="service-picture">\n' +
+                    '                                </div>\n' +
+                    '                                <p class="text">Доступная цена</p>\n' +
+                    '                            </div>\n' +
+                    '                            <div class="service-picture-cont">\n' +
+                    '                                <div class="picture">\n' +
+                    '                                    <img src="/images/service-material/service-pict-4.png" alt="service-picture">\n' +
+                    '                                </div>\n' +
+                    '                                <p class="text">Многолетний опыт</p>\n' +
+                    '                            </div>\n' +
+                    '                            <div class="service-picture-cont">\n' +
+                    '                                <div class="picture">\n' +
+                    '                                    <img src="/images/service-material/service-pict-1.png" alt="service-picture">\n' +
+                    '                                </div>\n' +
+                    '                                <p class="text">Команда талантливых специалистов</p>\n' +
+                    '                            </div>\n' +
+                    '                        </div>'}
+                ]
             });
             tinymce.init({
                 menubar: false,
