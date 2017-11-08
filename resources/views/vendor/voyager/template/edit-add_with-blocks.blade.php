@@ -837,12 +837,6 @@
                     '                                </div>\n' +
                     '                                <p class="text">Многолетний опыт</p>\n' +
                     '                            </div>\n' +
-                    '                            <div class="service-picture-cont">\n' +
-                    '                                <div class="picture">\n' +
-                    '                                    <img src="/images/service-material/service-pict-1.png" alt="service-picture">\n' +
-                    '                                </div>\n' +
-                    '                                <p class="text">Команда талантливых специалистов</p>\n' +
-                    '                            </div>\n' +
                     '                        </div>'}
                 ]
             });
