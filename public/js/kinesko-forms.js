@@ -5,36 +5,35 @@
 
 'use strict';
 
-;(function ($, window, document, undefined) {
-    $('.inputfile').each(function () {
-        var $input = $(this),
-            $label = $input.next('label'),
-            labelVal = $label.html();
+;( function( $, window, document, undefined )
+{
+	$( '.inputfile' ).each( function()
+	{
+		var $input	 = $( this ),
+			$label	 = $input.next( 'label' ),
+			labelVal = $label.html();
 
-        $input.on('change', function (e) {
-            var fileName = '';
+		$input.on( 'change', function( e )
+		{
+			var fileName = '';
 
-            if (this.files && this.files.length > 1)
-                fileName = ( this.getAttribute('data-multiple-caption') || '' ).replace('{count}', this.files.length);
-            else if (e.target.value)
-                fileName = e.target.value.split('\\').pop();
+			if( this.files && this.files.length > 1 )
+				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			else if( e.target.value )
+				fileName = e.target.value.split( '\\' ).pop();
 
-            if (fileName)
-                $label.find('span').html(fileName);
-            else
-                $label.html(labelVal);
-        });
+			if( fileName )
+				$label.find( 'span' ).html( fileName );
+			else
+				$label.html( labelVal );
+		});
 
-        // Firefox bug fix
-        $input
-            .on('focus', function () {
-                $input.addClass('has-focus');
-            })
-            .on('blur', function () {
-                $input.removeClass('has-focus');
-            });
-    });
-})(jQuery, window, document);
+		// Firefox bug fix
+		$input
+		.on( 'focus', function(){ $input.addClass( 'has-focus' ); })
+		.on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
+	});
+})( jQuery, window, document );
 (function (e, t, n) {
     var r = e.querySelectorAll("html")[0];
     r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2")
@@ -58,7 +57,7 @@ function kineskoFormShow(kineskoForm) {
 function kineskoFormHide(kineskoForm) {
     $(kineskoForm).removeClass("active").fadeOut(400);
 
-    if (!$("header").hasClass("active")) {
+    if(!$("header").hasClass("active")) {
         // check if the header is not active - avoid dual deactivation of body scroll
         $("html, body").removeClass("scroll-lock");
     }
@@ -76,7 +75,6 @@ function successFormShow() {
         clearTimeout(successFormTimer);
     }, timeToShow);
 }
-
 //------------   end OF GLOBAL VARIABLES AND FUNCTIONS   -------------
 
 // start of order-form logic
@@ -95,13 +93,16 @@ $(function () {
         kineskoFormHide(orderForm);
     });
 
-    $('.order-form').ajaxForm({
-        url: "/api/order-store", //путь до php фаила отправителя,
+    // form-handler
+
+    $(orderForm).ajaxForm({
+        url: "/api/order-store", // путь к обработчику
         type: "POST", //Метод отправки
         success: function () {
             //код в этом блоке выполняется при успешной отправке сообщения
             // alert("Ваше сообщение отправлено!");
             orderForm.reset();
+            $(".order-form .add-file-cont label span").text("+ Добавить файл");
             successFormShow();
             kineskoFormHide(orderForm);
         },
@@ -110,11 +111,10 @@ $(function () {
         }
     });
 
-
-    function modalClose(e) {
-        if (e.keyCode === 27) {
+    function modalClose (e) {
+        if ( e.keyCode === 27 ) {
             // close forms on ESC
-            if ($(orderForm).hasClass("active")) {
+            if($(orderForm).hasClass("active")) {
                 kineskoFormHide(orderForm);
             }
         }
@@ -143,12 +143,12 @@ $(function () {
     });
 
     // form-handler
-    $(callbackForm).submit(function (event) { //устанавливаем событие отправки для формы
+    $(callbackForm).submit(function(event) { //устанавливаем событие отправки для формы
         event.preventDefault();
         var form_data = $(this).serialize(); //собераем все данные из формы
         $.ajax({
             type: "POST", //Метод отправки
-            url: "/api/callback-store", //путь до php фаила отправителя
+            url: "/api/callback-store", // путь к обработчику
             data: form_data,
             success: function () {
                 //код в этом блоке выполняется при успешной отправке сообщения
@@ -163,10 +163,10 @@ $(function () {
         });
     });
 
-    function modalClose(e) {
-        if (e.keyCode === 27) {
+    function modalClose (e) {
+        if ( e.keyCode === 27 ) {
             // close forms on ESC
-            if ($(callbackForm).hasClass("active")) {
+            if($(callbackForm).hasClass("active")) {
                 kineskoFormHide(callbackForm);
             }
         }
@@ -181,12 +181,12 @@ $(function () {
     var blogSubscribeForm = document.querySelector(".blog-subscribe-form");
 
     // form-handler
-    $(blogSubscribeForm).submit(function (event) { //устанавливаем событие отправки для формы
+    $(blogSubscribeForm).submit(function(event) { //устанавливаем событие отправки для формы
         event.preventDefault();
         var form_data = $(this).serialize(); //собераем все данные из формы
         $.ajax({
             type: "POST", //Метод отправки
-            url: "/api/subscription-store", //путь до php фаила отправителя
+            url: "/api/subscription-store", // путь к обработчику
             data: form_data,
             success: function () {
                 //код в этом блоке выполняется при успешной отправке сообщения
@@ -218,10 +218,10 @@ $(function () {
         }
     });
 
-    function modalClose(e) {
-        if (e.keyCode === 27) {
+    function modalClose (e) {
+        if ( e.keyCode === 27 ) {
             // close forms on ESC
-            if ($(successForm).hasClass("active")) {
+            if($(successForm).hasClass("active")) {
                 kineskoFormHide(successForm);
             }
         }
@@ -232,14 +232,14 @@ $(function () {
 // end of of success-form logic
 
 $(function () {
-    $("body").click(function (event) {
+    $("body").click(function(event) {
         // if($(kineskoForms).hasClass("active")) {
         //     alert("YES!");
         // }
-        if (!$(event.target).closest($(".gl-container")).length &&
+        if(!$(event.target).closest($(".gl-container")).length &&
             $(kineskoForms).hasClass("active")) {
-            event.preventDefault();
-            kineskoFormHide(kineskoForms);
+                event.preventDefault();
+                kineskoFormHide(kineskoForms);
         }
     });
 });

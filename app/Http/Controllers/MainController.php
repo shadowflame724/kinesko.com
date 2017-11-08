@@ -20,14 +20,12 @@ class MainController extends Controller
         $page = Page::where('slug', '')->first();
         $serviceCategories = ServiceCategory::with('services')->get();
         $posts = Post::with('author')->with('category')->orderBy('created_at', 'DESC')->limit(3)->get();
-        $mainWork = Portfolio::where('on_main_page', '1')->with('category')->inRandomOrder()->limit(1)->first();
 
         if ($page != null) {
             return view('client.index', [
                 'page' => $page,
                 'serviceCategories' => $serviceCategories,
                 'posts' => $posts,
-                'mainWork' => $mainWork
             ]);
         } else {
             return abort(404);

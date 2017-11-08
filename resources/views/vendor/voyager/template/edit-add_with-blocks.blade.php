@@ -675,7 +675,7 @@
 
 @section('javascript')
     <!-- Latest Sortable -->
-    <script src="//rubaxa.github.io/Sortable/Sortable.js"></script>
+    <script src="/js/libs/Sortable.js"></script>
     <script>
         var params = {}
         var $image

@@ -212,7 +212,7 @@
 @section('page-scripts')
 <!-- black Google maps, via API, starts -->
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxp0_tlV4Dc7H80AVmFWO4yEVoeQckEpI"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxp0_tlV4Dc7H80AVmFWO4yEVoeQckEpI&language={{ LaravelLocalization::getCurrentLocale() }}"></script>
 <!-- black Google maps, via API, ends-->
 
 <!-- OwlCarousel -->

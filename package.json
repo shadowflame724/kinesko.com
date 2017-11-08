@@ -45,6 +45,6 @@
     "gulp": "^3.9.1",
     "gulp-stylus": "^2.6.0",
     "gulp.spritesmith": "^6.2.1",
-    "sortablejs": "^1.6.1"
+    "sortablejs": "^1.7.0"
   }
 }
