@@ -67,6 +67,7 @@ class BlogController extends Controller
 
     public function author($slug)
     {
+        $page = Page::where('slug', 'blog')->first();
         $user = User::where('slug', $slug)->first();
         $posts = Post::where('author_id', $user->id)->with('category')->paginate(setting('site.pagination_length'));
 
@@ -81,6 +82,7 @@ class BlogController extends Controller
                 'commonViews' => $commonViews,
                 'commonRating' => $commonRating,
                 'commonVotes' => $commonVotes,
+                'page' => 'page'
             ]);
         } else {
             return abort(404);

@@ -155,13 +155,12 @@ To design was effective from the point of view of business, it must evoke emotio
         'we_fat' => 'We are more than a studio',
         'we_fat_text' => '<p>
                             <span>
-Our designs are able to admire, inspire, sell and make a profit.
-                                We create designs that people want to use.
+We are a team of professionals who have implemented more than 100 successful projects. Among us there are experts in the field of animation and computer graphics, scriptwriters, marketers, directors and sound engineers.                        </span>
                             </span>
                             </p>
                             <p>
-To design was effective from the point of view of business, it must evoke emotions.
-                                We are very good at this. See for yourself.
+The company KINESKO specializes in creating various types of video, animation and computer graphics, post-production and marketing promotion. Turning to us, you can be sure of the final creative and commercial success. Our task is to translate your fantasies into reality. Choosing KINESKO, you choose the right option.
+
                             </p>',
         'read_more' => 'read more',
         'our_hobby' => 'our hobby'

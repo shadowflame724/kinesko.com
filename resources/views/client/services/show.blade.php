@@ -1,6 +1,8 @@
 @extends('client.template.layout')
 
-@section('page-title', $service->{'title' . $langSuf})
+@section('page-title', $service->{'seo_title' . $langSuf})
+@section('page-description', $service->{'meta_description' . $langSuf})
+@section('page-keywords', $service->{'meta_keywords' . $langSuf})
 
 @section('content')
 

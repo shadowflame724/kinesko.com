@@ -1,6 +1,8 @@
 @extends('client.template.layout')
 
-@section('page-title', 'Kinesko - блог')
+@section('page-title', $post->{'seo_title' . $langSuf})
+@section('page-description', $post->{'meta_description' . $langSuf})
+@section('page-keywords', $post->{'meta_keywords' . $langSuf})
 
 @section('page-style')
     <link rel="stylesheet" href="/css/libs/star-rating.css"> <!-- star-rating.css -->

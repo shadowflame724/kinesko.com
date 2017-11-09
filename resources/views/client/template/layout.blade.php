@@ -6,6 +6,8 @@
     <title>
     @yield('page-title')
     </title>
+    <meta name="description" content="@yield('page-description')">
+    <meta name="keywords" content="@yield('page-keywords')">
 
     @yield('page-style')
 @php($langSuf =  \Mcamara\LaravelLocalization\Facades\LaravelLocalization::getCurrentLocale() )

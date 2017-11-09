@@ -1,6 +1,8 @@
 @extends('client.template.layout')
 
-@section('page-title', $page->{'title' . $langSuf})
+@section('page-title', $page->{'seo_title' . $langSuf})
+@section('page-description', $page->{'meta_description' . $langSuf})
+@section('page-keywords', $page->{'meta_keywords' . $langSuf})
 
 @section('content')
 
@@ -28,7 +30,7 @@
 
                                 <div class="slide-links">
                                     <hr class="inclined-line">
-                                    @foreach($category->services as $service)
+                                    @foreach($category->services->where('on_main_page', 1)->slice(0,7) as $service)
                                         <a href="{{ route('client.services.show', ['service' => $service->slug]) }}">{{ $service->{'title' . $langSuf} }}</a>
                                     @endforeach
                                 </div>
@@ -96,7 +98,7 @@
                                     <li>
                                         <a href="{{ route('client.services.show', ['service' => $service->slug]) }}">{{  $service->{'title' . $langSuf} }}</a>
                                     </li>
-                                    @endforeach
+                                @endforeach
                             </ul>
                         </div>
                     </div>

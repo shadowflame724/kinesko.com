@@ -1,6 +1,8 @@
 @extends('client.template.layout')
 
-@section('page-title', 'Kinesko - блог')
+@section('page-title', $portfolio->{'seo_title' . $langSuf})
+@section('page-description', $portfolio->{'meta_description' . $langSuf})
+@section('page-keywords', $portfolio->{'meta_keywords' . $langSuf})
 
 @section('page-style')
     <link rel="stylesheet" href="/css/libs/star-rating.css"> <!-- star-rating.css -->
@@ -11,6 +13,7 @@
 <!-- start of portfolio-material -->
 <section id="portfolio-material">
     <div class="main-top-container bg-cont" style="background-image: url('/storage/{{ $portfolio->image }}');">
+        <div class="dark-mask"></div>
         <div class="container">
             <div class="page-head">
                 <div class="bread-crumbs">
