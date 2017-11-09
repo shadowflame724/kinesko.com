@@ -23,11 +23,11 @@ class BlogController extends Controller
         $categoryId = null;
 
         if ($categorySlug == null) {
-            $posts = Post::with('author')->with('category')->paginate(setting('site.pagination_length'));
+            $posts = Post::with('author')->with('category')->orderBy('created_at', 'DESC')->paginate(setting('site.pagination_length'));
         } else {
             $category = PostCategory::where('slug', $categorySlug)->first();
             $categoryId = $category->id;
-            $posts = Post::where('category_id', $categoryId)->with('author')->with('category')->paginate(setting('site.pagination_length'));
+            $posts = Post::where('category_id', $categoryId)->with('author')->with('category')->orderBy('created_at', 'DESC')->paginate(setting('site.pagination_length'));
         }
 
         if ($page != null) {
@@ -69,7 +69,7 @@ class BlogController extends Controller
     {
         $page = Page::where('slug', 'blog')->first();
         $user = User::where('slug', $slug)->first();
-        $posts = Post::where('author_id', $user->id)->with('category')->paginate(setting('site.pagination_length'));
+        $posts = Post::where('author_id', $user->id)->with('category')->orderBy('created_at', 'DESC')->paginate(setting('site.pagination_length'));
 
         $commonViews = $user->posts->sum('views');
         $commonRating = $user->posts->sum('rating');

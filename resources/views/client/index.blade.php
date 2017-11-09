@@ -67,7 +67,7 @@
                                 </h2>
                                 <hr class="inclined-line">
                                 <ul class="service-item-list">
-                                    @foreach($serviceCategory->services->where('on_main_page', 1) as $service)
+                                    @foreach($serviceCategory->services->where('on_main_page', 1)->slice(0,10) as $service)
                                         <li>
                                             <a href="{{ route('client.services.show', ['service' => $service->slug]) }}">{{ $service->{'title' . $langSuf} }}</a>
                                         </li>

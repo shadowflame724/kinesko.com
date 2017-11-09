@@ -23,11 +23,11 @@ class PortfolioController extends Controller
         $categoryId = null;
 
         if ($categorySlug == null) {
-            $portfolio = Portfolio::with('category')->get();
+            $portfolio = Portfolio::with('category')->orderBy('created_at', 'DESC')->get();
         } else {
             $category = ServiceCategory::where('slug', $categorySlug)->first();
             $categoryId = $category->id;
-            $portfolio = Portfolio::where('category_id', $categoryId)->with('category')->get();
+            $portfolio = Portfolio::where('category_id', $categoryId)->with('category')->orderBy('created_at', 'DESC')->get();
         }
 
         if ($page != null) {
