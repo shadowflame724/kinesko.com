@@ -23,11 +23,11 @@ class BlogController extends Controller
         $categoryId = null;
 
         if ($categorySlug == null) {
-            $posts = Post::with('author')->with('category')->paginate(15);
+            $posts = Post::with('author')->with('category')->paginate(setting('site.pagination_length'));
         } else {
             $category = PostCategory::where('slug', $categorySlug)->first();
             $categoryId = $category->id;
-            $posts = Post::where('category_id', $categoryId)->with('author')->with('category')->paginate(15);
+            $posts = Post::where('category_id', $categoryId)->with('author')->with('category')->paginate(setting('site.pagination_length'));
         }
 
         if ($page != null) {
@@ -82,7 +82,7 @@ class BlogController extends Controller
                 'commonViews' => $commonViews,
                 'commonRating' => $commonRating,
                 'commonVotes' => $commonVotes,
-                'page' => 'page'
+                'page' => $page
             ]);
         } else {
             return abort(404);
