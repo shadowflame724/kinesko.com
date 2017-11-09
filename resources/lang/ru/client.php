@@ -137,6 +137,18 @@ return [
         'get_directions' => 'проложить маршрут',
         'write_letter' => 'напишите нам письмо'
     ],
+    'search' => [
+        'results' => 'Результаты поиска по запросу',
+        'in_header' => 'в заголовке',
+        'in_text' => 'в тексте',
+        'search' => 'поиск',
+        'not_found' => 'По вашему запросу ничего не найдено',
+        'choice_category' => 'Выберите категорию',
+        'all' => 'Все',
+        'services' => 'Услуги',
+        'blog' => 'Блог',
+        'portfolio' => 'Портфолио'
+    ],
     'about' => [
         'our_team' => 'НАША КОМАНДА',
         'our_team_text' => '<p>

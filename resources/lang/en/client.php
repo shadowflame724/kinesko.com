@@ -139,6 +139,18 @@ We believe that stamping the same logos, corporate styles, websites - this,
         'get_directions' => 'get directions',
         'write_letter' => 'write us a letter'
     ],
+    'search' => [
+        'results' => 'SEARCH RESULTS BY REQUEST',
+        'in_header' => 'Moscow',
+        'in_text' => 'get directions',
+        'search' => 'search',
+        'not_found' => 'Nothing found on your request',
+        'choice_category' => 'choice category',
+        'all' => 'all',
+        'services' => 'services',
+        'blog' => 'blog',
+        'portfolio' => 'portfolio'
+    ],
     'about' => [
         'our_team' => 'OUR TEAM',
         'our_team_text' => '<p>

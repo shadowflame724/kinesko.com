@@ -1,8 +1,8 @@
 @extends('client.template.layout')
 
-@section('page-title', $page->{'seo_title' . $langSuf})
-@section('page-description', $page->{'meta_description' . $langSuf})
-@section('page-keywords', $page->{'meta_keywords' . $langSuf})
+@section('page-title', $pageInfo->{'seo_title' . $langSuf})
+@section('page-description', $pageInfo->{'meta_description' . $langSuf})
+@section('page-keywords', $pageInfo->{'meta_keywords' . $langSuf})
 
 @section('page-style')
     <link rel="stylesheet" href="/css/libs/star-rating.css"> <!-- star-rating.css -->
@@ -16,7 +16,7 @@
             <!--<div class="dark-mask"></div>-->
             <div class="container">
                 <div class="page-head">
-                    <p class="search-title">Результаты поиска по запросу</p>
+                    <p class="search-title">@lang('client.search.results')</p>
                     <h1 class="page-title">"{{ $query }}"</h1>
                 </div>
 
@@ -36,7 +36,7 @@
                                 <div class="input-box-wrapper text-box-wrapper">
                                     <div class="input-box">
                                         <input type="text" name="query" required="required" class="search-text"
-                                               @if(isset($query)) value="{{$query}}" @else placeholder="Поиск"
+                                               @if(isset($query)) value="{{$query}}" @else placeholder="@lang('client.search.search')"
                                                @endif tabindex="1">
                                     </div>
                                 </div>
@@ -44,11 +44,11 @@
                                 <div class="input-box-wrapper category-box-wrapper">
                                     <div class="input-box">
                                         <select name="category" class="search-category" tabindex="4">
-                                            <option value disabled>Выберите категорию</option>
-                                            <option value="all" selected>Все</option>
-                                            <option value="portfolio">Портфолио</option>
-                                            <option value="blog">Блог</option>
-                                            <option value="services">Услуги</option>
+                                            <option value disabled>@lang('client.search.choice_category')</option>
+                                            <option value="all" selected>@lang('client.search.all')</option>
+                                            <option value="portfolio">@lang('client.search.portfolio')</option>
+                                            <option value="blog">@lang('client.search.blog')</option>
+                                            <option value="services">@lang('client.search.services')</option>
                                         </select>
                                         <!--<div class="fake-block"></div>-->
                                     </div>
@@ -58,19 +58,19 @@
                                     <div class="checkbox-item">
                                         <input id="checkbox-in-header" type="checkbox" name="search-condition"
                                                value="in-header" tabindex="2">
-                                        <label for="checkbox-in-header"><span>в заголовке</span></label>
+                                        <label for="checkbox-in-header"><span>@lang('client.search.in_header')</span></label>
                                     </div>
                                     <div class="checkbox-item">
                                         <input id="checkbox-in-text" type="checkbox" name="search-condition"
                                                value="in-text" checked="checked" tabindex="3">
-                                        <label for="checkbox-in-text"><span>в тексте</span></label>
+                                        <label for="checkbox-in-text"><span>@lang('client.search.in_text')</span></label>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="right-cont">
                                 <button type="submit" class="skew-right gl-yellow-btn search-submit-btn" tabindex="3">
-                                    <span class="skew-left">поиск</span>
+                                    <span class="skew-left">@lang('client.search.search')</span>
                                 </button>
                             </div>
 
@@ -86,7 +86,7 @@
                                 result from data base) - which information for block is necessary or unnecessary !!!)
                              -->
                             @if($results->isEmpty())
-                            <p class="result-text">По вашему запросу ничего не найдено</p>
+                            <p class="result-text">@lang('client.search.not_found')</p>
                             @else
 
                             @foreach($results as $result)

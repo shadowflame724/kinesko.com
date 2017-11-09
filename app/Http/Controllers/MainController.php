@@ -9,7 +9,6 @@
 namespace App\Http\Controllers;
 
 use App\Post;
-use App\Portfolio;
 use App\ServiceCategory;
 use TCG\Voyager\Models\Page;
 

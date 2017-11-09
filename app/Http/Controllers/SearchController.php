@@ -17,6 +17,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Input;
+use TCG\Voyager\Models\Page;
 
 class SearchController extends Controller
 {
@@ -29,6 +30,7 @@ class SearchController extends Controller
             'services' => []
         ];
 
+        $pageInfo = Page::where('slug', 'search')->first();
 
         $query = Input::get('query');
         $category = Input::get('category');
@@ -246,6 +248,6 @@ class SearchController extends Controller
         $resultsForCurrentPage = $allResults->forPage($page, $perPage)->shuffle();
         $results = new LengthAwarePaginator($resultsForCurrentPage, count($allResults), $perPage, $page, ['path' => $request->url()]);
 
-        return view('client.search', compact('results', 'query'));
+        return view('client.search', compact('results', 'query', 'pageInfo'));
     }
 }
