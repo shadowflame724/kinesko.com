@@ -1,291 +1,2125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 	<url>
-	<loc>http://test.kinesko.com.local/contacts</loc>
+	<loc>https://localhost/contacts.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:22:04+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/contacts</loc>
+	<loc>https://localhost/en/contacts.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:22:04+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/company</loc>
+	<loc>https://localhost/company.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:21:25+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/company</loc>
+	<loc>https://localhost/en/company.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:21:25+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog</loc>
+	<loc>https://localhost/blog.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:20:39+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog</loc>
+	<loc>https://localhost/en/blog.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:20:39+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/portfolio</loc>
+	<loc>https://localhost/portfolio.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:19:55+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/portfolio</loc>
+	<loc>https://localhost/en/portfolio.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:19:55+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/services</loc>
+	<loc>https://localhost/services.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:19:04+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/services</loc>
+	<loc>https://localhost/en/services.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:19:04+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local</loc>
+	<loc>https://localhost/.html</loc>
 		<priority>1</priority>
 		<lastmod>2017-10-23T15:18:10+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en</loc>
+	<loc>https://localhost/en/.html</loc>
 		<priority>1</priority>
 		<lastmod>2017-10-23T15:18:10+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local</loc>
+	<loc>https://localhost/.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:18:10+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en</loc>
+	<loc>https://localhost/en/.html</loc>
 		<priority>0.9</priority>
 		<lastmod>2017-10-23T15:18:10+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya</loc>
+	<loc>https://localhost/search.html</loc>
+		<priority>0.9</priority>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/search.html</loc>
+		<priority>0.9</priority>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T14:08:13+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya</loc>
+	<loc>https://localhost/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T14:08:13+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/sadasdasd5</loc>
-		<priority>0.6</priority>
-		<lastmod>2017-11-02T11:19:19+03:00</lastmod>
+	<loc>https://localhost/services/mediaplanirovanie.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-06T15:02:33+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyasadasdasd5</loc>
-		<priority>0.6</priority>
-		<lastmod>2017-11-02T11:19:19+03:00</lastmod>
+	<loc>https://localhost/en/services/mediaplanirovanie.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-06T15:02:33+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/test_slider</loc>
-		<priority>0.6</priority>
-		<lastmod>2017-11-02T17:48:16+03:00</lastmod>
+	<loc>https://localhost/services/instagram-smm.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:18+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyatest_slider</loc>
-		<priority>0.6</priority>
-		<lastmod>2017-11-02T17:48:16+03:00</lastmod>
+	<loc>https://localhost/en/services/instagram-smm.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:18+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/portfolio/sozdanie-igr</loc>
+	<loc>https://localhost/services/facebook-smm.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:28+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/facebook-smm.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:28+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/creative-concept.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:02:53+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/creative-concept.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:02:53+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/social-media-marketing.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:03:23+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/social-media-marketing.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:03:23+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/youtube-promotion.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:07:29+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/youtube-promotion.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:07:29+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/radio-screenplay.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T15:29:28+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/radio-screenplay.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T15:29:28+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/documentary-screenplay.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T15:27:59+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/documentary-screenplay.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T15:27:59+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/multimedia-presentation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:08:59+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/multimedia-presentation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:08:59+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/adaptacia-reklami.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:13:55+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/adaptacia-reklami.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:13:55+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/scenariy-korporativnogo-filma.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:15:06+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/scenariy-korporativnogo-filma.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:15:06+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/sozdanie-reklamnih-sloganov.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:15:42+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/sozdanie-reklamnih-sloganov.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:15:42+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-socialnoj-reklamy.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:33:21+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-socialnoj-reklamy.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:33:21+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-reklamnogo-bannera.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T11:04:34+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-reklamnogo-bannera.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T11:04:34+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-reklamnoj-animacii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T15:25:09+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-reklamnoj-animacii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T15:25:09+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-reklamnogo-scenarija.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:16:24+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-reklamnogo-scenarija.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:16:24+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/sozdanie-dudl-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:28:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/sozdanie-dudl-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:28:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/prodvizhenie-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:24:04+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/prodvizhenie-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:24:04+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/testportfolio.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T14:58:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyatestportfolio.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T14:58:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/steampunk-animaciya.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T14:44:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/portfolio/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyasteampunk-animaciya.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T14:44:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/portfolio/sozdanie-igr.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T14:08:08+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/portfolio/sozdanie-igr</loc>
+	<loc>https://localhost/en/portfolio/sozdanie-igr.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T14:08:08+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/portfolio/animaciya-i-3d-mul-tiplikaciya</loc>
+	<loc>https://localhost/services/android-game-development.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:00+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/android-game-development.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:00+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/ios-game-development.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/ios-game-development.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/game-screenplay.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:44+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/game-screenplay.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:44+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/making-mobile-game.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:31:33+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/making-mobile-game.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:31:33+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/sozdanie-personazha-igri.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:16:25+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/sozdanie-personazha-igri.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:16:25+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/ozvuchka-igr.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:18:20+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/ozvuchka-igr.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:18:20+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-trejlera-igry.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:33:47+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-trejlera-igry.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:33:47+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-video-dlja-igr.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T11:34:12+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-video-dlja-igr.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T11:34:12+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/portfolio/animaciya-i-3d-mul-tiplikaciya.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T14:08:02+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/portfolio/animaciya-i-3d-mul-tiplikaciya</loc>
+	<loc>https://localhost/en/portfolio/animaciya-i-3d-mul-tiplikaciya.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T14:08:02+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/portfolio/s-emka-i-postobrabotka-videorolikov</loc>
+	<loc>https://localhost/services/3D-character.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:37:19+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/3D-character.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:37:19+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Cartoon.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:44:30+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Cartoon.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:44:30+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/website-animation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:39:29+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/website-animation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:39:29+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/animated-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:40:40+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/animated-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:40:40+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/3d-modelling.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:43:22+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/3d-modelling.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:43:22+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/3D-visualization-and-render.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:00:17+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/3D-visualization-and-render.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:00:17+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/3d-graphics.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:00:53+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/3d-graphics.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:00:53+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/architectural-visualization.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:06:59+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/architectural-visualization.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:06:59+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/flash-animation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:09:32+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/flash-animation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:09:32+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/sozdanie-illyustracii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:11:17+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/sozdanie-illyustracii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:11:17+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Character-animation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:23:26+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Character-animation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:23:26+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/3D-animation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:24:02+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/3D-animation.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:24:02+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/sozdanie-2D-animacii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:25:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/sozdanie-2D-animacii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:25:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-animacii-logotipa.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:34:28+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-animacii-logotipa.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:34:28+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-flash-prezentacii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:35:01+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-flash-prezentacii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:35:01+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-graficheskogo-dizajna.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:36:43+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-graficheskogo-dizajna.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:36:43+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Animacija-mobilnyh-prilozhenij.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:39:37+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Animacija-mobilnyh-prilozhenij.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:39:37+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Predvaritelnaja-3D-vizualizacija.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:30:44+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Predvaritelnaja-3D-vizualizacija.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:30:44+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/2D-motion-graphics.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:55:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/2D-motion-graphics.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:55:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/portfolio/s-emka-i-postobrabotka-videorolikov.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T14:07:56+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/portfolio/s-emka-i-postobrabotka-videorolikov</loc>
+	<loc>https://localhost/en/portfolio/s-emka-i-postobrabotka-videorolikov.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T14:07:56+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya</loc>
+	<loc>https://localhost/services/aerosemka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:29:44+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/aerosemka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:29:44+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/post-production.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:35+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/post-production.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:35+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/technological-movie.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/technological-movie.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:30:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/medicine-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:34:49+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/medicine-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:34:49+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/filming-conference.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:35:26+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/filming-conference.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:35:26+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/video-catalog.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:36:07+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/video-catalog.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:36:07+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/video-for-website.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:36:39+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/video-for-website.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:36:39+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/videosemka-prazdnikov.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:38:39+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/videosemka-prazdnikov.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T09:38:39+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/youtube-screenplay.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:01:25+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/youtube-screenplay.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:01:25+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/love-story.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:01:55+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/love-story.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:01:55+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/videoreportazh.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:02:22+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/videoreportazh.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:02:22+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/concert-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:03:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/concert-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:03:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/detskaya-semka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:04:22+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/detskaya-semka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:04:22+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/coporate-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:04:50+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/coporate-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:04:50+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/videosemka-vypusknogo-i-poslednego-zvonka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:06:12+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/videosemka-vypusknogo-i-poslednego-zvonka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:06:12+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/izgotovlenie-audiorolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:10:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/izgotovlenie-audiorolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:10:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/promo-video-artists.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:10:41+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/promo-video-artists.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:10:41+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/videosemka-treningov.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:12:40+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/videosemka-treningov.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:12:40+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/detskaya-videosemka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:13:23+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/detskaya-videosemka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:13:23+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/semka-dokumentalnogo-filma.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:14:31+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/semka-dokumentalnogo-filma.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:14:31+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/video-review.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:17:11+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/video-review.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:17:11+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/proizvodstvo-imidzhevogo-rolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:18:52+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/proizvodstvo-imidzhevogo-rolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:18:52+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/videosemka-meropriyatij.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:22:26+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/videosemka-meropriyatij.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:22:26+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/videosemka-dnya-rozhdeniya.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:22:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/videosemka-dnya-rozhdeniya.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:22:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/sozdanie-vfx.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:24:31+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/sozdanie-vfx.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:24:31+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/videosemka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:25:03+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/videosemka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:25:03+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Videomontazh.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:26:17+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Videomontazh.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:26:17+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Ozvuchka-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:26:49+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Ozvuchka-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:26:49+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-virusnogo-rolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:27:31+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-virusnogo-rolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:27:31+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-zastavki.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:31:26+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-zastavki.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:31:26+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-raskadrovki.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:31:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-raskadrovki.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:31:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-reklamnogo-rolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:32:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-reklamnogo-rolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:32:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Semka-svadebnogo-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:35:40+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Semka-svadebnogo-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:35:40+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Motion-graphics.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:36:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Motion-graphics.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:36:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-videoprezentacii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:44:15+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-videoprezentacii.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:44:15+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-stop-moushen-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:55:15+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-stop-moushen-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T10:55:15+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/sozdanie-videouroka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:33:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/sozdanie-videouroka.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:33:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-tizera.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:45:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-tizera.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:45:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Semka promo-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:53:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Semka promo-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T12:53:51+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-obuchajushhego-videorolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:13:36+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-obuchajushhego-videorolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:13:36+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-prezentacionnogo-videorolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:21:31+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-prezentacionnogo-videorolika.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:21:31+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/postproduction-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:39:19+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/postproduction-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:39:19+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/Sozdanie-video-infografiki.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:47:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/Sozdanie-video-infografiki.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T13:47:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/sozdanie trejlera.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:09:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/sozdanie trejlera.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:09:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/cvetokorrekcija-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:18:54+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/cvetokorrekcija-video.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:18:54+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/semka-muzykalnogo-klipa.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:30:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/semka-muzykalnogo-klipa.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:30:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/services/semka-korporativnogo-filma.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:37:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/services/semka-korporativnogo-filma.html</loc>
+		<priority>0.7</priority>
+		<lastmod>2017-11-09T14:37:45+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T13:35:21+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya</loc>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T13:35:21+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/lorem-ipsum-post</loc>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/lorem-ipsum-post.html</loc>
 		<priority>0.6</priority>
-		<lastmod>2017-10-26T17:58:56+03:00</lastmod>
+		<lastmod>2017-11-10T13:29:52+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyalorem-ipsum-post</loc>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyalorem-ipsum-post.html</loc>
 		<priority>0.6</priority>
-		<lastmod>2017-10-26T17:58:56+03:00</lastmod>
+		<lastmod>2017-11-10T13:29:52+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/stat-ya-o-sozdanii-igr</loc>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/writing-screenplay.html</loc>
 		<priority>0.6</priority>
-		<lastmod>2017-11-02T18:28:15+03:00</lastmod>
+		<lastmod>2017-11-10T13:29:48+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyastat-ya-o-sozdanii-igr</loc>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyawriting-screenplay.html</loc>
 		<priority>0.6</priority>
-		<lastmod>2017-11-02T18:28:15+03:00</lastmod>
+		<lastmod>2017-11-10T13:29:48+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)</loc>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/3D-televizor-est-li-smysl-brat.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:50:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya3D-televizor-est-li-smysl-brat.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:50:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/kak-razrabotat-reklamnuju-kampaniju.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:34+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyakak-razrabotat-reklamnuju-kampaniju.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:34+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/upravlenie-reputaciey-pri-pomoschi-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:02+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyaupravlenie-reputaciey-pri-pomoschi-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:02+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/sozdanie-videoinfografiki.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:44:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyasozdanie-videoinfografiki.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:44:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/vidyi-reklamyi-i-ih-effektivnost.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:41+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyavidyi-reklamyi-i-ih-effektivnost.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:41+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/videorolik-companii-idei-dlya-sozdaniya-interesnogo-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:29+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyavideorolik-companii-idei-dlya-sozdaniya-interesnogo-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:29+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/prodauschiy-videorolik-8-sovetov-po-sozdaniyu-uspeshnoy-reklami.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:03+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyaprodauschiy-videorolik-8-sovetov-po-sozdaniyu-uspeshnoy-reklami.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:03+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/reklamnyie-tizeryi-v-chem-sekret-ih-populyarnosti.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:59+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyareklamnyie-tizeryi-v-chem-sekret-ih-populyarnosti.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:59+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/chto-nuzhno-znat-o-razmeschenii-videorolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:54+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyachto-nuzhno-znat-o-razmeschenii-videorolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:54+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/trudnyiy-vyibor-kak-opredelit-temu-dlya-videorolika.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:49+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyatrudnyiy-vyibor-kak-opredelit-temu-dlya-videorolika.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:49+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/kak-ponyat-chto-vam-nuzhen-reklamnyiy-rolik.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:30+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyakak-ponyat-chto-vam-nuzhen-reklamnyiy-rolik.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:30+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/kak-napisat-stsenariy-dlya-videorolika.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:49:06+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyakak-napisat-stsenariy-dlya-videorolika.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:49:06+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniya/kak-pridumat-ideu-dlya-rolika.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:49:05+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/razrabotka-reklamnoj-strategii-i-strategii-prodvizheniyakak-pridumat-ideu-dlya-rolika.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:49:05+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx).html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T13:35:13+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)</loc>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx).html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T13:35:13+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/my-sample-post</loc>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/my-sample-post.html</loc>
 		<priority>0.6</priority>
 		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)my-sample-post</loc>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)my-sample-post.html</loc>
 		<priority>0.6</priority>
 		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)</loc>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/stat-ya-o-sozdanii-igr.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:54:46+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)stat-ya-o-sozdanii-igr.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:54:46+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/aeros-emka-s-kvadrokoptera-top-luchshih-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:29:00+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)aeros-emka-s-kvadrokoptera-top-luchshih-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:29:00+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/best-concert-movies.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:51:42+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)best-concert-movies.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:51:42+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/best-commercial-2017.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:51:39+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)best-commercial-2017.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:51:39+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/best-documentary-movies.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:29:33+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)best-documentary-movies.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:29:33+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/children-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:29:28+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)children-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:29:28+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/after-effects-review.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:38+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)after-effects-review.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:38+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/vse-o-videomontazhe.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:49:57+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)vse-o-videomontazhe.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:49:57+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/best-intro.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:49:57+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)best-intro.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:49:57+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/snimat-video-kak-luchshie-rezhissery-chast-2.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:50:00+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)snimat-video-kak-luchshie-rezhissery-chast-2.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:50:00+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/sozdanie-cgi.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:25:23+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)sozdanie-cgi.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:25:23+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/snimat-kak-luchshie-rezhissery.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:55+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)snimat-kak-luchshie-rezhissery.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:55+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/top-luchshih-reklamnyh-rolikov-two.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:53+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)top-luchshih-reklamnyh-rolikov-two.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:53+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/top-luchshih-reklamnyh-rolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:18+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)top-luchshih-reklamnyh-rolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:18+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/sozdat-virusnoe-video-pochuvstvuj-sebya-spilbergom.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:50+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)sozdat-virusnoe-video-pochuvstvuj-sebya-spilbergom.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:50+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/3d-animacija-v-video-dlja-reklamy-za-i-protiv.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:48+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)3d-animacija-v-video-dlja-reklamy-za-i-protiv.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:48+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/chto-takoe-vizualnyie-effekti-i-chem-oni-otlichayutsya-ot-speceffektov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:41+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)chto-takoe-vizualnyie-effekti-i-chem-oni-otlichayutsya-ot-speceffektov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:41+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/7-neosporimyih-dokazatelstv-togo-chto-video-luchshe-teksta.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:11+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)7-neosporimyih-dokazatelstv-togo-chto-video-luchshe-teksta.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:11+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/trendyi-videomarketinga-v-2016-godu.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:36+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)trendyi-videomarketinga-v-2016-godu.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:36+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/kak-sozdat-po-nastoyaschemu-virusnoe-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:34+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)kak-sozdat-po-nastoyaschemu-virusnoe-video.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:34+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/kakoy-dolzhna-byit-dlitelnost-reklamnogo-rolika.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:48:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)kakoy-dolzhna-byit-dlitelnost-reklamnogo-rolika.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:48:27+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/stili-viderolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:22+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)stili-viderolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:22+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/lineyniy-i-nelineyniy-montaj:-ih-kratkaya-harakteristika-i-glavnie-otlicia.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:43:17+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)lineyniy-i-nelineyniy-montaj:-ih-kratkaya-harakteristika-i-glavnie-otlicia.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:43:17+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/demonstracionniy-videorolik-idei-i-soveti.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:13+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)demonstracionniy-videorolik-idei-i-soveti.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:13+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/zhanryi-reklamnyih-rolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)zhanryi-reklamnyih-rolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/vidyi-reklamnyih-rolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:48+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)vidyi-reklamnyih-rolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:48+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/reklamniy-rolik-magazina-rekomendacii-po-sozdaniu-i-udachnie-primeri.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:04+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)reklamniy-rolik-magazina-rekomendacii-po-sozdaniu-i-udachnie-primeri.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:04+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/8-besplatnih-servisov-s-melodiyami-dlya-videorolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:54:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)8-besplatnih-servisov-s-melodiyami-dlya-videorolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:54:56+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/zastavki-dlya-videorolikov-osobennosti-sozdaniya-i-primeneniya.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:43+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)zastavki-dlya-videorolikov-osobennosti-sozdaniya-i-primeneniya.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:43+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/obzor-luchshyh-programm-po-obrabotke-videorolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:38+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)obzor-luchshyh-programm-po-obrabotke-videorolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:38+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/videoroliki-tipy-osobennosti-etapy-sozdaniya-primery.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:25:42+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)videoroliki-tipy-osobennosti-etapy-sozdaniya-primery.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:25:42+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/kak-sozdat-reklamnyiy-rolik-sayta.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:33+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)kak-sozdat-reklamnyiy-rolik-sayta.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:33+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/reklamny-rolik-restorana:-osobennosti-sozdania-i-popularnie-stsenarii.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:53+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)reklamny-rolik-restorana:-osobennosti-sozdania-i-popularnie-stsenarii.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:53+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/3d-reklamnye-roliki:-jetapy-i-osobennosti-sozdaniya.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:48:07+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)3d-reklamnye-roliki:-jetapy-i-osobennosti-sozdaniya.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:48:07+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/kachestvennyj-videomontazh-glazami-jekspertov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:47:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)kachestvennyj-videomontazh-glazami-jekspertov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:47:58+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)/kak-sozdat-animacionnyj-rolik.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:47:57+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/s-emka-i-postobrabotka-videorolikov-(effekty-i-vfx)kak-sozdat-animacionnyj-rolik.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:47:57+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej).html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T13:35:05+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)</loc>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej).html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T13:35:05+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/latest-post</loc>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/latest-post.html</loc>
 		<priority>0.6</priority>
 		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)latest-post</loc>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)latest-post.html</loc>
 		<priority>0.6</priority>
 		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/sozdanie-igr</loc>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/vse-o-sozdanii-raskadrovki.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:29:43+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)vse-o-sozdanii-raskadrovki.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:29:43+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/sozdanie-animacii-chto-gde-kogda.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:50:00+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)sozdanie-animacii-chto-gde-kogda.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:50:00+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/V-kakih-programmah-risujut-populjarnye-multserialy.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:50:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)V-kakih-programmah-risujut-populjarnye-multserialy.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:50:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/vse-sekrety-sozdanija-animacii-Pixar.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:57+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)vse-sekrety-sozdanija-animacii-Pixar.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:28:57+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/obzor-popularnih-programm-dlya-sozdaniya-3D-animacii.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:13+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)obzor-popularnih-programm-dlya-sozdaniya-3D-animacii.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:26:13+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/sozdanie-prostoy-animatsii-svoimi-rukami.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:07+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)sozdanie-prostoy-animatsii-svoimi-rukami.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:07+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/reklamnaya-animatciya.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:14+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)reklamnaya-animatciya.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:14+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/nerealnaya-realnost-ili-vse-o-personazhah-reklamnyih-rolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:19+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)nerealnaya-realnost-ili-vse-o-personazhah-reklamnyih-rolikov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:27:19+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)/12-osnovnyh-pravil-animacii.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:48:02+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/animaciya-i-3d-mul-tiplikaciya-(sozdanie-personazhej)12-osnovnyh-pravil-animacii.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-10T13:48:02+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/sozdanie-igr.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T13:34:54+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/sozdanie-igr</loc>
+	<loc>https://localhost/en/blog/sozdanie-igr.html</loc>
 		<priority>0.8</priority>
 		<lastmod>2017-10-24T13:34:54+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/sozdanie-igr/yarr-post</loc>
+	<loc>https://localhost/blog/sozdanie-igr/yarr-post.html</loc>
 		<priority>0.6</priority>
 		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/sozdanie-igryarr-post</loc>
+	<loc>https://localhost/en/blog/sozdanie-igryarr-post.html</loc>
 		<priority>0.6</priority>
 		<lastmod>2017-10-23T10:05:51+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/authoroleg</loc>
+	<loc>https://localhost/blog/sozdanie-igr/how-to-write-game.html</loc>
 		<priority>0.6</priority>
-		<lastmod>2017-11-02T17:45:01+03:00</lastmod>
+		<lastmod>2017-11-10T13:51:28+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/authoroleg</loc>
+	<loc>https://localhost/en/blog/sozdanie-igrhow-to-write-game.html</loc>
 		<priority>0.6</priority>
-		<lastmod>2017-11-02T17:45:01+03:00</lastmod>
+		<lastmod>2017-11-10T13:51:28+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/blog/authoraleksandr-kopytov</loc>
+	<loc>https://localhost/blog/authorsome_author.html</loc>
 		<priority>0.6</priority>
-		<lastmod>2017-11-02T15:39:26+03:00</lastmod>
+		<lastmod>2017-11-03T09:26:06+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>http://test.kinesko.com.local/en/blog/authoraleksandr-kopytov</loc>
+	<loc>https://localhost/en/blog/authorsome_author.html</loc>
 		<priority>0.6</priority>
-		<lastmod>2017-11-02T15:39:26+03:00</lastmod>
+		<lastmod>2017-11-03T09:26:06+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/authoroleg.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-03T09:18:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/authoroleg.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-03T09:18:10+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/blog/authoraleksandr-kopytov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-03T10:16:55+03:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://localhost/en/blog/authoraleksandr-kopytov.html</loc>
+		<priority>0.6</priority>
+		<lastmod>2017-11-03T10:16:55+03:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 </urlset>

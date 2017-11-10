@@ -131,7 +131,7 @@
                                         @switch($type)
                                             @case('text')
                                             <div class="card list-group-item">
-                                                <div class="card-header" role="tab" id="heading' + count + '">
+                                                <div class="card-header" role="tab" id="heading{{ $globalCount }}">
                                                     <h5 class="mb-0">
                                                         <a class="collapsed" data-toggle="collapse"
                                                            data-parent="#{{ $block->color }}accordion"
@@ -146,7 +146,7 @@
                                                 <div id="collapse{{ $globalCount }}" class="collapse" role="tabpanel"
                                                      aria-labelledby="heading{{ $globalCount }}">
                                                     <div class="card-block">
-                                                        <div class="form-group">
+
                                                             <input type="hidden" name="blocks[{{ $globalCount }}][id]"
                                                                    value="{{ $block->id }}">
 
@@ -158,19 +158,7 @@
                                                             <input type="hidden"
                                                                    name="blocks[{{ $globalCount }}][order]"
                                                                    value="{{ $block->order }}" class="order">
-                                                            <label for="name">Title RU</label>
-                                                            <input type="text" class="form-control"
-                                                                   name="blocks[{{ $globalCount }}][title_ru]"
-                                                                   value="{{ $block->title_ru }}"
-                                                                   placeholder="Title RU">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="name">Title EN</label>
-                                                            <input type="text" class="form-control"
-                                                                   name="blocks[{{ $globalCount }}][title_en]"
-                                                                   value="{{ $block->title_en }}"
-                                                                   placeholder="Title EN">
-                                                        </div>
+
                                                         <div class="form-group">
                                                             <label for="name">Body RU</label>
                                                             <textarea class="form-control blockTextBox"
@@ -190,9 +178,9 @@
 
                                             @break
 
-                                            @case('text')
+                                            @case('textFullScreen')
                                             <div class="card list-group-item">
-                                                <div class="card-header" role="tab" id="heading' + count + '">
+                                                <div class="card-header" role="tab" id="heading{{ $globalCount }}">
                                                     <h5 class="mb-0">
                                                         <a class="collapsed" data-toggle="collapse"
                                                            data-parent="#{{ $block->color }}accordion"
@@ -200,25 +188,23 @@
                                                            aria-controls="collapse{{ $globalCount }}">
                                                             <span class="glyphicon glyphicon-move"
                                                                   aria-hidden="true"></span>
-                                                            {{ $block->color }} TEXT Block
+                                                            {{ $block->color }} TEXT FullScreen Block
                                                         </a>
                                                     </h5>
                                                 </div>
                                                 <div id="collapse{{ $globalCount }}" class="collapse" role="tabpanel"
                                                      aria-labelledby="heading{{ $globalCount }}">
                                                     <div class="card-block">
-
-                                                            <input type="hidden" name="blocks[{{ $globalCount }}][id]"
-                                                                   value="{{ $block->id }}">
-
-                                                            <input type="hidden" name="blocks[{{ $globalCount }}][type]"
-                                                                   value="text">
-                                                            <input type="hidden"
-                                                                   name="blocks[{{ $globalCount }}][color]"
-                                                                   value="{{ $block->color }}">
-                                                            <input type="hidden"
-                                                                   name="blocks[{{ $globalCount }}][order]"
-                                                                   value="{{ $block->order }}" class="order">
+                                                        <input type="hidden" name="blocks[{{ $globalCount }}][id]"
+                                                               value="{{ $block->id }}">
+                                                        <input type="hidden" name="blocks[{{ $globalCount }}][type]"
+                                                               value="text">
+                                                        <input type="hidden"
+                                                               name="blocks[{{ $globalCount }}][color]"
+                                                               value="{{ $block->color }}">
+                                                        <input type="hidden"
+                                                               name="blocks[{{ $globalCount }}][order]"
+                                                               value="{{ $block->order }}" class="order">
 
                                                         <div class="form-group">
                                                             <label for="name">Body RU</label>
@@ -236,12 +222,11 @@
                                                     <i class="voyager-trash"></i>
                                                 </div>
                                             </div>
-
                                             @break
 
                                             @case('image')
                                             <div class="card list-group-item">
-                                                <div class="card-header" role="tab" id="heading{{ $globalCount }} ">
+                                                <div class="card-header" role="tab" id="heading{{ $globalCount }}">
                                                     <h5 class="mb-0">
                                                         <a class="collapsed" data-toggle="collapse"
                                                            data-parent="#{{ $block->color }}accordion"

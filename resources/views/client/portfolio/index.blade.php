@@ -45,7 +45,7 @@
             <!-- box-1 -->
             <div class="portfolio-item">
                 <div class="poster-img-cont">
-                    <img src="/storage/{{ $item->image_thumb }}" alt="portfolio-picture">
+                    <img src="/storage/{{ $item->image_thumb }}" alt="{{ $item->image_thumb_alt }}">
                 </div>
                 <div class="hover-layer" style="color: #2e042a;">
                     <h3 class="portfolio-name">

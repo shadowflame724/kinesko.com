@@ -8,7 +8,7 @@ class Portfolio extends BaseModel
 
     public function category()
     {
-        return $this->belongsTo(ServiceCategory::class);
+        return $this->belongsTo(ServiceCategory::class, 'category_id', 'id');
     }
 
     public function getWhiteBlocks()

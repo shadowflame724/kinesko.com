@@ -29,7 +29,8 @@
         </div>
 
         {{--//= template/portfolio-block-big.html--}}
-        @include('client.template.portfolio-block-big')
+        {{--@include('client.template.portfolio-block-big')--}}
+        @widget('PortfolioBig')
 
     </div>
     <!-- end of our-works -->
