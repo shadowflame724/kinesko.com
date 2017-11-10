@@ -46,15 +46,14 @@ class BaseModel extends Model
         $serviceCategories = ServiceCategory::with('services')->with('portfolio')->get()->sortBy('created_at');
         $postCategories = PostCategory::with('posts')->get()->sortBy('created_at');
         $users = DB::table('users')->orderBy('created_at', 'desc')->get();
+        $sitemap->add(URL::to('/'), $currentTimeStamp, 1.0, 'daily');
+        $sitemap->add(URL::to('/en/'), $currentTimeStamp, 1.0, 'daily');
 
         foreach ($pages as $value) {
-            if ($value->slug == '') {
-                $sitemap->add(URL::to('/' . $value->slug . '.html'), $value->updated_at, 1.0, 'daily');
-                $sitemap->add(URL::to('/en/' . $value->slug . '.html'), $value->updated_at, 1.0, 'daily');
+            if (strlen($value->slug) > 1) {
+                $sitemap->add(URL::to('/' . $value->slug . '.html'), $value->updated_at, 0.9, 'daily');
+                $sitemap->add(URL::to('/en/' . $value->slug . '.html'), $value->updated_at, 0.9, 'daily');
             }
-
-            $sitemap->add(URL::to('/' . $value->slug . '.html'), $value->updated_at, 0.9, 'daily');
-            $sitemap->add(URL::to('/en/' . $value->slug . '.html'), $value->updated_at, 0.9, 'daily');
         }
 
         foreach ($serviceCategories as $serviceCategory) {
@@ -88,8 +87,8 @@ class BaseModel extends Model
         }
 
         foreach ($users as $user) {
-            $sitemap->add(URL::to('/blog/author' . $user->slug . '.html'), $user->updated_at, 0.6, 'daily');
-            $sitemap->add(URL::to('/en/blog/author' . $user->slug . '.html'), $user->updated_at, 0.6, 'daily');
+            $sitemap->add(URL::to('/blog/author/' . $user->slug . '.html'), $user->updated_at, 0.6, 'daily');
+            $sitemap->add(URL::to('/en/blog/author/' . $user->slug . '.html'), $user->updated_at, 0.6, 'daily');
         }
 
         return $sitemap->store('xml', 'sitemap');

@@ -1,5 +1,6 @@
 <IfModule mod_rewrite.c>
-    RewriteEngine on
+    RewriteEngine On
+
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
 
@@ -8,8 +9,7 @@ RewriteEngine On
 RewriteRule \.git - [F,L]
 
 RewriteCond %{HTTP_HOST} ^www\.(.*)$
-RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
 RewriteCond %{THE_REQUEST} //
 RewriteRule .* /$0 [R=301,L]
-

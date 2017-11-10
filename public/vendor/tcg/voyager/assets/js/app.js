@@ -26105,7 +26105,7 @@
             skin: "voyager",
             min_height: 600,
             resize: "vertical",
-            plugins: "link, image, code, youtube, giphy, table, textcolor, anchor, paste, template, importcss",
+            plugins: "link, image, code, youtube, giphy, table, textcolor, anchor, paste, template",
             extended_valid_elements: "input[id|name|value|type|class|style|required|placeholder|autocomplete|onclick]",
             file_browser_callback: function (e, t, n, i) {
                 "image" == n && $("#upload_file").trigger("click")

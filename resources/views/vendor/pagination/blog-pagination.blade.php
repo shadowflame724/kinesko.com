@@ -2,9 +2,11 @@
     <ul class="blog-pagination">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
-            <li class="disabled"><span><<</span></li>
+            {{--<li class="disabled"><span><<</span></li>--}}
         @else
-            <li><a href="{{ $paginator->previousPageUrl() }}" rel="prev"><<</a></li>
+            <li><a href="{{ Request::url() . '?page=1' }}" rel="prev"><<</a></li>
+
+            <li><a href="{{ $paginator->previousPageUrl() }}" rel="prev"><</a></li>
         @endif
 
         {{-- Pagination Elements --}}
@@ -28,9 +30,11 @@
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
-            <li><a href="{{ $paginator->nextPageUrl() }}" rel="next">>></a></li>
+            <li><a href="{{ $paginator->nextPageUrl() }}" rel="next">></a></li>
+
+            <li><a href="{{ Request::url() . '?page=' . $paginator->lastPage() }}" rel="next">>></a></li>
         @else
-            <li class="disabled"><span>>></span></li>
+            {{--<li class="disabled"><span>>></span></li>--}}
         @endif
     </ul>
 @endif
